@@ -1,0 +1,105 @@
+{
+  "id": "restaurant",
+  "title": "在餐廳吃飯",
+  "context": "",
+  "language_code": "ja",
+  "duration": 64.391,
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "other",
+      "native": "歡迎光臨，請問幾位？",
+      "target": "いらっしゃいませ。何名様ですか。",
+      "start": 0.0,
+      "end": 3.768
+    },
+    {
+      "order": 2,
+      "speaker": "you",
+      "native": "兩位。",
+      "target": "二人です。",
+      "start": 5.768,
+      "end": 7.544
+    },
+    {
+      "order": 3,
+      "speaker": "other",
+      "native": "有預約嗎？",
+      "target": "ご予約はされていますか。",
+      "start": 9.544,
+      "end": 11.896
+    },
+    {
+      "order": 4,
+      "speaker": "you",
+      "native": "沒有，現在還有位子嗎？",
+      "target": "いいえ、今空いてる席ありますか。",
+      "start": 13.896,
+      "end": 17.472
+    },
+    {
+      "order": 5,
+      "speaker": "other",
+      "native": "有，請往這邊。",
+      "target": "はい、こちらへどうぞ。",
+      "start": 19.472,
+      "end": 22.04
+    },
+    {
+      "order": 6,
+      "speaker": "you",
+      "native": "不好意思，可以給我菜單嗎？",
+      "target": "すみません、メニューをいただけますか。",
+      "start": 24.04,
+      "end": 27.448
+    },
+    {
+      "order": 7,
+      "speaker": "other",
+      "native": "這是菜單，今天的推薦是這個。",
+      "target": "こちらメニューです。今日のおすすめはこちらになります。",
+      "start": 29.448,
+      "end": 34.32
+    },
+    {
+      "order": 8,
+      "speaker": "you",
+      "native": "那我點這個，還有一杯生啤酒。",
+      "target": "じゃあ、これと、あと生ビール一杯お願いします。",
+      "start": 36.32,
+      "end": 40.76
+    },
+    {
+      "order": 9,
+      "speaker": "other",
+      "native": "好的，請稍等。",
+      "target": "かしこまりました。少々お待ちください。",
+      "start": 42.76,
+      "end": 46.816
+    },
+    {
+      "order": 10,
+      "speaker": "you",
+      "native": "不好意思，可以幫我加點水嗎？",
+      "target": "すみません、お水のおかわりお願いします。",
+      "start": 48.816,
+      "end": 52.704
+    },
+    {
+      "order": 11,
+      "speaker": "you",
+      "native": "不好意思，買單。",
+      "target": "すみません、お会計お願いします。",
+      "start": 54.704,
+      "end": 58.184
+    },
+    {
+      "order": 12,
+      "speaker": "other",
+      "native": "謝謝光臨。",
+      "target": "ありがとうございました。",
+      "start": 60.184,
+      "end": 62.392
+    }
+  ]
+}

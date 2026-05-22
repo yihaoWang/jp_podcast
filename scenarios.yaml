@@ -1,0 +1,40 @@
+target_language: japanese
+target_language_code: ja
+native_language: 繁體中文
+sentences_per_scenario: 12
+
+scenarios:
+  - id: cafe_order
+    title: 在咖啡廳點餐
+    context: 你走進一家日式咖啡廳，要點一杯飲料跟甜點
+    roles:
+      you: 顧客
+      other: 店員
+
+  - id: work_meeting
+    title: 工作會議開場
+    context: 跟日本同事的線上週會，輪到你 update 進度
+    roles:
+      you: 工程師
+      other: 主管
+
+  - id: ask_directions
+    title: 問路
+    context: 在東京街頭迷路，找最近的車站
+    roles:
+      you: 觀光客
+      other: 路人
+
+  - id: doctor_visit
+    title: 看醫生
+    context: 感冒喉嚨痛，到診所跟醫生描述症狀
+    roles:
+      you: 病患
+      other: 醫生
+
+  - id: small_talk
+    title: 同事閒聊
+    context: 茶水間遇到同事，聊週末
+    roles:
+      you: 你
+      other: 同事

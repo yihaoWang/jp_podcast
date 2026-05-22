@@ -1,0 +1,11 @@
+{
+  "scenarios": [
+    {
+      "id": "restaurant",
+      "title": "在餐廳吃飯",
+      "context": "",
+      "duration": 64.391,
+      "line_count": 12
+    }
+  ]
+}
