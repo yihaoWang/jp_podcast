@@ -1,0 +1,151 @@
+[
+  {
+    "id": "restaurant",
+    "title": "在餐廳吃飯",
+    "context": "在日式餐廳從入座、點餐到結帳的完整對話",
+    "lines": [
+      {
+        "speaker": "other",
+        "native": "歡迎光臨，請問幾位？",
+        "target": "いらっしゃいませ。何名様ですか。",
+        "breakdown": [
+          { "surface": "いらっしゃいませ", "reading": "いらっしゃいませ", "pos": "招呼語", "meaning": "歡迎光臨（服務業專用敬語）" },
+          { "surface": "何名様", "reading": "なんめいさま", "pos": "名詞", "meaning": "幾位（樣 さま 是對客人的敬稱）" },
+          { "surface": "ですか", "reading": "ですか", "pos": "助動詞+助詞", "meaning": "禮貌疑問句結尾" }
+        ],
+        "grammar_note": "「何名様」是「何人」的敬語版本，服務業必用。「いらっしゃいませ」是商業招呼語，私下不會用。"
+      },
+      {
+        "speaker": "you",
+        "native": "兩位。",
+        "target": "二人です。",
+        "breakdown": [
+          { "surface": "二人", "reading": "ふたり", "pos": "名詞", "meaning": "兩個人（注意讀音不規則）" },
+          { "surface": "です", "reading": "です", "pos": "助動詞", "meaning": "禮貌斷定" }
+        ],
+        "grammar_note": "「一人 ひとり / 二人 ふたり」是不規則讀音，三人以上才是「〜にん」。"
+      },
+      {
+        "speaker": "other",
+        "native": "有預約嗎？",
+        "target": "ご予約はされていますか。",
+        "breakdown": [
+          { "surface": "ご予約", "reading": "ごよやく", "pos": "名詞", "meaning": "預約（ご 是敬語接頭詞）" },
+          { "surface": "は", "reading": "は", "pos": "助詞", "meaning": "主題提示" },
+          { "surface": "されて", "reading": "されて", "pos": "動詞", "meaning": "する 的尊敬語 て形" },
+          { "surface": "います", "reading": "います", "pos": "補助動詞", "meaning": "狀態持續" },
+          { "surface": "か", "reading": "か", "pos": "助詞", "meaning": "疑問" }
+        ],
+        "grammar_note": "「されています」是「しています」的尊敬語形，敬意比直接問「予約しましたか」更高。"
+      },
+      {
+        "speaker": "you",
+        "native": "沒有，現在還有位子嗎？",
+        "target": "いいえ、今空いてる席ありますか。",
+        "breakdown": [
+          { "surface": "いいえ", "reading": "いいえ", "pos": "感嘆詞", "meaning": "不、沒有" },
+          { "surface": "今", "reading": "いま", "pos": "副詞", "meaning": "現在" },
+          { "surface": "空いてる", "reading": "あいてる", "pos": "動詞", "meaning": "空著的（空いている 的口語縮約）" },
+          { "surface": "席", "reading": "せき", "pos": "名詞", "meaning": "座位" },
+          { "surface": "ありますか", "reading": "ありますか", "pos": "動詞", "meaning": "有嗎" }
+        ],
+        "grammar_note": "「〜ている」在口語常縮成「〜てる」。「空いてる席」是「空著的位子」，比「席が空いてますか」更口語自然。"
+      },
+      {
+        "speaker": "other",
+        "native": "有，請往這邊。",
+        "target": "はい、こちらへどうぞ。",
+        "breakdown": [
+          { "surface": "はい", "reading": "はい", "pos": "感嘆詞", "meaning": "是" },
+          { "surface": "こちら", "reading": "こちら", "pos": "代名詞", "meaning": "這邊（敬語形）" },
+          { "surface": "へ", "reading": "へ", "pos": "助詞", "meaning": "方向" },
+          { "surface": "どうぞ", "reading": "どうぞ", "pos": "副詞", "meaning": "請（引導/讓步）" }
+        ],
+        "grammar_note": "「こちら」是「ここ／こっち」的敬語版。服務業引導客人會說「こちらへどうぞ」。"
+      },
+      {
+        "speaker": "you",
+        "native": "不好意思，可以給我菜單嗎？",
+        "target": "すみません、メニューをいただけますか。",
+        "breakdown": [
+          { "surface": "すみません", "reading": "すみません", "pos": "感嘆詞", "meaning": "不好意思（呼喚店員）" },
+          { "surface": "メニュー", "reading": "メニュー", "pos": "名詞", "meaning": "菜單（外來語 menu）" },
+          { "surface": "を", "reading": "を", "pos": "助詞", "meaning": "受格" },
+          { "surface": "いただけますか", "reading": "いただけますか", "pos": "動詞", "meaning": "可以給我嗎（謙讓語可能形）" }
+        ],
+        "grammar_note": "「〜をいただけますか」是「〜をください」的更禮貌版本，餐廳請求物品最自然的說法。"
+      },
+      {
+        "speaker": "other",
+        "native": "這是菜單，今天的推薦是這個。",
+        "target": "こちらメニューです。今日のおすすめはこちらになります。",
+        "breakdown": [
+          { "surface": "こちら", "reading": "こちら", "pos": "代名詞", "meaning": "這個（敬語）" },
+          { "surface": "メニュー", "reading": "メニュー", "pos": "名詞", "meaning": "菜單" },
+          { "surface": "今日のおすすめ", "reading": "きょうのおすすめ", "pos": "片語", "meaning": "今日推薦" },
+          { "surface": "になります", "reading": "になります", "pos": "動詞", "meaning": "是（服務業常用代替 です）" }
+        ],
+        "grammar_note": "「〜になります」在服務業是「〜です」的更柔軟版本，雖然文法學界有爭議但實際使用極廣。"
+      },
+      {
+        "speaker": "you",
+        "native": "那我點這個，還有一杯生啤酒。",
+        "target": "じゃあ、これと、あと生ビール一杯お願いします。",
+        "breakdown": [
+          { "surface": "じゃあ", "reading": "じゃあ", "pos": "接續詞", "meaning": "那麼（では 的口語）" },
+          { "surface": "これ", "reading": "これ", "pos": "代名詞", "meaning": "這個" },
+          { "surface": "と", "reading": "と", "pos": "助詞", "meaning": "和（並列）" },
+          { "surface": "あと", "reading": "あと", "pos": "副詞", "meaning": "還有、另外" },
+          { "surface": "生ビール", "reading": "なまビール", "pos": "名詞", "meaning": "生啤酒" },
+          { "surface": "一杯", "reading": "いっぱい", "pos": "數量詞", "meaning": "一杯" },
+          { "surface": "お願いします", "reading": "おねがいします", "pos": "片語", "meaning": "拜託、請" }
+        ],
+        "grammar_note": "點餐結尾用「お願いします」是最自然的萬用句型。「あと」用來追加品項，比「そして」更口語。"
+      },
+      {
+        "speaker": "other",
+        "native": "好的，請稍等。",
+        "target": "かしこまりました。少々お待ちください。",
+        "breakdown": [
+          { "surface": "かしこまりました", "reading": "かしこまりました", "pos": "動詞", "meaning": "明白了（服務業最高敬語）" },
+          { "surface": "少々", "reading": "しょうしょう", "pos": "副詞", "meaning": "稍微、片刻" },
+          { "surface": "お待ちください", "reading": "おまちください", "pos": "片語", "meaning": "請等候（尊敬語）" }
+        ],
+        "grammar_note": "「かしこまりました」比「わかりました」更尊敬，是高級服務業才會用。「少々お待ちください」是固定句型。"
+      },
+      {
+        "speaker": "you",
+        "native": "不好意思，可以幫我加點水嗎？",
+        "target": "すみません、お水のおかわりお願いします。",
+        "breakdown": [
+          { "surface": "すみません", "reading": "すみません", "pos": "感嘆詞", "meaning": "不好意思" },
+          { "surface": "お水", "reading": "おみず", "pos": "名詞", "meaning": "水（お 是美化語）" },
+          { "surface": "の", "reading": "の", "pos": "助詞", "meaning": "的" },
+          { "surface": "おかわり", "reading": "おかわり", "pos": "名詞", "meaning": "續杯、再來一份" },
+          { "surface": "お願いします", "reading": "おねがいします", "pos": "片語", "meaning": "拜託" }
+        ],
+        "grammar_note": "「おかわり」是日本餐廳續飯/續飲料的關鍵字，記住就夠用。「お水」加 お 是美化語，更禮貌。"
+      },
+      {
+        "speaker": "you",
+        "native": "不好意思，買單。",
+        "target": "すみません、お会計お願いします。",
+        "breakdown": [
+          { "surface": "すみません", "reading": "すみません", "pos": "感嘆詞", "meaning": "不好意思" },
+          { "surface": "お会計", "reading": "おかいけい", "pos": "名詞", "meaning": "結帳" },
+          { "surface": "お願いします", "reading": "おねがいします", "pos": "片語", "meaning": "拜託" }
+        ],
+        "grammar_note": "「お会計」是餐廳結帳的標準說法。也可說「お勘定 おかんじょう」，較傳統。"
+      },
+      {
+        "speaker": "other",
+        "native": "謝謝光臨。",
+        "target": "ありがとうございました。",
+        "breakdown": [
+          { "surface": "ありがとうございました", "reading": "ありがとうございました", "pos": "片語", "meaning": "謝謝（過去式表示交易已完成）" }
+        ],
+        "grammar_note": "結帳後店家用過去式「ございました」表示交易完成；如果還沒結束會用現在式「ございます」。"
+      }
+    ]
+  }
+]

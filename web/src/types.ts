@@ -1,5 +1,12 @@
 export type Speaker = "you" | "other";
 
+export interface BreakdownToken {
+  surface: string;
+  reading: string;
+  pos: string;
+  meaning: string;
+}
+
 export interface SubtitleLine {
   order: number;
   speaker: Speaker;
@@ -7,6 +14,8 @@ export interface SubtitleLine {
   target: string;
   start: number;
   end: number;
+  breakdown?: BreakdownToken[];
+  grammar_note?: string;
 }
 
 export interface Scenario {

@@ -1,9 +1,7 @@
-"""CSV → MP3 + 字幕 JSON。每個情境一個 MP3，附帶帶時間戳的字幕。"""
+"""dialogues.json → MP3 + 字幕 JSON。每個情境一個 MP3，附帶時間戳與單字 breakdown。"""
 import asyncio
-import csv
 import json
 import sys
-from collections import defaultdict
 from pathlib import Path
 import yaml
 from pydub import AudioSegment
@@ -11,14 +9,10 @@ from pydub import AudioSegment
 from providers.tts import get_provider
 
 ROOT = Path(__file__).parent
-CSV_PATH = ROOT / "dialogues.csv"
+DIALOGUES_PATH = ROOT / "dialogues.json"
 OUT_DIR = ROOT / "audio"
 GAP_MS = 2000
 PROVIDER_NAME = "edge"
-
-
-async def synth_line(tts, text: str, voice: str, path: Path) -> None:
-    await tts.synthesize(text, voice, path)
 
 
 async def main() -> None:
@@ -31,32 +25,32 @@ async def main() -> None:
     tmp_dir = OUT_DIR / ".tmp"
     tmp_dir.mkdir(exist_ok=True)
 
-    grouped: dict[str, list[dict]] = defaultdict(list)
-    with CSV_PATH.open(encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            grouped[row["scenario_id"]].append(row)
-
+    dialogues = json.loads(DIALOGUES_PATH.read_text())
     index: list[dict] = []
 
-    for scenario_id, lines in grouped.items():
+    for scenario in dialogues:
+        scenario_id = scenario["id"]
+        lines = scenario["lines"]
         print(f"[audio] {scenario_id} ({len(lines)} lines)", file=sys.stderr)
         segments: list[AudioSegment] = []
         silence = AudioSegment.silent(duration=GAP_MS)
         subtitles: list[dict] = []
         cursor_ms = 0
 
-        for line in lines:
+        for idx, line in enumerate(lines, 1):
             voice = voices[line["speaker"]]
-            clip_path = tmp_dir / f"{scenario_id}_{line['order']}.mp3"
-            await synth_line(tts, line["target"], voice, clip_path)
+            clip_path = tmp_dir / f"{scenario_id}_{idx}.mp3"
+            await tts.synthesize(line["target"], voice, clip_path)
             clip = AudioSegment.from_file(clip_path)
             start_ms = cursor_ms
             end_ms = cursor_ms + len(clip)
             subtitles.append({
-                "order": int(line["order"]),
+                "order": idx,
                 "speaker": line["speaker"],
                 "native": line["native"],
                 "target": line["target"],
+                "breakdown": line.get("breakdown", []),
+                "grammar_note": line.get("grammar_note", ""),
                 "start": start_ms / 1000,
                 "end": end_ms / 1000,
             })
@@ -68,17 +62,22 @@ async def main() -> None:
         out_path = OUT_DIR / f"{scenario_id}.mp3"
         combined.export(out_path, format="mp3")
 
-        scenario_meta = next((s for s in config["scenarios"] if s["id"] == scenario_id), None)
         meta = {
             "id": scenario_id,
-            "title": lines[0]["scenario_title"],
-            "context": scenario_meta["context"] if scenario_meta else "",
+            "title": scenario["title"],
+            "context": scenario.get("context", ""),
             "language_code": lang_code,
             "duration": len(combined) / 1000,
             "lines": subtitles,
         }
         (OUT_DIR / f"{scenario_id}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2))
-        index.append({"id": scenario_id, "title": meta["title"], "context": meta["context"], "duration": meta["duration"], "line_count": len(subtitles)})
+        index.append({
+            "id": scenario_id,
+            "title": meta["title"],
+            "context": meta["context"],
+            "duration": meta["duration"],
+            "line_count": len(subtitles),
+        })
         print(f"  → {out_path}", file=sys.stderr)
 
     (OUT_DIR / "index.json").write_text(json.dumps({"scenarios": index}, ensure_ascii=False, indent=2))

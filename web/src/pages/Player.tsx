@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import BreakdownPanel from "../components/BreakdownPanel";
 import type { Scenario } from "../types";
 
 type Visibility = "both" | "native" | "target";
@@ -22,6 +23,17 @@ const Player = () => {
   const [visibility, setVisibility] = useState<Visibility>("both");
   const [speed, setSpeed] = useState(1);
   const [autoScroll, setAutoScroll] = useState(true);
+  const [expandedOrders, setExpandedOrders] = useState<Set<number>>(new Set());
+  const [autoExpand, setAutoExpand] = useState(false);
+
+  const toggleExpand = (order: number) => {
+    setExpandedOrders((prev) => {
+      const next = new Set(prev);
+      if (next.has(order)) next.delete(order);
+      else next.add(order);
+      return next;
+    });
+  };
 
   useEffect(() => {
     if (!id) return;
@@ -114,6 +126,15 @@ const Player = () => {
         <label className="ml-auto flex items-center gap-2 text-neutral-400">
           <input
             type="checkbox"
+            checked={autoExpand}
+            onChange={(e) => setAutoExpand(e.target.checked)}
+            className="accent-neutral-500"
+          />
+          自動展開解析
+        </label>
+        <label className="flex items-center gap-2 text-neutral-400">
+          <input
+            type="checkbox"
             checked={autoScroll}
             onChange={(e) => setAutoScroll(e.target.checked)}
             className="accent-neutral-500"
@@ -126,6 +147,7 @@ const Player = () => {
         {scenario.lines.map((line, idx) => {
           const isActive = idx === activeIndex;
           const isPast = currentTime >= line.end;
+          const isExpanded = expandedOrders.has(line.order) || (autoExpand && isActive);
           return (
             <li
               key={line.order}
@@ -134,32 +156,43 @@ const Player = () => {
                 isActive
                   ? "border-amber-500/60 bg-amber-500/10"
                   : isPast
-                    ? "border-transparent opacity-50"
+                    ? "border-transparent opacity-50 hover:opacity-100"
                     : "border-transparent hover:bg-neutral-900"
               }`}
             >
-              <button
-                type="button"
-                onClick={() => jumpTo(line.start)}
-                className="block w-full text-left"
-              >
-                <div className="mb-1 flex items-center gap-2 text-xs text-neutral-500">
-                  <span
-                    className={`rounded px-1.5 py-0.5 ${
-                      line.speaker === "you" ? "bg-sky-900/50 text-sky-300" : "bg-fuchsia-900/50 text-fuchsia-300"
-                    }`}
-                  >
-                    {line.speaker === "you" ? "你" : "對方"}
-                  </span>
-                  <span className="tabular-nums">{line.start.toFixed(1)}s</span>
-                </div>
-                {showTarget && (
-                  <div className="text-lg leading-relaxed text-neutral-100">{line.target}</div>
-                )}
-                {showNative && (
-                  <div className={`text-sm text-neutral-400 ${showTarget ? "mt-1" : ""}`}>{line.native}</div>
-                )}
-              </button>
+              <div className="flex items-start gap-3">
+                <button
+                  type="button"
+                  onClick={() => jumpTo(line.start)}
+                  className="flex-1 text-left"
+                >
+                  <div className="mb-1 flex items-center gap-2 text-xs text-neutral-500">
+                    <span
+                      className={`rounded px-1.5 py-0.5 ${
+                        line.speaker === "you" ? "bg-sky-900/50 text-sky-300" : "bg-fuchsia-900/50 text-fuchsia-300"
+                      }`}
+                    >
+                      {line.speaker === "you" ? "你" : "對方"}
+                    </span>
+                    <span className="tabular-nums">{line.start.toFixed(1)}s</span>
+                  </div>
+                  {showTarget && (
+                    <div className="text-lg leading-relaxed text-neutral-100">{line.target}</div>
+                  )}
+                  {showNative && (
+                    <div className={`text-sm text-neutral-400 ${showTarget ? "mt-1" : ""}`}>{line.native}</div>
+                  )}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => toggleExpand(line.order)}
+                  className="shrink-0 rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs text-neutral-400 transition hover:border-neutral-600 hover:text-neutral-100"
+                  aria-label="切換單字解析"
+                >
+                  {isExpanded ? "收起" : "解析"}
+                </button>
+              </div>
+              {isExpanded && <BreakdownPanel line={line} />}
             </li>
           );
         })}

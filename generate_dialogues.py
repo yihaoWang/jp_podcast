@@ -1,5 +1,4 @@
-"""情境 → 對話 CSV。讀 scenarios.yaml，呼叫 LLM 產出每個情境的雙人對話。"""
-import csv
+"""情境 → 對話 JSON。包含每句的單字 breakdown + 語法說明。"""
 import json
 import re
 import sys
@@ -9,23 +8,33 @@ import yaml
 from providers.llm import get_provider
 
 ROOT = Path(__file__).parent
-OUT = ROOT / "dialogues.csv"
+OUT = ROOT / "dialogues.json"
 
-SYSTEM = """你是語言學習對話設計師。產生最口語、自然、native speaker 真的會講的對話。
+SYSTEM = """你是日文語言學習對話設計師。產生最口語、自然、native speaker 真的會講的對話。
 - 避免教科書腔
 - 包含縮約、語助詞、自然停頓詞
-- 嚴格依照使用者指定的 JSON 格式輸出，不要加任何說明文字"""
+- 每句要附上單字 breakdown（每個 token 包含表面形 / 讀音 / 詞性 / 中文意義）
+- 每句要附上 grammar_note 解釋這句的關鍵句型或文化點
+- 嚴格依照 JSON 格式輸出，不要加說明文字或 markdown fence"""
 
-USER_TPL = """目標語言：{lang}（{native} 為母語學習者使用）
+USER_TPL = """目標語言：日文（{native} 為母語學習者使用）
 情境：{title}
 背景：{context}
 角色 A（you）：{you_role}
 角色 B（other）：{other_role}
 
-請產生 {n} 句往返對話（A 跟 B 交替），輸出 JSON 陣列，每個元素：
-{{"speaker": "you" | "other", "native": "{native}翻譯", "target": "目標語句子"}}
+產生 {n} 句往返對話（A 跟 B 交替），輸出 JSON 陣列，每個元素：
+{{
+  "speaker": "you" | "other",
+  "native": "{native}翻譯",
+  "target": "日文句子",
+  "breakdown": [
+    {{"surface": "表面形", "reading": "假名讀音", "pos": "詞性", "meaning": "中文意義"}}
+  ],
+  "grammar_note": "1-2 句話解釋句型或文化點"
+}}
 
-只輸出 JSON，不要 markdown code fence。"""
+只輸出 JSON 陣列，不要 markdown fence。"""
 
 
 def extract_json(text: str) -> list[dict]:
@@ -38,11 +47,10 @@ def main() -> None:
     config = yaml.safe_load((ROOT / "scenarios.yaml").read_text())
     llm = get_provider("claude")
 
-    rows: list[dict] = []
+    result: list[dict] = []
     for scenario in config["scenarios"]:
         print(f"[generate] {scenario['id']} - {scenario['title']}", file=sys.stderr)
         prompt = USER_TPL.format(
-            lang=config["target_language"],
             native=config["native_language"],
             title=scenario["title"],
             context=scenario["context"],
@@ -57,22 +65,16 @@ def main() -> None:
             print(f"  [skip] JSON parse failed: {e}\n  raw: {raw[:200]}", file=sys.stderr)
             continue
 
-        for idx, line in enumerate(lines, 1):
-            rows.append({
-                "scenario_id": scenario["id"],
-                "scenario_title": scenario["title"],
-                "order": idx,
-                "speaker": line["speaker"],
-                "native": line["native"],
-                "target": line["target"],
-            })
+        result.append({
+            "id": scenario["id"],
+            "title": scenario["title"],
+            "context": scenario["context"],
+            "lines": lines,
+        })
 
-    with OUT.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["scenario_id", "scenario_title", "order", "speaker", "native", "target"])
-        writer.writeheader()
-        writer.writerows(rows)
-
-    print(f"[done] {len(rows)} lines → {OUT}", file=sys.stderr)
+    OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2))
+    total = sum(len(s["lines"]) for s in result)
+    print(f"[done] {len(result)} scenarios, {total} lines → {OUT}", file=sys.stderr)
 
 
 if __name__ == "__main__":
