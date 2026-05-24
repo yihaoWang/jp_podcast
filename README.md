@@ -40,7 +40,15 @@ Outputs:
 
 ## Uploaded Speech Ingestion
 
-If you have a transcript from a real recording, convert it into a personal sentence island:
+In the web app, use **Upload audio** and provide only the recording. The deployed API transcribes the audio and asks the LLM to create the title, context, target-language sentences, word breakdowns, and grammar notes.
+
+Required deployment environment variables:
+
+- `OPENAI_API_KEY`: audio transcription
+- `ANTHROPIC_API_KEY`: sentence-island generation
+- `ANTHROPIC_MODEL`: optional, defaults to `claude-sonnet-4-6`
+
+For local CLI ingestion with an existing transcript:
 
 ```bash
 python ingest_uploaded_source.py \
@@ -52,7 +60,7 @@ python ingest_uploaded_source.py \
 python generate_audio.py
 ```
 
-The transcript is required for now. The original audio path is stored as source metadata.
+The CLI path is for batch/local workflows where a transcript already exists. The web app should remain audio-only.
 
 ## Switching TTS Providers
 
