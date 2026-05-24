@@ -30,6 +30,7 @@ export interface Scenario {
   title: string;
   context: string;
   language_code: string;
+  native_language_code?: string;
   source_type?: SourceType;
   source_id?: string;
   difficulty?: string;
