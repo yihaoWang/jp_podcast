@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "copy-audio": "node scripts/copy-audio.js",
+    "build": "npm run copy-audio && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

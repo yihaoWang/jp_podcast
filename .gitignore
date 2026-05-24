@@ -1,0 +1,4 @@
+.wrangler/
+web/dist/
+web/public/audio/
+web/node_modules/
