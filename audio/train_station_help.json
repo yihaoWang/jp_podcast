@@ -7,13 +7,13 @@
   "source_type": "generated_scenario",
   "source_id": "train_station_help",
   "difficulty": null,
-  "duration": 57.511,
+  "duration": 45.511,
   "variants": [
     {
       "mode": "target",
       "label": "Target only",
       "path": "/audio/train_station_help.mp3",
-      "duration": 57.511
+      "duration": 45.511
     },
     {
       "mode": "shadowing",
@@ -25,19 +25,19 @@
       "mode": "slow",
       "label": "Slow target",
       "path": "/audio/train_station_help.slow.mp3",
-      "duration": 65.745
+      "duration": 53.745
     },
     {
       "mode": "native_then_target",
       "label": "Native then target",
       "path": "/audio/train_station_help.native-target.mp3",
-      "duration": 98.574
+      "duration": 86.574
     },
     {
       "mode": "target_then_native",
       "label": "Target then native",
       "path": "/audio/train_station_help.target-native.mp3",
-      "duration": 98.574
+      "duration": 86.574
     }
   ],
   "lines": [
@@ -130,8 +130,8 @@
         }
       ],
       "grammar_note": "「快速」是比普通車停站少的列車；在車站聽懂這個很重要。",
-      "start": 6.704,
-      "end": 9.392
+      "start": 5.504,
+      "end": 8.192
     },
     {
       "order": 3,
@@ -170,8 +170,8 @@
         }
       ],
       "grammar_note": "「〜まで行きますか」可以確認交通工具是否到目的地。",
-      "start": 11.392,
-      "end": 14.68
+      "start": 8.992,
+      "end": 12.28
     },
     {
       "order": 4,
@@ -210,8 +210,8 @@
         }
       ],
       "grammar_note": "「乗り換え」是轉乘；「必要ありません」是正式又清楚的「不需要」。",
-      "start": 16.68,
-      "end": 21.336
+      "start": 13.08,
+      "end": 17.736
     },
     {
       "order": 5,
@@ -250,8 +250,8 @@
         }
       ],
       "grammar_note": "日文的月台常說「ホーム」，不是直譯的「平台」。",
-      "start": 23.336,
-      "end": 25.592
+      "start": 18.536,
+      "end": 20.792
     },
     {
       "order": 6,
@@ -296,8 +296,8 @@
         }
       ],
       "grammar_note": "「番線」是月台線號；「三番線」就是三號月台。",
-      "start": 27.592,
-      "end": 31.84
+      "start": 21.592,
+      "end": 25.84
     },
     {
       "order": 7,
@@ -336,8 +336,8 @@
         }
       ],
       "grammar_note": "「〜で大丈夫ですか」可以確認票、付款方式、文件是否可用。",
-      "start": 33.84,
-      "end": 36.672
+      "start": 26.64,
+      "end": 29.472
     },
     {
       "order": 8,
@@ -382,8 +382,8 @@
         }
       ],
       "grammar_note": "「精算」是補票或結清差額，在日本車站很常見。",
-      "start": 38.672,
-      "end": 44.888
+      "start": 30.272,
+      "end": 36.488
     },
     {
       "order": 9,
@@ -422,8 +422,8 @@
         }
       ],
       "grammar_note": "「終電」是末班電車，夜間移動一定要會。",
-      "start": 46.888,
-      "end": 49.456
+      "start": 37.288,
+      "end": 39.856
     },
     {
       "order": 10,
@@ -468,8 +468,8 @@
         }
       ],
       "grammar_note": "「〜方面」表示往某方向，是車站廣播常見說法。",
-      "start": 51.456,
-      "end": 55.512
+      "start": 40.656,
+      "end": 44.712
     }
   ]
 }

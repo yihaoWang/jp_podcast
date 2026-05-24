@@ -7,13 +7,13 @@
   "source_type": "generated_scenario",
   "source_id": "restaurant",
   "difficulty": null,
-  "duration": 64.391,
+  "duration": 49.991,
   "variants": [
     {
       "mode": "target",
       "label": "Target only",
       "path": "/audio/restaurant.mp3",
-      "duration": 64.391
+      "duration": 49.991
     },
     {
       "mode": "shadowing",
@@ -25,19 +25,19 @@
       "mode": "slow",
       "label": "Slow target",
       "path": "/audio/restaurant.slow.mp3",
-      "duration": 73.257
+      "duration": 58.857
     },
     {
       "mode": "native_then_target",
       "label": "Native then target",
       "path": "/audio/restaurant.native-target.mp3",
-      "duration": 107.974
+      "duration": 93.574
     },
     {
       "mode": "target_then_native",
       "label": "Target then native",
       "path": "/audio/restaurant.target-native.mp3",
-      "duration": 107.974
+      "duration": 93.574
     }
   ],
   "lines": [
@@ -100,8 +100,8 @@
         }
       ],
       "grammar_note": "「一人 ひとり / 二人 ふたり」是不規則讀音，三人以上才是「〜にん」。",
-      "start": 5.768,
-      "end": 7.544
+      "start": 4.568,
+      "end": 6.344
     },
     {
       "order": 3,
@@ -146,8 +146,8 @@
         }
       ],
       "grammar_note": "「されています」是「しています」的尊敬語形，敬意比直接問「予約しましたか」更高。",
-      "start": 9.544,
-      "end": 11.896
+      "start": 7.144,
+      "end": 9.496
     },
     {
       "order": 4,
@@ -192,8 +192,8 @@
         }
       ],
       "grammar_note": "「〜ている」在口語常縮成「〜てる」。「空いてる席」是「空著的位子」，比「席が空いてますか」更口語自然。",
-      "start": 13.896,
-      "end": 17.472
+      "start": 10.296,
+      "end": 13.872
     },
     {
       "order": 5,
@@ -232,8 +232,8 @@
         }
       ],
       "grammar_note": "「こちら」是「ここ／こっち」的敬語版。服務業引導客人會說「こちらへどうぞ」。",
-      "start": 19.472,
-      "end": 22.04
+      "start": 14.672,
+      "end": 17.24
     },
     {
       "order": 6,
@@ -272,8 +272,8 @@
         }
       ],
       "grammar_note": "「〜をいただけますか」是「〜をください」的更禮貌版本，餐廳請求物品最自然的說法。",
-      "start": 24.04,
-      "end": 27.448
+      "start": 18.04,
+      "end": 21.448
     },
     {
       "order": 7,
@@ -312,8 +312,8 @@
         }
       ],
       "grammar_note": "「〜になります」在服務業是「〜です」的更柔軟版本，雖然文法學界有爭議但實際使用極廣。",
-      "start": 29.448,
-      "end": 34.32
+      "start": 22.248,
+      "end": 27.12
     },
     {
       "order": 8,
@@ -370,8 +370,8 @@
         }
       ],
       "grammar_note": "點餐結尾用「お願いします」是最自然的萬用句型。「あと」用來追加品項，比「そして」更口語。",
-      "start": 36.32,
-      "end": 40.76
+      "start": 27.92,
+      "end": 32.36
     },
     {
       "order": 9,
@@ -404,8 +404,8 @@
         }
       ],
       "grammar_note": "「かしこまりました」比「わかりました」更尊敬，是高級服務業才會用。「少々お待ちください」是固定句型。",
-      "start": 42.76,
-      "end": 46.816
+      "start": 33.16,
+      "end": 37.216
     },
     {
       "order": 10,
@@ -450,8 +450,8 @@
         }
       ],
       "grammar_note": "「おかわり」是日本餐廳續飯/續飲料的關鍵字，記住就夠用。「お水」加 お 是美化語，更禮貌。",
-      "start": 48.816,
-      "end": 52.704
+      "start": 38.016,
+      "end": 41.904
     },
     {
       "order": 11,
@@ -484,8 +484,8 @@
         }
       ],
       "grammar_note": "「お会計」是餐廳結帳的標準說法。也可說「お勘定 おかんじょう」，較傳統。",
-      "start": 54.704,
-      "end": 58.184
+      "start": 42.704,
+      "end": 46.184
     },
     {
       "order": 12,
@@ -506,8 +506,8 @@
         }
       ],
       "grammar_note": "結帳後店家用過去式「ございました」表示交易完成；如果還沒結束會用現在式「ございます」。",
-      "start": 60.184,
-      "end": 62.392
+      "start": 46.984,
+      "end": 49.192
     }
   ]
 }

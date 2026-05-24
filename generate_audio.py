@@ -15,7 +15,7 @@ from providers.tts import get_provider
 ROOT = Path(__file__).parent
 DIALOGUES_PATH = ROOT / "dialogues.json"
 OUT_DIR = ROOT / "audio"
-GAP_MS = 2000
+GAP_MS = 800
 SHADOW_GAP_MS = 5000
 PROVIDER_NAME = "edge"
 VARIANT_MODES = ("target", "shadowing", "slow", "native_then_target", "target_then_native")

@@ -7,13 +7,13 @@
   "source_type": "generated_scenario",
   "source_id": "hotel_checkin",
   "difficulty": null,
-  "duration": 55.687,
+  "duration": 43.687,
   "variants": [
     {
       "mode": "target",
       "label": "Target only",
       "path": "/audio/hotel_checkin.mp3",
-      "duration": 55.687
+      "duration": 43.687
     },
     {
       "mode": "shadowing",
@@ -25,19 +25,19 @@
       "mode": "slow",
       "label": "Slow target",
       "path": "/audio/hotel_checkin.slow.mp3",
-      "duration": 63.521
+      "duration": 51.521
     },
     {
       "mode": "native_then_target",
       "label": "Native then target",
       "path": "/audio/hotel_checkin.native-target.mp3",
-      "duration": 92.766
+      "duration": 80.766
     },
     {
       "mode": "target_then_native",
       "label": "Target then native",
       "path": "/audio/hotel_checkin.target-native.mp3",
-      "duration": 92.766
+      "duration": 80.766
     }
   ],
   "lines": [
@@ -112,8 +112,8 @@
         }
       ],
       "grammar_note": "「ございますか」是服務業常用的禮貌說法，比「ありますか」更正式。",
-      "start": 5.624,
-      "end": 7.928
+      "start": 4.424,
+      "end": 6.728
     },
     {
       "order": 3,
@@ -152,8 +152,8 @@
         }
       ],
       "grammar_note": "「〜の名前で予約しています」表示用某個名字訂位或訂房。",
-      "start": 9.928,
-      "end": 13.48
+      "start": 7.528,
+      "end": 11.08
     },
     {
       "order": 4,
@@ -192,8 +192,8 @@
         }
       ],
       "grammar_note": "「拝見してもよろしいですか」是很禮貌的「可以看一下嗎」。",
-      "start": 15.48,
-      "end": 18.528
+      "start": 11.88,
+      "end": 14.928
     },
     {
       "order": 5,
@@ -238,8 +238,8 @@
         }
       ],
       "grammar_note": "遞東西時用「こちらが〜です」很自然，也比只說「はい」清楚。",
-      "start": 20.528,
-      "end": 23.72
+      "start": 15.728,
+      "end": 18.92
     },
     {
       "order": 6,
@@ -284,8 +284,8 @@
         }
       ],
       "grammar_note": "「預ける」是寄放行李、託運物品的核心動詞。",
-      "start": 25.72,
-      "end": 29.584
+      "start": 19.72,
+      "end": 23.584
     },
     {
       "order": 7,
@@ -324,8 +324,8 @@
         }
       ],
       "grammar_note": "「お預かりできます」是櫃台人員說「可以幫您保管」的自然說法。",
-      "start": 31.584,
-      "end": 36.384
+      "start": 24.384,
+      "end": 29.184
     },
     {
       "order": 8,
@@ -370,8 +370,8 @@
         }
       ],
       "grammar_note": "「何時から何時まで」是問營業時間、早餐時間、使用時間的固定句型。",
-      "start": 38.384,
-      "end": 41.648
+      "start": 29.984,
+      "end": 33.248
     },
     {
       "order": 9,
@@ -416,8 +416,8 @@
         }
       ],
       "grammar_note": "「〜でございます」是服務業常用的正式版「です」。",
-      "start": 43.648,
-      "end": 47.608
+      "start": 34.048,
+      "end": 38.008
     },
     {
       "order": 10,
@@ -462,8 +462,8 @@
         }
       ],
       "grammar_note": "「確認できますか」可以問資訊在哪裡確認，也可用在預約、時間、地址。",
-      "start": 49.608,
-      "end": 53.688
+      "start": 38.808,
+      "end": 42.888
     }
   ]
 }
