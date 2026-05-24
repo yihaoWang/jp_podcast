@@ -38,6 +38,22 @@ Outputs:
 - `dialogues.json`: full sentence bank with native text, target text, speaker, word breakdown, and grammar notes.
 - `audio/<scenario_id>.mp3`: one podcast-style audio file per scenario, with 2 seconds of silence between sentences.
 
+## Uploaded Speech Ingestion
+
+If you have a transcript from a real recording, convert it into a personal sentence island:
+
+```bash
+python ingest_uploaded_source.py \
+  --transcript path/to/transcript.txt \
+  --audio path/to/original.m4a \
+  --id my_daily_phrases \
+  --title "My daily phrases" \
+  --context "Things I actually said at work today"
+python generate_audio.py
+```
+
+The transcript is required for now. The original audio path is stored as source metadata.
+
 ## Switching TTS Providers
 
 Add a class implementing `TTSProvider` in `providers/tts.py`, then register it in `get_provider()`.

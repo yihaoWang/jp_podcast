@@ -3,13 +3,54 @@
   "title": "便利商店付款",
   "context": "在便利商店買東西，處理袋子、加熱便當、刷卡、集點和收據",
   "language_code": "ja",
+  "native_language_code": "zh-TW",
+  "source_type": "generated_scenario",
+  "source_id": "convenience_store_payment",
+  "difficulty": null,
   "duration": 54.967,
+  "variants": [
+    {
+      "mode": "target",
+      "label": "Target only",
+      "path": "/audio/convenience_store_payment.mp3",
+      "duration": 54.967
+    },
+    {
+      "mode": "shadowing",
+      "label": "Shadowing long pause",
+      "path": "/audio/convenience_store_payment.shadowing.mp3",
+      "duration": 84.967
+    },
+    {
+      "mode": "slow",
+      "label": "Slow target",
+      "path": "/audio/convenience_store_payment.slow.mp3",
+      "duration": 62.643
+    },
+    {
+      "mode": "native_then_target",
+      "label": "Native then target",
+      "path": "/audio/convenience_store_payment.native-target.mp3",
+      "duration": 89.478
+    },
+    {
+      "mode": "target_then_native",
+      "label": "Target then native",
+      "path": "/audio/convenience_store_payment.target-native.mp3",
+      "duration": 89.478
+    }
+  ],
   "lines": [
     {
       "order": 1,
       "speaker": "other",
       "native": "歡迎光臨。袋子需要嗎？",
       "target": "いらっしゃいませ。レジ袋はご利用ですか。",
+      "line_id": "convenience_store_payment:1",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "いらっしゃいませ",
@@ -37,7 +78,7 @@
         }
       ],
       "grammar_note": "「ご利用ですか」是店員常用的禮貌問法，比直接說「使いますか」更像服務業日文。",
-      "start": 0,
+      "start": 0.0,
       "end": 4.224
     },
     {
@@ -45,6 +86,11 @@
       "speaker": "you",
       "native": "不用，沒關係。",
       "target": "大丈夫です。袋はいりません。",
+      "line_id": "convenience_store_payment:2",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "大丈夫",
@@ -80,6 +126,11 @@
       "speaker": "other",
       "native": "便當要幫您加熱嗎？",
       "target": "お弁当、温めますか。",
+      "line_id": "convenience_store_payment:3",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "お弁当",
@@ -109,6 +160,11 @@
       "speaker": "you",
       "native": "麻煩幫我加熱。",
       "target": "お願いします。温めてください。",
+      "line_id": "convenience_store_payment:4",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "お願いします",
@@ -138,6 +194,11 @@
       "speaker": "other",
       "native": "付款方式要怎麼付？",
       "target": "お支払い方法はいかがなさいますか。",
+      "line_id": "convenience_store_payment:5",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "お支払い",
@@ -173,6 +234,11 @@
       "speaker": "you",
       "native": "我用信用卡付款。",
       "target": "クレジットカードでお願いします。",
+      "line_id": "convenience_store_payment:6",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "クレジットカード",
@@ -202,6 +268,11 @@
       "speaker": "other",
       "native": "請插入卡片。",
       "target": "カードを差し込んでください。",
+      "line_id": "convenience_store_payment:7",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "カード",
@@ -237,6 +308,11 @@
       "speaker": "other",
       "native": "需要收據嗎？",
       "target": "レシートはご利用ですか。",
+      "line_id": "convenience_store_payment:8",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "レシート",
@@ -272,6 +348,11 @@
       "speaker": "you",
       "native": "不用收據，謝謝。",
       "target": "レシートは大丈夫です。ありがとうございます。",
+      "line_id": "convenience_store_payment:9",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "レシート",
@@ -307,6 +388,11 @@
       "speaker": "other",
       "native": "久等了，謝謝光臨。",
       "target": "お待たせしました。ありがとうございました。",
+      "line_id": "convenience_store_payment:10",
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "お待たせしました",

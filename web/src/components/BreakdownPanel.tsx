@@ -1,10 +1,14 @@
 import type { SubtitleLine } from "../types";
+import type { Locale } from "../i18n";
+import { messages } from "../i18n";
 
 interface Props {
   line: SubtitleLine;
+  locale?: Locale;
 }
 
-const BreakdownPanel = ({ line }: Props) => {
+const BreakdownPanel = ({ line, locale = "zh-TW" }: Props) => {
+  const t = messages[locale];
   const tokens = line.breakdown ?? [];
   const hasTokens = tokens.length > 0;
   const hasNote = Boolean(line.grammar_note);
@@ -12,7 +16,7 @@ const BreakdownPanel = ({ line }: Props) => {
   if (!hasTokens && !hasNote) {
     return (
       <div className="mt-3 rounded-md border border-neutral-800 bg-neutral-950 p-3 text-sm text-neutral-500">
-        這句沒有單字解說資料。
+        {t.noBreakdown}
       </div>
     );
   }
@@ -21,7 +25,7 @@ const BreakdownPanel = ({ line }: Props) => {
     <div className="mt-3 space-y-3 rounded-md border border-neutral-800 bg-neutral-950 p-3">
       {hasTokens && (
         <div>
-          <div className="mb-2 text-xs uppercase tracking-wider text-neutral-500">單字解析</div>
+          <div className="mb-2 text-xs uppercase tracking-wider text-neutral-500">{t.wordBreakdown}</div>
           <ul className="space-y-1.5">
             {tokens.map((token, idx) => (
               <li key={idx} className="grid grid-cols-[auto_auto_auto_1fr] items-baseline gap-x-3 gap-y-0.5">
@@ -40,7 +44,7 @@ const BreakdownPanel = ({ line }: Props) => {
 
       {hasNote && (
         <div className="border-t border-neutral-800 pt-3">
-          <div className="mb-1 text-xs uppercase tracking-wider text-neutral-500">語法 / 文化點</div>
+          <div className="mb-1 text-xs uppercase tracking-wider text-neutral-500">{t.grammarCulture}</div>
           <p className="text-sm leading-relaxed text-amber-100/80">{line.grammar_note}</p>
         </div>
       )}

@@ -18,6 +18,7 @@ class EdgeTTSProvider(TTSProvider):
         "ja": {"you": "ja-JP-NanamiNeural", "other": "ja-JP-KeitaNeural"},
         "en": {"you": "en-US-AvaNeural", "other": "en-US-AndrewNeural"},
         "es": {"you": "es-ES-ElviraNeural", "other": "es-ES-AlvaroNeural"},
+        "zh-TW": {"you": "zh-TW-HsiaoChenNeural", "other": "zh-TW-YunJheNeural"},
     }
 
     async def synthesize(self, text: str, voice: str, output_path: Path) -> None:

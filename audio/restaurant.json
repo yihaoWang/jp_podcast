@@ -3,13 +3,54 @@
   "title": "在餐廳吃飯",
   "context": "在日式餐廳從入座、點餐到結帳的完整對話",
   "language_code": "ja",
+  "native_language_code": "zh-TW",
+  "source_type": "generated_scenario",
+  "source_id": "restaurant",
+  "difficulty": null,
   "duration": 64.391,
+  "variants": [
+    {
+      "mode": "target",
+      "label": "Target only",
+      "path": "/audio/restaurant.mp3",
+      "duration": 64.391
+    },
+    {
+      "mode": "shadowing",
+      "label": "Shadowing long pause",
+      "path": "/audio/restaurant.shadowing.mp3",
+      "duration": 100.391
+    },
+    {
+      "mode": "slow",
+      "label": "Slow target",
+      "path": "/audio/restaurant.slow.mp3",
+      "duration": 73.257
+    },
+    {
+      "mode": "native_then_target",
+      "label": "Native then target",
+      "path": "/audio/restaurant.native-target.mp3",
+      "duration": 107.974
+    },
+    {
+      "mode": "target_then_native",
+      "label": "Target then native",
+      "path": "/audio/restaurant.target-native.mp3",
+      "duration": 107.974
+    }
+  ],
   "lines": [
     {
       "order": 1,
       "speaker": "other",
       "native": "歡迎光臨，請問幾位？",
       "target": "いらっしゃいませ。何名様ですか。",
+      "line_id": "restaurant:1",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "いらっしゃいませ",
@@ -39,6 +80,11 @@
       "speaker": "you",
       "native": "兩位。",
       "target": "二人です。",
+      "line_id": "restaurant:2",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "二人",
@@ -62,6 +108,11 @@
       "speaker": "other",
       "native": "有預約嗎？",
       "target": "ご予約はされていますか。",
+      "line_id": "restaurant:3",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "ご予約",
@@ -103,6 +154,11 @@
       "speaker": "you",
       "native": "沒有，現在還有位子嗎？",
       "target": "いいえ、今空いてる席ありますか。",
+      "line_id": "restaurant:4",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "いいえ",
@@ -144,6 +200,11 @@
       "speaker": "other",
       "native": "有，請往這邊。",
       "target": "はい、こちらへどうぞ。",
+      "line_id": "restaurant:5",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "はい",
@@ -179,6 +240,11 @@
       "speaker": "you",
       "native": "不好意思，可以給我菜單嗎？",
       "target": "すみません、メニューをいただけますか。",
+      "line_id": "restaurant:6",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "すみません",
@@ -214,6 +280,11 @@
       "speaker": "other",
       "native": "這是菜單，今天的推薦是這個。",
       "target": "こちらメニューです。今日のおすすめはこちらになります。",
+      "line_id": "restaurant:7",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "こちら",
@@ -249,6 +320,11 @@
       "speaker": "you",
       "native": "那我點這個，還有一杯生啤酒。",
       "target": "じゃあ、これと、あと生ビール一杯お願いします。",
+      "line_id": "restaurant:8",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "じゃあ",
@@ -302,6 +378,11 @@
       "speaker": "other",
       "native": "好的，請稍等。",
       "target": "かしこまりました。少々お待ちください。",
+      "line_id": "restaurant:9",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "かしこまりました",
@@ -331,6 +412,11 @@
       "speaker": "you",
       "native": "不好意思，可以幫我加點水嗎？",
       "target": "すみません、お水のおかわりお願いします。",
+      "line_id": "restaurant:10",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "すみません",
@@ -372,6 +458,11 @@
       "speaker": "you",
       "native": "不好意思，買單。",
       "target": "すみません、お会計お願いします。",
+      "line_id": "restaurant:11",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "すみません",
@@ -401,6 +492,11 @@
       "speaker": "other",
       "native": "謝謝光臨。",
       "target": "ありがとうございました。",
+      "line_id": "restaurant:12",
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "ありがとうございました",

@@ -1,6 +1,7 @@
 target_language: japanese
 target_language_code: ja
 native_language: 繁體中文
+native_language_code: zh-TW
 sentences_per_scenario: 12
 
 scenarios:

@@ -3,13 +3,54 @@
   "title": "車站問路與轉乘",
   "context": "在日本車站找不到月台，想確認路線、轉乘、末班車和是否需要補票",
   "language_code": "ja",
+  "native_language_code": "zh-TW",
+  "source_type": "generated_scenario",
+  "source_id": "train_station_help",
+  "difficulty": null,
   "duration": 57.511,
+  "variants": [
+    {
+      "mode": "target",
+      "label": "Target only",
+      "path": "/audio/train_station_help.mp3",
+      "duration": 57.511
+    },
+    {
+      "mode": "shadowing",
+      "label": "Shadowing long pause",
+      "path": "/audio/train_station_help.shadowing.mp3",
+      "duration": 87.511
+    },
+    {
+      "mode": "slow",
+      "label": "Slow target",
+      "path": "/audio/train_station_help.slow.mp3",
+      "duration": 65.745
+    },
+    {
+      "mode": "native_then_target",
+      "label": "Native then target",
+      "path": "/audio/train_station_help.native-target.mp3",
+      "duration": 98.574
+    },
+    {
+      "mode": "target_then_native",
+      "label": "Target then native",
+      "path": "/audio/train_station_help.target-native.mp3",
+      "duration": 98.574
+    }
+  ],
   "lines": [
     {
       "order": 1,
       "speaker": "you",
       "native": "不好意思，請問去新宿要搭哪一班？",
       "target": "すみません、新宿へ行くにはどれに乗ればいいですか。",
+      "line_id": "train_station_help:1",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "すみません",
@@ -49,7 +90,7 @@
         }
       ],
       "grammar_note": "「〜にはどれに乗ればいいですか」是問交通方式的實用句型。",
-      "start": 0,
+      "start": 0.0,
       "end": 4.704
     },
     {
@@ -57,6 +98,11 @@
       "speaker": "other",
       "native": "請搭這邊的快速列車。",
       "target": "こちらの快速に乗ってください。",
+      "line_id": "train_station_help:2",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "こちら",
@@ -92,6 +138,11 @@
       "speaker": "you",
       "native": "這班車會到新宿嗎？",
       "target": "この電車は新宿まで行きますか。",
+      "line_id": "train_station_help:3",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "この",
@@ -127,6 +178,11 @@
       "speaker": "other",
       "native": "會到。不需要轉車。",
       "target": "はい、行きます。乗り換えは必要ありません。",
+      "line_id": "train_station_help:4",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "はい",
@@ -162,6 +218,11 @@
       "speaker": "you",
       "native": "月台在哪裡？",
       "target": "ホームはどこですか。",
+      "line_id": "train_station_help:5",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "ホーム",
@@ -197,6 +258,11 @@
       "speaker": "other",
       "native": "三號月台，請上樓。",
       "target": "三番線です。階段を上がってください。",
+      "line_id": "train_station_help:6",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "三番線",
@@ -238,6 +304,11 @@
       "speaker": "you",
       "native": "現在這張票可以用嗎？",
       "target": "この切符で大丈夫ですか。",
+      "line_id": "train_station_help:7",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "この",
@@ -273,6 +344,11 @@
       "speaker": "other",
       "native": "可以。如果超過票價，出站時補票。",
       "target": "大丈夫です。足りない場合は、改札を出る時に精算してください。",
+      "line_id": "train_station_help:8",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "足りない",
@@ -314,6 +390,11 @@
       "speaker": "you",
       "native": "請問末班車是幾點？",
       "target": "終電は何時ですか。",
+      "line_id": "train_station_help:9",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "終電",
@@ -349,6 +430,11 @@
       "speaker": "other",
       "native": "往新宿的末班車是十二點十分。",
       "target": "新宿方面の終電は十二時十分です。",
+      "line_id": "train_station_help:10",
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "review_state": "new",
       "breakdown": [
         {
           "surface": "新宿方面",

@@ -1,4 +1,4 @@
-"""情境 → 對話 JSON。包含每句的單字 breakdown + 語法說明。"""
+"""Scenario config -> dialogue JSON with word breakdown and grammar notes."""
 import json
 import re
 import sys
@@ -10,31 +10,33 @@ from providers.llm import get_provider
 ROOT = Path(__file__).parent
 OUT = ROOT / "dialogues.json"
 
-SYSTEM = """你是日文語言學習對話設計師。產生最口語、自然、native speaker 真的會講的對話。
-- 避免教科書腔
-- 包含縮約、語助詞、自然停頓詞
-- 每句要附上單字 breakdown（每個 token 包含表面形 / 讀音 / 詞性 / 中文意義）
-- 每句要附上 grammar_note 解釋這句的關鍵句型或文化點
-- 嚴格依照 JSON 格式輸出，不要加說明文字或 markdown fence"""
+SYSTEM_TPL = """You are a language-learning dialogue designer.
+Generate the most natural, spoken {target_language} that native speakers would actually use.
+- Avoid textbook phrasing.
+- Include contractions, particles, discourse markers, and natural spoken rhythm when appropriate.
+- Each line must include a word breakdown. Each token should include surface / reading / part of speech / meaning in {native_language}.
+- Each line must include grammar_note explaining the key pattern, nuance, or culture point in {native_language}.
+- Output strict JSON only. Do not include explanation text or markdown fences."""
 
-USER_TPL = """目標語言：日文（{native} 為母語學習者使用）
-情境：{title}
-背景：{context}
-角色 A（you）：{you_role}
-角色 B（other）：{other_role}
+USER_TPL = """Target language: {target_language}
+Learner native language: {native_language}
+Scenario: {title}
+Context: {context}
+Role A (you): {you_role}
+Role B (other): {other_role}
 
-產生 {n} 句往返對話（A 跟 B 交替），輸出 JSON 陣列，每個元素：
+Generate {n} alternating dialogue lines between A and B. Output a JSON array. Each element:
 {{
   "speaker": "you" | "other",
-  "native": "{native}翻譯",
-  "target": "日文句子",
+  "native": "{native_language} meaning",
+  "target": "{target_language} sentence",
   "breakdown": [
-    {{"surface": "表面形", "reading": "假名讀音", "pos": "詞性", "meaning": "中文意義"}}
+    {{"surface": "surface form", "reading": "reading or pronunciation", "pos": "part of speech", "meaning": "{native_language} meaning"}}
   ],
-  "grammar_note": "1-2 句話解釋句型或文化點"
+  "grammar_note": "1-2 sentence explanation in {native_language}"
 }}
 
-只輸出 JSON 陣列，不要 markdown fence。"""
+Output only the JSON array. Do not use markdown fences."""
 
 
 def extract_json(text: str) -> list[dict]:
@@ -46,29 +48,41 @@ def extract_json(text: str) -> list[dict]:
 def main() -> None:
     config = yaml.safe_load((ROOT / "scenarios.yaml").read_text())
     llm = get_provider("claude")
+    target_language = config["target_language"]
+    native_language = config["native_language"]
+    system = SYSTEM_TPL.format(target_language=target_language, native_language=native_language)
 
     result: list[dict] = []
     for scenario in config["scenarios"]:
         print(f"[generate] {scenario['id']} - {scenario['title']}", file=sys.stderr)
         prompt = USER_TPL.format(
-            native=config["native_language"],
+            native_language=native_language,
+            target_language=target_language,
             title=scenario["title"],
             context=scenario["context"],
             you_role=scenario["roles"]["you"],
             other_role=scenario["roles"]["other"],
             n=config["sentences_per_scenario"],
         )
-        raw = llm.complete(SYSTEM, prompt)
+        raw = llm.complete(system, prompt)
         try:
             lines = extract_json(raw)
         except json.JSONDecodeError as e:
             print(f"  [skip] JSON parse failed: {e}\n  raw: {raw[:200]}", file=sys.stderr)
             continue
+        for idx, line in enumerate(lines, 1):
+            line.setdefault("review_state", "new")
+            line.setdefault("source_type", "generated_scenario")
+            line.setdefault("source_id", scenario["id"])
+            line.setdefault("line_id", f"{scenario['id']}:{idx}")
 
         result.append({
             "id": scenario["id"],
             "title": scenario["title"],
             "context": scenario["context"],
+            "source_type": "generated_scenario",
+            "source_id": scenario["id"],
+            "difficulty": scenario.get("difficulty"),
             "lines": lines,
         })
 

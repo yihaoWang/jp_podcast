@@ -5,28 +5,168 @@
       "title": "在餐廳吃飯",
       "context": "在日式餐廳從入座、點餐到結帳的完整對話",
       "duration": 64.391,
-      "line_count": 12
+      "line_count": 12,
+      "source_type": "generated_scenario",
+      "source_id": "restaurant",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/restaurant.mp3",
+          "duration": 64.391
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/restaurant.shadowing.mp3",
+          "duration": 100.391
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/restaurant.slow.mp3",
+          "duration": 73.257
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/restaurant.native-target.mp3",
+          "duration": 107.974
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/restaurant.target-native.mp3",
+          "duration": 107.974
+        }
+      ]
     },
     {
       "id": "convenience_store_payment",
       "title": "便利商店付款",
       "context": "在便利商店買東西，處理袋子、加熱便當、刷卡、集點和收據",
       "duration": 54.967,
-      "line_count": 10
+      "line_count": 10,
+      "source_type": "generated_scenario",
+      "source_id": "convenience_store_payment",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/convenience_store_payment.mp3",
+          "duration": 54.967
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/convenience_store_payment.shadowing.mp3",
+          "duration": 84.967
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/convenience_store_payment.slow.mp3",
+          "duration": 62.643
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/convenience_store_payment.native-target.mp3",
+          "duration": 89.478
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/convenience_store_payment.target-native.mp3",
+          "duration": 89.478
+        }
+      ]
     },
     {
       "id": "train_station_help",
       "title": "車站問路與轉乘",
       "context": "在日本車站找不到月台，想確認路線、轉乘、末班車和是否需要補票",
       "duration": 57.511,
-      "line_count": 10
+      "line_count": 10,
+      "source_type": "generated_scenario",
+      "source_id": "train_station_help",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/train_station_help.mp3",
+          "duration": 57.511
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/train_station_help.shadowing.mp3",
+          "duration": 87.511
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/train_station_help.slow.mp3",
+          "duration": 65.745
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/train_station_help.native-target.mp3",
+          "duration": 98.574
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/train_station_help.target-native.mp3",
+          "duration": 98.574
+        }
+      ]
     },
     {
       "id": "hotel_checkin",
       "title": "飯店入住",
       "context": "到飯店 check-in，確認訂房、寄放行李、早餐時間、Wi-Fi 和退房時間",
       "duration": 55.687,
-      "line_count": 10
+      "line_count": 10,
+      "source_type": "generated_scenario",
+      "source_id": "hotel_checkin",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/hotel_checkin.mp3",
+          "duration": 55.687
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/hotel_checkin.shadowing.mp3",
+          "duration": 85.687
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/hotel_checkin.slow.mp3",
+          "duration": 63.521
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/hotel_checkin.native-target.mp3",
+          "duration": 92.766
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/hotel_checkin.target-native.mp3",
+          "duration": 92.766
+        }
+      ]
     }
   ]
 }

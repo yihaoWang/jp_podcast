@@ -1,4 +1,6 @@
 export type Speaker = "you" | "other";
+export type SourceType = "generated_scenario" | "uploaded_audio";
+export type ReviewState = "new" | "correct" | "wrong" | "skipped";
 
 export interface BreakdownToken {
   surface: string;
@@ -14,6 +16,11 @@ export interface SubtitleLine {
   target: string;
   start: number;
   end: number;
+  line_id?: string;
+  source_type?: SourceType;
+  source_id?: string;
+  difficulty?: string;
+  review_state?: ReviewState;
   breakdown?: BreakdownToken[];
   grammar_note?: string;
 }
@@ -23,7 +30,11 @@ export interface Scenario {
   title: string;
   context: string;
   language_code: string;
+  source_type?: SourceType;
+  source_id?: string;
+  difficulty?: string;
   duration: number;
+  variants?: AudioVariant[];
   lines: SubtitleLine[];
 }
 
@@ -33,8 +44,19 @@ export interface ScenarioIndexEntry {
   context: string;
   duration: number;
   line_count: number;
+  source_type?: SourceType;
+  source_id?: string;
+  difficulty?: string;
+  variants?: AudioVariant[];
 }
 
 export interface ScenarioIndex {
   scenarios: ScenarioIndexEntry[];
+}
+
+export interface AudioVariant {
+  mode: string;
+  label: string;
+  path: string;
+  duration?: number;
 }

@@ -28,7 +28,12 @@
             "meaning": "禮貌疑問句結尾"
           }
         ],
-        "grammar_note": "「何名様」是「何人」的敬語版本，服務業必用。「いらっしゃいませ」是商業招呼語，私下不會用。"
+        "grammar_note": "「何名様」是「何人」的敬語版本，服務業必用。「いらっしゃいませ」是商業招呼語，私下不會用。",
+        "line_id": "restaurant:1",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -48,7 +53,12 @@
             "meaning": "禮貌斷定"
           }
         ],
-        "grammar_note": "「一人 ひとり / 二人 ふたり」是不規則讀音，三人以上才是「〜にん」。"
+        "grammar_note": "「一人 ひとり / 二人 ふたり」是不規則讀音，三人以上才是「〜にん」。",
+        "line_id": "restaurant:2",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -86,7 +96,12 @@
             "meaning": "疑問"
           }
         ],
-        "grammar_note": "「されています」是「しています」的尊敬語形，敬意比直接問「予約しましたか」更高。"
+        "grammar_note": "「されています」是「しています」的尊敬語形，敬意比直接問「予約しましたか」更高。",
+        "line_id": "restaurant:3",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -124,7 +139,12 @@
             "meaning": "有嗎"
           }
         ],
-        "grammar_note": "「〜ている」在口語常縮成「〜てる」。「空いてる席」是「空著的位子」，比「席が空いてますか」更口語自然。"
+        "grammar_note": "「〜ている」在口語常縮成「〜てる」。「空いてる席」是「空著的位子」，比「席が空いてますか」更口語自然。",
+        "line_id": "restaurant:4",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -156,7 +176,12 @@
             "meaning": "請（引導/讓步）"
           }
         ],
-        "grammar_note": "「こちら」是「ここ／こっち」的敬語版。服務業引導客人會說「こちらへどうぞ」。"
+        "grammar_note": "「こちら」是「ここ／こっち」的敬語版。服務業引導客人會說「こちらへどうぞ」。",
+        "line_id": "restaurant:5",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -188,7 +213,12 @@
             "meaning": "可以給我嗎（謙讓語可能形）"
           }
         ],
-        "grammar_note": "「〜をいただけますか」是「〜をください」的更禮貌版本，餐廳請求物品最自然的說法。"
+        "grammar_note": "「〜をいただけますか」是「〜をください」的更禮貌版本，餐廳請求物品最自然的說法。",
+        "line_id": "restaurant:6",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -220,7 +250,12 @@
             "meaning": "是（服務業常用代替 です）"
           }
         ],
-        "grammar_note": "「〜になります」在服務業是「〜です」的更柔軟版本，雖然文法學界有爭議但實際使用極廣。"
+        "grammar_note": "「〜になります」在服務業是「〜です」的更柔軟版本，雖然文法學界有爭議但實際使用極廣。",
+        "line_id": "restaurant:7",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -270,7 +305,12 @@
             "meaning": "拜託、請"
           }
         ],
-        "grammar_note": "點餐結尾用「お願いします」是最自然的萬用句型。「あと」用來追加品項，比「そして」更口語。"
+        "grammar_note": "點餐結尾用「お願いします」是最自然的萬用句型。「あと」用來追加品項，比「そして」更口語。",
+        "line_id": "restaurant:8",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -296,7 +336,12 @@
             "meaning": "請等候（尊敬語）"
           }
         ],
-        "grammar_note": "「かしこまりました」比「わかりました」更尊敬，是高級服務業才會用。「少々お待ちください」是固定句型。"
+        "grammar_note": "「かしこまりました」比「わかりました」更尊敬，是高級服務業才會用。「少々お待ちください」是固定句型。",
+        "line_id": "restaurant:9",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -334,7 +379,12 @@
             "meaning": "拜託"
           }
         ],
-        "grammar_note": "「おかわり」是日本餐廳續飯/續飲料的關鍵字，記住就夠用。「お水」加 お 是美化語，更禮貌。"
+        "grammar_note": "「おかわり」是日本餐廳續飯/續飲料的關鍵字，記住就夠用。「お水」加 お 是美化語，更禮貌。",
+        "line_id": "restaurant:10",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -360,7 +410,12 @@
             "meaning": "拜託"
           }
         ],
-        "grammar_note": "「お会計」是餐廳結帳的標準說法。也可說「お勘定 おかんじょう」，較傳統。"
+        "grammar_note": "「お会計」是餐廳結帳的標準說法。也可說「お勘定 おかんじょう」，較傳統。",
+        "line_id": "restaurant:11",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -374,9 +429,17 @@
             "meaning": "謝謝（過去式表示交易已完成）"
           }
         ],
-        "grammar_note": "結帳後店家用過去式「ございました」表示交易完成；如果還沒結束會用現在式「ございます」。"
+        "grammar_note": "結帳後店家用過去式「ございました」表示交易完成；如果還沒結束會用現在式「ございます」。",
+        "line_id": "restaurant:12",
+        "source_type": "generated_scenario",
+        "source_id": "restaurant",
+        "difficulty": null,
+        "review_state": "new"
       }
-    ]
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "restaurant",
+    "difficulty": null
   },
   {
     "id": "convenience_store_payment",
@@ -413,7 +476,12 @@
             "meaning": "禮貌疑問句結尾"
           }
         ],
-        "grammar_note": "「ご利用ですか」是店員常用的禮貌問法，比直接說「使いますか」更像服務業日文。"
+        "grammar_note": "「ご利用ですか」是店員常用的禮貌問法，比直接說「使いますか」更像服務業日文。",
+        "line_id": "convenience_store_payment:1",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -445,7 +513,12 @@
             "meaning": "不需要"
           }
         ],
-        "grammar_note": "「大丈夫です」在店員詢問時常表示不用；後面補「いりません」可以避免誤會。"
+        "grammar_note": "「大丈夫です」在店員詢問時常表示不用；後面補「いりません」可以避免誤會。",
+        "line_id": "convenience_store_payment:2",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -471,7 +544,12 @@
             "meaning": "疑問"
           }
         ],
-        "grammar_note": "便利商店最常聽到的句子之一。「温めますか」就是是否要微波加熱。"
+        "grammar_note": "便利商店最常聽到的句子之一。「温めますか」就是是否要微波加熱。",
+        "line_id": "convenience_store_payment:3",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -497,7 +575,12 @@
             "meaning": "請對方做某事"
           }
         ],
-        "grammar_note": "「お願いします」可以單獨回答請對方幫忙；「〜てください」明確提出請求。"
+        "grammar_note": "「お願いします」可以單獨回答請對方幫忙；「〜てください」明確提出請求。",
+        "line_id": "convenience_store_payment:4",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -529,7 +612,12 @@
             "meaning": "する 的尊敬語"
           }
         ],
-        "grammar_note": "「いかがなさいますか」是很禮貌的「要怎麼做」。收銀台常用。"
+        "grammar_note": "「いかがなさいますか」是很禮貌的「要怎麼做」。收銀台常用。",
+        "line_id": "convenience_store_payment:5",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -555,7 +643,12 @@
             "meaning": "麻煩用這個方式處理"
           }
         ],
-        "grammar_note": "「〜でお願いします」表示用某種方式處理，付款、寄送、預約都很好用。"
+        "grammar_note": "「〜でお願いします」表示用某種方式處理，付款、寄送、預約都很好用。",
+        "line_id": "convenience_store_payment:6",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -587,7 +680,12 @@
             "meaning": "請"
           }
         ],
-        "grammar_note": "「差し込む」是插入卡片、插頭的動詞；刷卡機常會顯示這個字。"
+        "grammar_note": "「差し込む」是插入卡片、插頭的動詞；刷卡機常會顯示這個字。",
+        "line_id": "convenience_store_payment:7",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -619,7 +717,12 @@
             "meaning": "疑問結尾"
           }
         ],
-        "grammar_note": "店員可能用「ご利用ですか」問收據、袋子、筷子等是否需要。"
+        "grammar_note": "店員可能用「ご利用ですか」問收據、袋子、筷子等是否需要。",
+        "line_id": "convenience_store_payment:8",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -651,7 +754,12 @@
             "meaning": "謝謝"
           }
         ],
-        "grammar_note": "「〜は大丈夫です」是自然口語的拒絕方式，語氣比「いりません」柔和。"
+        "grammar_note": "「〜は大丈夫です」是自然口語的拒絕方式，語氣比「いりません」柔和。",
+        "line_id": "convenience_store_payment:9",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -671,9 +779,17 @@
             "meaning": "謝謝光臨，交易完成後的謝謝"
           }
         ],
-        "grammar_note": "「お待たせしました」是讓客人等待後的固定道歉句。"
+        "grammar_note": "「お待たせしました」是讓客人等待後的固定道歉句。",
+        "line_id": "convenience_store_payment:10",
+        "source_type": "generated_scenario",
+        "source_id": "convenience_store_payment",
+        "difficulty": null,
+        "review_state": "new"
       }
-    ]
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "convenience_store_payment",
+    "difficulty": null
   },
   {
     "id": "train_station_help",
@@ -722,7 +838,12 @@
             "meaning": "搭哪個才好"
           }
         ],
-        "grammar_note": "「〜にはどれに乗ればいいですか」是問交通方式的實用句型。"
+        "grammar_note": "「〜にはどれに乗ればいいですか」是問交通方式的實用句型。",
+        "line_id": "train_station_help:1",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -754,7 +875,12 @@
             "meaning": "請搭乘"
           }
         ],
-        "grammar_note": "「快速」是比普通車停站少的列車；在車站聽懂這個很重要。"
+        "grammar_note": "「快速」是比普通車停站少的列車；在車站聽懂這個很重要。",
+        "line_id": "train_station_help:2",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -786,7 +912,12 @@
             "meaning": "會去嗎"
           }
         ],
-        "grammar_note": "「〜まで行きますか」可以確認交通工具是否到目的地。"
+        "grammar_note": "「〜まで行きますか」可以確認交通工具是否到目的地。",
+        "line_id": "train_station_help:3",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -818,7 +949,12 @@
             "meaning": "不需要"
           }
         ],
-        "grammar_note": "「乗り換え」是轉乘；「必要ありません」是正式又清楚的「不需要」。"
+        "grammar_note": "「乗り換え」是轉乘；「必要ありません」是正式又清楚的「不需要」。",
+        "line_id": "train_station_help:4",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -850,7 +986,12 @@
             "meaning": "禮貌疑問"
           }
         ],
-        "grammar_note": "日文的月台常說「ホーム」，不是直譯的「平台」。"
+        "grammar_note": "日文的月台常說「ホーム」，不是直譯的「平台」。",
+        "line_id": "train_station_help:5",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -888,7 +1029,12 @@
             "meaning": "請上去"
           }
         ],
-        "grammar_note": "「番線」是月台線號；「三番線」就是三號月台。"
+        "grammar_note": "「番線」是月台線號；「三番線」就是三號月台。",
+        "line_id": "train_station_help:6",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -920,7 +1066,12 @@
             "meaning": "可以嗎、沒問題嗎"
           }
         ],
-        "grammar_note": "「〜で大丈夫ですか」可以確認票、付款方式、文件是否可用。"
+        "grammar_note": "「〜で大丈夫ですか」可以確認票、付款方式、文件是否可用。",
+        "line_id": "train_station_help:7",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -958,7 +1109,12 @@
             "meaning": "請補票/結清差額"
           }
         ],
-        "grammar_note": "「精算」是補票或結清差額，在日本車站很常見。"
+        "grammar_note": "「精算」是補票或結清差額，在日本車站很常見。",
+        "line_id": "train_station_help:8",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -990,7 +1146,12 @@
             "meaning": "禮貌疑問"
           }
         ],
-        "grammar_note": "「終電」是末班電車，夜間移動一定要會。"
+        "grammar_note": "「終電」是末班電車，夜間移動一定要會。",
+        "line_id": "train_station_help:9",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -1028,9 +1189,17 @@
             "meaning": "是"
           }
         ],
-        "grammar_note": "「〜方面」表示往某方向，是車站廣播常見說法。"
+        "grammar_note": "「〜方面」表示往某方向，是車站廣播常見說法。",
+        "line_id": "train_station_help:10",
+        "source_type": "generated_scenario",
+        "source_id": "train_station_help",
+        "difficulty": null,
+        "review_state": "new"
       }
-    ]
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "train_station_help",
+    "difficulty": null
   },
   {
     "id": "hotel_checkin",
@@ -1067,7 +1236,12 @@
             "meaning": "麻煩辦理"
           }
         ],
-        "grammar_note": "「〜をお願いします」是旅行中萬用的請求句型。"
+        "grammar_note": "「〜をお願いします」是旅行中萬用的請求句型。",
+        "line_id": "hotel_checkin:1",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -1093,7 +1267,12 @@
             "meaning": "有嗎，ありますか 的禮貌說法"
           }
         ],
-        "grammar_note": "「ございますか」是服務業常用的禮貌說法，比「ありますか」更正式。"
+        "grammar_note": "「ございますか」是服務業常用的禮貌說法，比「ありますか」更正式。",
+        "line_id": "hotel_checkin:2",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -1125,7 +1304,12 @@
             "meaning": "已經預約/訂房"
           }
         ],
-        "grammar_note": "「〜の名前で予約しています」表示用某個名字訂位或訂房。"
+        "grammar_note": "「〜の名前で予約しています」表示用某個名字訂位或訂房。",
+        "line_id": "hotel_checkin:3",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -1157,7 +1341,12 @@
             "meaning": "可以嗎，禮貌說法"
           }
         ],
-        "grammar_note": "「拝見してもよろしいですか」是很禮貌的「可以看一下嗎」。"
+        "grammar_note": "「拝見してもよろしいですか」是很禮貌的「可以看一下嗎」。",
+        "line_id": "hotel_checkin:4",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -1195,7 +1384,12 @@
             "meaning": "是"
           }
         ],
-        "grammar_note": "遞東西時用「こちらが〜です」很自然，也比只說「はい」清楚。"
+        "grammar_note": "遞東西時用「こちらが〜です」很自然，也比只說「はい」清楚。",
+        "line_id": "hotel_checkin:5",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -1233,7 +1427,12 @@
             "meaning": "可以寄放嗎"
           }
         ],
-        "grammar_note": "「預ける」是寄放行李、託運物品的核心動詞。"
+        "grammar_note": "「預ける」是寄放行李、託運物品的核心動詞。",
+        "line_id": "hotel_checkin:6",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -1265,7 +1464,12 @@
             "meaning": "請放"
           }
         ],
-        "grammar_note": "「お預かりできます」是櫃台人員說「可以幫您保管」的自然說法。"
+        "grammar_note": "「お預かりできます」是櫃台人員說「可以幫您保管」的自然說法。",
+        "line_id": "hotel_checkin:7",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -1303,7 +1507,12 @@
             "meaning": "疑問"
           }
         ],
-        "grammar_note": "「何時から何時まで」是問營業時間、早餐時間、使用時間的固定句型。"
+        "grammar_note": "「何時から何時まで」是問營業時間、早餐時間、使用時間的固定句型。",
+        "line_id": "hotel_checkin:8",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "other",
@@ -1341,7 +1550,12 @@
             "meaning": "です 的更禮貌說法"
           }
         ],
-        "grammar_note": "「〜でございます」是服務業常用的正式版「です」。"
+        "grammar_note": "「〜でございます」是服務業常用的正式版「です」。",
+        "line_id": "hotel_checkin:9",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       },
       {
         "speaker": "you",
@@ -1379,8 +1593,16 @@
             "meaning": "可以確認嗎"
           }
         ],
-        "grammar_note": "「確認できますか」可以問資訊在哪裡確認，也可用在預約、時間、地址。"
+        "grammar_note": "「確認できますか」可以問資訊在哪裡確認，也可用在預約、時間、地址。",
+        "line_id": "hotel_checkin:10",
+        "source_type": "generated_scenario",
+        "source_id": "hotel_checkin",
+        "difficulty": null,
+        "review_state": "new"
       }
-    ]
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "hotel_checkin",
+    "difficulty": null
   }
 ]
