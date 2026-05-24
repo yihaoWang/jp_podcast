@@ -36,6 +36,7 @@ const Player = () => {
   const [autoScroll, setAutoScroll] = useState(true);
   const [expandedOrders, setExpandedOrders] = useState<Set<number>>(new Set());
   const [autoExpand, setAutoExpand] = useState(false);
+  const [loopScenario, setLoopScenario] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState<AudioVariant | null>(null);
   const [locale, setLocale] = useState<Locale>(getInitialLocale);
   const t = messages[locale];
@@ -163,6 +164,19 @@ const Player = () => {
           {t.repeatLine}
         </button>
 
+        <button
+          type="button"
+          onClick={() => setLoopScenario((value) => !value)}
+          className={`rounded-md border px-3 py-1 transition ${
+            loopScenario
+              ? "border-amber-600 bg-amber-950/60 text-amber-100"
+              : "border-neutral-800 bg-neutral-900 text-neutral-200 hover:border-neutral-600"
+          }`}
+          aria-pressed={loopScenario}
+        >
+          {t.loopScenario}
+        </button>
+
         <Link
           to="/review"
           className="rounded-md border border-neutral-800 bg-neutral-900 px-3 py-1 text-neutral-200 transition hover:border-neutral-600"
@@ -254,6 +268,7 @@ const Player = () => {
         ref={audioRef}
         src={audioSrc}
         controls
+        loop={loopScenario}
         onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
         className="mt-4 w-full"
       />
