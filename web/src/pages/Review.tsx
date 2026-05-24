@@ -67,11 +67,11 @@ const Review = () => {
   };
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-8">
-      <header className="mb-6 flex items-start justify-between gap-4">
-        <div>
+    <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8">
+      <header className="mb-6 flex items-start justify-between gap-3">
+        <div className="min-w-0">
           <Link to="/" className="text-sm text-neutral-500 hover:text-neutral-200">← {t.back}</Link>
-          <h1 className="mt-3 text-3xl font-bold tracking-tight">{t.reviewTitle}</h1>
+          <h1 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">{t.reviewTitle}</h1>
           <p className="mt-2 max-w-2xl text-sm text-neutral-400">{t.reviewSubtitle}</p>
           {error && <p className="mt-2 text-sm text-yellow-300">{t.loadFailed}: {error}</p>}
         </div>
@@ -93,7 +93,53 @@ const Review = () => {
         ))}
       </div>
 
-      <div className="overflow-hidden rounded-md border border-neutral-800">
+      <div className="space-y-3 md:hidden">
+        {rows.map(({ scenario, line, state }) => {
+          const key = `${scenario.id}:${line.order}`;
+          const isRevealed = revealed.has(key);
+          return (
+            <article key={key} className="rounded-md border border-neutral-800 bg-neutral-950 p-4">
+              <div className="mb-3 flex items-center justify-between gap-3">
+                <div className="min-w-0 truncate text-xs text-neutral-500">{scenario.title}</div>
+                <span className={`shrink-0 rounded border px-2 py-1 text-xs ${stateClass[state]}`}>{stateLabel(state, t)}</span>
+              </div>
+
+              <div className="space-y-3">
+                <section>
+                  <div className="mb-1 text-xs uppercase text-neutral-600">{t.nativeHeader}</div>
+                  <div className="text-base leading-relaxed text-neutral-200">{line.native}</div>
+                </section>
+                <section>
+                  <div className="mb-1 text-xs uppercase text-neutral-600">{t.targetHeader}</div>
+                  <div className="text-2xl leading-relaxed text-neutral-100">{isRevealed ? line.target : "••••••"}</div>
+                </section>
+              </div>
+
+              <div className="mt-4 grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setRevealed((prev) => new Set(prev).add(key))}
+                  className="rounded-md border border-neutral-700 px-3 py-2 text-sm text-neutral-300"
+                >
+                  {t.reveal}
+                </button>
+                {REVIEW_STATES.map((next) => (
+                  <button
+                    key={next}
+                    type="button"
+                    onClick={() => mark(scenario, line, next)}
+                    className={`rounded-md border px-3 py-2 text-sm ${stateClass[next]}`}
+                  >
+                    {stateLabel(next, t)}
+                  </button>
+                ))}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+
+      <div className="hidden overflow-hidden rounded-md border border-neutral-800 md:block">
         <table className="w-full border-collapse text-left text-sm">
           <thead className="bg-neutral-900 text-xs uppercase text-neutral-500">
             <tr>
