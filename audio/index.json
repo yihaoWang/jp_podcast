@@ -6,6 +6,27 @@
       "context": "在日式餐廳從入座、點餐到結帳的完整對話",
       "duration": 64.391,
       "line_count": 12
+    },
+    {
+      "id": "convenience_store_payment",
+      "title": "便利商店付款",
+      "context": "在便利商店買東西，處理袋子、加熱便當、刷卡、集點和收據",
+      "duration": 54.967,
+      "line_count": 10
+    },
+    {
+      "id": "train_station_help",
+      "title": "車站問路與轉乘",
+      "context": "在日本車站找不到月台，想確認路線、轉乘、末班車和是否需要補票",
+      "duration": 57.511,
+      "line_count": 10
+    },
+    {
+      "id": "hotel_checkin",
+      "title": "飯店入住",
+      "context": "到飯店 check-in，確認訂房、寄放行李、早餐時間、Wi-Fi 和退房時間",
+      "duration": 55.687,
+      "line_count": 10
     }
   ]
 }

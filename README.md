@@ -1,33 +1,47 @@
 # jp_podcast
 
-語言學習 pipeline：情境 → AI 對話 → TTS Podcast。
+A language-learning pipeline: real speech / scenarios -> AI language islands -> TTS podcast -> listening, prediction, shadowing, and active recall.
 
-## 安裝
+This project follows the guideline in [RTK.md](/Users/yihao.wang/project/jp_podcast/RTK.md). It is not a generic podcast generator. Its purpose is to turn sentences the learner genuinely needs into repeatable listening and recall material.
+
+See [ROADMAP.md](/Users/yihao.wang/project/jp_podcast/ROADMAP.md) for implementation priorities.
+
+## Two Source Types
+
+1. Uploaded audio: record real things you say in daily life or at work, then transcribe and convert them into natural target-language sentence islands.
+2. Generated scenarios: define restaurant, work meeting, doctor visit, directions, or other situations in `scenarios.yaml`, then generate natural native-speaker dialogue.
+
+Both sources should converge into the same sentence-bank format so they can share audio generation, word breakdowns, wrong-answer review, and the web player.
+
+## Installation
 
 ```bash
 pip install -r requirements.txt
-brew install ffmpeg  # pydub 合併 MP3 需要
-export ANTHROPIC_API_KEY=sk-...
+brew install ffmpeg  # required by pydub when combining MP3 files
+cp .env.example .env
+# Then edit .env and set ANTHROPIC_API_KEY.
 ```
 
-## 使用
+## Usage
 
 ```bash
-# 1. 編輯 scenarios.yaml，加入你想練的情境
-# 2. 用 LLM 產生對話 CSV
+# 1. Edit scenarios.yaml and add situations you want to practice.
+# 2. Generate dialogue JSON with the LLM.
 python generate_dialogues.py
 
-# 3. 用 TTS 合成 MP3（預設 Edge TTS，免費）
+# 3. Generate MP3 audio with TTS. Edge TTS is the default free provider.
 python generate_audio.py
 ```
 
-輸出：
-- `dialogues.csv` — 完整句庫（中文 / 目標語 / 角色）
-- `audio/<scenario_id>.mp3` — 每個情境一個 Podcast，句間 2 秒空白
+Outputs:
 
-## 換 TTS Provider
+- `dialogues.json`: full sentence bank with native text, target text, speaker, word breakdown, and grammar notes.
+- `audio/<scenario_id>.mp3`: one podcast-style audio file per scenario, with 2 seconds of silence between sentences.
 
-`providers/tts.py` 新增 class 實作 `TTSProvider`，在 `get_provider()` 註冊。
-然後改 `generate_audio.py` 的 `PROVIDER_NAME`。
+## Switching TTS Providers
 
-候選：OpenAI TTS HD、ElevenLabs、Azure Neural TTS。
+Add a class implementing `TTSProvider` in `providers/tts.py`, then register it in `get_provider()`.
+
+Update `PROVIDER_NAME` in `generate_audio.py`.
+
+Provider candidates: OpenAI TTS HD, ElevenLabs, Azure Neural TTS.

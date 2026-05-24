@@ -1,0 +1,383 @@
+{
+  "id": "hotel_checkin",
+  "title": "飯店入住",
+  "context": "到飯店 check-in，確認訂房、寄放行李、早餐時間、Wi-Fi 和退房時間",
+  "language_code": "ja",
+  "duration": 55.687,
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "you",
+      "native": "你好，我想辦理入住。",
+      "target": "こんにちは、チェックインをお願いします。",
+      "breakdown": [
+        {
+          "surface": "こんにちは",
+          "reading": "こんにちは",
+          "pos": "挨拶",
+          "meaning": "你好"
+        },
+        {
+          "surface": "チェックイン",
+          "reading": "チェックイン",
+          "pos": "名詞",
+          "meaning": "入住"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "pos": "助詞",
+          "meaning": "受詞標記"
+        },
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "片語",
+          "meaning": "麻煩辦理"
+        }
+      ],
+      "grammar_note": "「〜をお願いします」是旅行中萬用的請求句型。",
+      "start": 0,
+      "end": 3.624
+    },
+    {
+      "order": 2,
+      "speaker": "other",
+      "native": "請問有訂房嗎？",
+      "target": "ご予約はございますか。",
+      "breakdown": [
+        {
+          "surface": "ご予約",
+          "reading": "ごよやく",
+          "pos": "名詞/敬語",
+          "meaning": "預約、訂房"
+        },
+        {
+          "surface": "は",
+          "reading": "は",
+          "pos": "助詞",
+          "meaning": "主題提示"
+        },
+        {
+          "surface": "ございますか",
+          "reading": "ございますか",
+          "pos": "動詞",
+          "meaning": "有嗎，ありますか 的禮貌說法"
+        }
+      ],
+      "grammar_note": "「ございますか」是服務業常用的禮貌說法，比「ありますか」更正式。",
+      "start": 5.624,
+      "end": 7.928
+    },
+    {
+      "order": 3,
+      "speaker": "you",
+      "native": "有，用王的名字訂的。",
+      "target": "はい、王の名前で予約しています。",
+      "breakdown": [
+        {
+          "surface": "はい",
+          "reading": "はい",
+          "pos": "感嘆詞",
+          "meaning": "是"
+        },
+        {
+          "surface": "王",
+          "reading": "おう",
+          "pos": "姓名",
+          "meaning": "王"
+        },
+        {
+          "surface": "の名前で",
+          "reading": "のなまえで",
+          "pos": "片語",
+          "meaning": "用某人的名字"
+        },
+        {
+          "surface": "予約しています",
+          "reading": "よやくしています",
+          "pos": "動詞",
+          "meaning": "已經預約/訂房"
+        }
+      ],
+      "grammar_note": "「〜の名前で予約しています」表示用某個名字訂位或訂房。",
+      "start": 9.928,
+      "end": 13.48
+    },
+    {
+      "order": 4,
+      "speaker": "other",
+      "native": "請出示護照。",
+      "target": "パスポートを拝見してもよろしいですか。",
+      "breakdown": [
+        {
+          "surface": "パスポート",
+          "reading": "パスポート",
+          "pos": "名詞",
+          "meaning": "護照"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "pos": "助詞",
+          "meaning": "受詞標記"
+        },
+        {
+          "surface": "拝見しても",
+          "reading": "はいけんしても",
+          "pos": "謙讓語",
+          "meaning": "可以讓我看一下"
+        },
+        {
+          "surface": "よろしいですか",
+          "reading": "よろしいですか",
+          "pos": "片語",
+          "meaning": "可以嗎，禮貌說法"
+        }
+      ],
+      "grammar_note": "「拝見してもよろしいですか」是很禮貌的「可以看一下嗎」。",
+      "start": 15.48,
+      "end": 18.528
+    },
+    {
+      "order": 5,
+      "speaker": "you",
+      "native": "好的，這是我的護照。",
+      "target": "はい、こちらがパスポートです。",
+      "breakdown": [
+        {
+          "surface": "はい",
+          "reading": "はい",
+          "pos": "感嘆詞",
+          "meaning": "好的"
+        },
+        {
+          "surface": "こちら",
+          "reading": "こちら",
+          "pos": "代名詞",
+          "meaning": "這個、這邊，禮貌說法"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "pos": "助詞",
+          "meaning": "主語標記"
+        },
+        {
+          "surface": "パスポート",
+          "reading": "パスポート",
+          "pos": "名詞",
+          "meaning": "護照"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "pos": "助動詞",
+          "meaning": "是"
+        }
+      ],
+      "grammar_note": "遞東西時用「こちらが〜です」很自然，也比只說「はい」清楚。",
+      "start": 20.528,
+      "end": 23.72
+    },
+    {
+      "order": 6,
+      "speaker": "you",
+      "native": "入住前可以寄放行李嗎？",
+      "target": "チェックイン前に荷物を預けてもいいですか。",
+      "breakdown": [
+        {
+          "surface": "チェックイン前",
+          "reading": "チェックインまえ",
+          "pos": "名詞",
+          "meaning": "入住前"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "pos": "助詞",
+          "meaning": "時間點"
+        },
+        {
+          "surface": "荷物",
+          "reading": "にもつ",
+          "pos": "名詞",
+          "meaning": "行李"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "pos": "助詞",
+          "meaning": "受詞標記"
+        },
+        {
+          "surface": "預けてもいいですか",
+          "reading": "あずけてもいいですか",
+          "pos": "動詞+許可",
+          "meaning": "可以寄放嗎"
+        }
+      ],
+      "grammar_note": "「預ける」是寄放行李、託運物品的核心動詞。",
+      "start": 25.72,
+      "end": 29.584
+    },
+    {
+      "order": 7,
+      "speaker": "other",
+      "native": "可以，請放在這邊。",
+      "target": "はい、お預かりできます。こちらに置いてください。",
+      "breakdown": [
+        {
+          "surface": "お預かりできます",
+          "reading": "おあずかりできます",
+          "pos": "動詞/敬語",
+          "meaning": "可以幫您保管"
+        },
+        {
+          "surface": "こちら",
+          "reading": "こちら",
+          "pos": "代名詞",
+          "meaning": "這裡"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "pos": "助詞",
+          "meaning": "放置位置"
+        },
+        {
+          "surface": "置いてください",
+          "reading": "おいてください",
+          "pos": "動詞て形+ください",
+          "meaning": "請放"
+        }
+      ],
+      "grammar_note": "「お預かりできます」是櫃台人員說「可以幫您保管」的自然說法。",
+      "start": 31.584,
+      "end": 36.384
+    },
+    {
+      "order": 8,
+      "speaker": "you",
+      "native": "請問早餐是幾點到幾點？",
+      "target": "朝食は何時から何時までですか。",
+      "breakdown": [
+        {
+          "surface": "朝食",
+          "reading": "ちょうしょく",
+          "pos": "名詞",
+          "meaning": "早餐"
+        },
+        {
+          "surface": "は",
+          "reading": "は",
+          "pos": "助詞",
+          "meaning": "主題提示"
+        },
+        {
+          "surface": "何時から",
+          "reading": "なんじから",
+          "pos": "時間疑問",
+          "meaning": "從幾點"
+        },
+        {
+          "surface": "何時まで",
+          "reading": "なんじまで",
+          "pos": "時間疑問",
+          "meaning": "到幾點"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "pos": "助動詞+助詞",
+          "meaning": "疑問"
+        }
+      ],
+      "grammar_note": "「何時から何時まで」是問營業時間、早餐時間、使用時間的固定句型。",
+      "start": 38.384,
+      "end": 41.648
+    },
+    {
+      "order": 9,
+      "speaker": "other",
+      "native": "早上七點到十點，在二樓。",
+      "target": "朝七時から十時まで、二階でございます。",
+      "breakdown": [
+        {
+          "surface": "朝七時",
+          "reading": "あさしちじ",
+          "pos": "時間",
+          "meaning": "早上七點"
+        },
+        {
+          "surface": "から",
+          "reading": "から",
+          "pos": "助詞",
+          "meaning": "從"
+        },
+        {
+          "surface": "十時まで",
+          "reading": "じゅうじまで",
+          "pos": "時間",
+          "meaning": "到十點"
+        },
+        {
+          "surface": "二階",
+          "reading": "にかい",
+          "pos": "名詞",
+          "meaning": "二樓"
+        },
+        {
+          "surface": "でございます",
+          "reading": "でございます",
+          "pos": "丁寧語",
+          "meaning": "です 的更禮貌說法"
+        }
+      ],
+      "grammar_note": "「〜でございます」是服務業常用的正式版「です」。",
+      "start": 43.648,
+      "end": 47.608
+    },
+    {
+      "order": 10,
+      "speaker": "you",
+      "native": "Wi-Fi 密碼在哪裡看？",
+      "target": "Wi-Fiのパスワードはどこで確認できますか。",
+      "breakdown": [
+        {
+          "surface": "Wi-Fi",
+          "reading": "ワイファイ",
+          "pos": "名詞",
+          "meaning": "無線網路"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "pos": "助詞",
+          "meaning": "的"
+        },
+        {
+          "surface": "パスワード",
+          "reading": "パスワード",
+          "pos": "名詞",
+          "meaning": "密碼"
+        },
+        {
+          "surface": "どこで",
+          "reading": "どこで",
+          "pos": "疑問詞+助詞",
+          "meaning": "在哪裡"
+        },
+        {
+          "surface": "確認できますか",
+          "reading": "かくにんできますか",
+          "pos": "動詞",
+          "meaning": "可以確認嗎"
+        }
+      ],
+      "grammar_note": "「確認できますか」可以問資訊在哪裡確認，也可用在預約、時間、地址。",
+      "start": 49.608,
+      "end": 53.688
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "id": "train_station_help",
+  "title": "車站問路與轉乘",
+  "context": "在日本車站找不到月台，想確認路線、轉乘、末班車和是否需要補票",
+  "language_code": "ja",
+  "duration": 57.511,
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "you",
+      "native": "不好意思，請問去新宿要搭哪一班？",
+      "target": "すみません、新宿へ行くにはどれに乗ればいいですか。",
+      "breakdown": [
+        {
+          "surface": "すみません",
+          "reading": "すみません",
+          "pos": "感嘆詞",
+          "meaning": "不好意思，用來開口詢問"
+        },
+        {
+          "surface": "新宿",
+          "reading": "しんじゅく",
+          "pos": "地名",
+          "meaning": "新宿"
+        },
+        {
+          "surface": "へ",
+          "reading": "へ",
+          "pos": "助詞",
+          "meaning": "往某方向"
+        },
+        {
+          "surface": "行くには",
+          "reading": "いくには",
+          "pos": "片語",
+          "meaning": "要去的話"
+        },
+        {
+          "surface": "どれ",
+          "reading": "どれ",
+          "pos": "疑問詞",
+          "meaning": "哪一個"
+        },
+        {
+          "surface": "乗ればいい",
+          "reading": "のればいい",
+          "pos": "條件形+いい",
+          "meaning": "搭哪個才好"
+        }
+      ],
+      "grammar_note": "「〜にはどれに乗ればいいですか」是問交通方式的實用句型。",
+      "start": 0,
+      "end": 4.704
+    },
+    {
+      "order": 2,
+      "speaker": "other",
+      "native": "請搭這邊的快速列車。",
+      "target": "こちらの快速に乗ってください。",
+      "breakdown": [
+        {
+          "surface": "こちら",
+          "reading": "こちら",
+          "pos": "代名詞",
+          "meaning": "這邊，禮貌說法"
+        },
+        {
+          "surface": "快速",
+          "reading": "かいそく",
+          "pos": "名詞",
+          "meaning": "快速列車"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "pos": "助詞",
+          "meaning": "表示搭乘對象"
+        },
+        {
+          "surface": "乗ってください",
+          "reading": "のってください",
+          "pos": "動詞て形+ください",
+          "meaning": "請搭乘"
+        }
+      ],
+      "grammar_note": "「快速」是比普通車停站少的列車；在車站聽懂這個很重要。",
+      "start": 6.704,
+      "end": 9.392
+    },
+    {
+      "order": 3,
+      "speaker": "you",
+      "native": "這班車會到新宿嗎？",
+      "target": "この電車は新宿まで行きますか。",
+      "breakdown": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "pos": "連體詞",
+          "meaning": "這個"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "pos": "名詞",
+          "meaning": "電車"
+        },
+        {
+          "surface": "新宿まで",
+          "reading": "しんじゅくまで",
+          "pos": "名詞+助詞",
+          "meaning": "到新宿為止"
+        },
+        {
+          "surface": "行きますか",
+          "reading": "いきますか",
+          "pos": "動詞",
+          "meaning": "會去嗎"
+        }
+      ],
+      "grammar_note": "「〜まで行きますか」可以確認交通工具是否到目的地。",
+      "start": 11.392,
+      "end": 14.68
+    },
+    {
+      "order": 4,
+      "speaker": "other",
+      "native": "會到。不需要轉車。",
+      "target": "はい、行きます。乗り換えは必要ありません。",
+      "breakdown": [
+        {
+          "surface": "はい",
+          "reading": "はい",
+          "pos": "感嘆詞",
+          "meaning": "是、會"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "pos": "動詞",
+          "meaning": "會去"
+        },
+        {
+          "surface": "乗り換え",
+          "reading": "のりかえ",
+          "pos": "名詞",
+          "meaning": "轉乘"
+        },
+        {
+          "surface": "必要ありません",
+          "reading": "ひつようありません",
+          "pos": "片語",
+          "meaning": "不需要"
+        }
+      ],
+      "grammar_note": "「乗り換え」是轉乘；「必要ありません」是正式又清楚的「不需要」。",
+      "start": 16.68,
+      "end": 21.336
+    },
+    {
+      "order": 5,
+      "speaker": "you",
+      "native": "月台在哪裡？",
+      "target": "ホームはどこですか。",
+      "breakdown": [
+        {
+          "surface": "ホーム",
+          "reading": "ホーム",
+          "pos": "名詞",
+          "meaning": "月台"
+        },
+        {
+          "surface": "は",
+          "reading": "は",
+          "pos": "助詞",
+          "meaning": "主題提示"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "pos": "疑問詞",
+          "meaning": "哪裡"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "pos": "助動詞+助詞",
+          "meaning": "禮貌疑問"
+        }
+      ],
+      "grammar_note": "日文的月台常說「ホーム」，不是直譯的「平台」。",
+      "start": 23.336,
+      "end": 25.592
+    },
+    {
+      "order": 6,
+      "speaker": "other",
+      "native": "三號月台，請上樓。",
+      "target": "三番線です。階段を上がってください。",
+      "breakdown": [
+        {
+          "surface": "三番線",
+          "reading": "さんばんせん",
+          "pos": "名詞",
+          "meaning": "三號月台/三號線"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "pos": "助動詞",
+          "meaning": "是"
+        },
+        {
+          "surface": "階段",
+          "reading": "かいだん",
+          "pos": "名詞",
+          "meaning": "樓梯"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "pos": "助詞",
+          "meaning": "經過的路徑"
+        },
+        {
+          "surface": "上がってください",
+          "reading": "あがってください",
+          "pos": "動詞て形+ください",
+          "meaning": "請上去"
+        }
+      ],
+      "grammar_note": "「番線」是月台線號；「三番線」就是三號月台。",
+      "start": 27.592,
+      "end": 31.84
+    },
+    {
+      "order": 7,
+      "speaker": "you",
+      "native": "現在這張票可以用嗎？",
+      "target": "この切符で大丈夫ですか。",
+      "breakdown": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "pos": "連體詞",
+          "meaning": "這張、這個"
+        },
+        {
+          "surface": "切符",
+          "reading": "きっぷ",
+          "pos": "名詞",
+          "meaning": "車票"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "pos": "助詞",
+          "meaning": "用、憑"
+        },
+        {
+          "surface": "大丈夫ですか",
+          "reading": "だいじょうぶですか",
+          "pos": "片語",
+          "meaning": "可以嗎、沒問題嗎"
+        }
+      ],
+      "grammar_note": "「〜で大丈夫ですか」可以確認票、付款方式、文件是否可用。",
+      "start": 33.84,
+      "end": 36.672
+    },
+    {
+      "order": 8,
+      "speaker": "other",
+      "native": "可以。如果超過票價，出站時補票。",
+      "target": "大丈夫です。足りない場合は、改札を出る時に精算してください。",
+      "breakdown": [
+        {
+          "surface": "足りない",
+          "reading": "たりない",
+          "pos": "動詞/形容詞",
+          "meaning": "不夠"
+        },
+        {
+          "surface": "場合",
+          "reading": "ばあい",
+          "pos": "名詞",
+          "meaning": "情況"
+        },
+        {
+          "surface": "改札",
+          "reading": "かいさつ",
+          "pos": "名詞",
+          "meaning": "剪票口、閘門"
+        },
+        {
+          "surface": "出る時",
+          "reading": "でるとき",
+          "pos": "片語",
+          "meaning": "出去的時候"
+        },
+        {
+          "surface": "精算してください",
+          "reading": "せいさんしてください",
+          "pos": "名詞+する",
+          "meaning": "請補票/結清差額"
+        }
+      ],
+      "grammar_note": "「精算」是補票或結清差額，在日本車站很常見。",
+      "start": 38.672,
+      "end": 44.888
+    },
+    {
+      "order": 9,
+      "speaker": "you",
+      "native": "請問末班車是幾點？",
+      "target": "終電は何時ですか。",
+      "breakdown": [
+        {
+          "surface": "終電",
+          "reading": "しゅうでん",
+          "pos": "名詞",
+          "meaning": "末班電車"
+        },
+        {
+          "surface": "は",
+          "reading": "は",
+          "pos": "助詞",
+          "meaning": "主題提示"
+        },
+        {
+          "surface": "何時",
+          "reading": "なんじ",
+          "pos": "疑問詞",
+          "meaning": "幾點"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "pos": "助動詞+助詞",
+          "meaning": "禮貌疑問"
+        }
+      ],
+      "grammar_note": "「終電」是末班電車，夜間移動一定要會。",
+      "start": 46.888,
+      "end": 49.456
+    },
+    {
+      "order": 10,
+      "speaker": "other",
+      "native": "往新宿的末班車是十二點十分。",
+      "target": "新宿方面の終電は十二時十分です。",
+      "breakdown": [
+        {
+          "surface": "新宿方面",
+          "reading": "しんじゅくほうめん",
+          "pos": "名詞",
+          "meaning": "往新宿方向"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "pos": "助詞",
+          "meaning": "的"
+        },
+        {
+          "surface": "終電",
+          "reading": "しゅうでん",
+          "pos": "名詞",
+          "meaning": "末班車"
+        },
+        {
+          "surface": "十二時十分",
+          "reading": "じゅうにじじゅっぷん",
+          "pos": "時間",
+          "meaning": "十二點十分"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "pos": "助動詞",
+          "meaning": "是"
+        }
+      ],
+      "grammar_note": "「〜方面」表示往某方向，是車站廣播常見說法。",
+      "start": 51.456,
+      "end": 55.512
+    }
+  ]
+}

@@ -9,9 +9,24 @@
         "native": "歡迎光臨，請問幾位？",
         "target": "いらっしゃいませ。何名様ですか。",
         "breakdown": [
-          { "surface": "いらっしゃいませ", "reading": "いらっしゃいませ", "pos": "招呼語", "meaning": "歡迎光臨（服務業專用敬語）" },
-          { "surface": "何名様", "reading": "なんめいさま", "pos": "名詞", "meaning": "幾位（樣 さま 是對客人的敬稱）" },
-          { "surface": "ですか", "reading": "ですか", "pos": "助動詞+助詞", "meaning": "禮貌疑問句結尾" }
+          {
+            "surface": "いらっしゃいませ",
+            "reading": "いらっしゃいませ",
+            "pos": "招呼語",
+            "meaning": "歡迎光臨（服務業專用敬語）"
+          },
+          {
+            "surface": "何名様",
+            "reading": "なんめいさま",
+            "pos": "名詞",
+            "meaning": "幾位（樣 さま 是對客人的敬稱）"
+          },
+          {
+            "surface": "ですか",
+            "reading": "ですか",
+            "pos": "助動詞+助詞",
+            "meaning": "禮貌疑問句結尾"
+          }
         ],
         "grammar_note": "「何名様」是「何人」的敬語版本，服務業必用。「いらっしゃいませ」是商業招呼語，私下不會用。"
       },
@@ -20,8 +35,18 @@
         "native": "兩位。",
         "target": "二人です。",
         "breakdown": [
-          { "surface": "二人", "reading": "ふたり", "pos": "名詞", "meaning": "兩個人（注意讀音不規則）" },
-          { "surface": "です", "reading": "です", "pos": "助動詞", "meaning": "禮貌斷定" }
+          {
+            "surface": "二人",
+            "reading": "ふたり",
+            "pos": "名詞",
+            "meaning": "兩個人（注意讀音不規則）"
+          },
+          {
+            "surface": "です",
+            "reading": "です",
+            "pos": "助動詞",
+            "meaning": "禮貌斷定"
+          }
         ],
         "grammar_note": "「一人 ひとり / 二人 ふたり」是不規則讀音，三人以上才是「〜にん」。"
       },
@@ -30,11 +55,36 @@
         "native": "有預約嗎？",
         "target": "ご予約はされていますか。",
         "breakdown": [
-          { "surface": "ご予約", "reading": "ごよやく", "pos": "名詞", "meaning": "預約（ご 是敬語接頭詞）" },
-          { "surface": "は", "reading": "は", "pos": "助詞", "meaning": "主題提示" },
-          { "surface": "されて", "reading": "されて", "pos": "動詞", "meaning": "する 的尊敬語 て形" },
-          { "surface": "います", "reading": "います", "pos": "補助動詞", "meaning": "狀態持續" },
-          { "surface": "か", "reading": "か", "pos": "助詞", "meaning": "疑問" }
+          {
+            "surface": "ご予約",
+            "reading": "ごよやく",
+            "pos": "名詞",
+            "meaning": "預約（ご 是敬語接頭詞）"
+          },
+          {
+            "surface": "は",
+            "reading": "は",
+            "pos": "助詞",
+            "meaning": "主題提示"
+          },
+          {
+            "surface": "されて",
+            "reading": "されて",
+            "pos": "動詞",
+            "meaning": "する 的尊敬語 て形"
+          },
+          {
+            "surface": "います",
+            "reading": "います",
+            "pos": "補助動詞",
+            "meaning": "狀態持續"
+          },
+          {
+            "surface": "か",
+            "reading": "か",
+            "pos": "助詞",
+            "meaning": "疑問"
+          }
         ],
         "grammar_note": "「されています」是「しています」的尊敬語形，敬意比直接問「予約しましたか」更高。"
       },
@@ -43,11 +93,36 @@
         "native": "沒有，現在還有位子嗎？",
         "target": "いいえ、今空いてる席ありますか。",
         "breakdown": [
-          { "surface": "いいえ", "reading": "いいえ", "pos": "感嘆詞", "meaning": "不、沒有" },
-          { "surface": "今", "reading": "いま", "pos": "副詞", "meaning": "現在" },
-          { "surface": "空いてる", "reading": "あいてる", "pos": "動詞", "meaning": "空著的（空いている 的口語縮約）" },
-          { "surface": "席", "reading": "せき", "pos": "名詞", "meaning": "座位" },
-          { "surface": "ありますか", "reading": "ありますか", "pos": "動詞", "meaning": "有嗎" }
+          {
+            "surface": "いいえ",
+            "reading": "いいえ",
+            "pos": "感嘆詞",
+            "meaning": "不、沒有"
+          },
+          {
+            "surface": "今",
+            "reading": "いま",
+            "pos": "副詞",
+            "meaning": "現在"
+          },
+          {
+            "surface": "空いてる",
+            "reading": "あいてる",
+            "pos": "動詞",
+            "meaning": "空著的（空いている 的口語縮約）"
+          },
+          {
+            "surface": "席",
+            "reading": "せき",
+            "pos": "名詞",
+            "meaning": "座位"
+          },
+          {
+            "surface": "ありますか",
+            "reading": "ありますか",
+            "pos": "動詞",
+            "meaning": "有嗎"
+          }
         ],
         "grammar_note": "「〜ている」在口語常縮成「〜てる」。「空いてる席」是「空著的位子」，比「席が空いてますか」更口語自然。"
       },
@@ -56,10 +131,30 @@
         "native": "有，請往這邊。",
         "target": "はい、こちらへどうぞ。",
         "breakdown": [
-          { "surface": "はい", "reading": "はい", "pos": "感嘆詞", "meaning": "是" },
-          { "surface": "こちら", "reading": "こちら", "pos": "代名詞", "meaning": "這邊（敬語形）" },
-          { "surface": "へ", "reading": "へ", "pos": "助詞", "meaning": "方向" },
-          { "surface": "どうぞ", "reading": "どうぞ", "pos": "副詞", "meaning": "請（引導/讓步）" }
+          {
+            "surface": "はい",
+            "reading": "はい",
+            "pos": "感嘆詞",
+            "meaning": "是"
+          },
+          {
+            "surface": "こちら",
+            "reading": "こちら",
+            "pos": "代名詞",
+            "meaning": "這邊（敬語形）"
+          },
+          {
+            "surface": "へ",
+            "reading": "へ",
+            "pos": "助詞",
+            "meaning": "方向"
+          },
+          {
+            "surface": "どうぞ",
+            "reading": "どうぞ",
+            "pos": "副詞",
+            "meaning": "請（引導/讓步）"
+          }
         ],
         "grammar_note": "「こちら」是「ここ／こっち」的敬語版。服務業引導客人會說「こちらへどうぞ」。"
       },
@@ -68,10 +163,30 @@
         "native": "不好意思，可以給我菜單嗎？",
         "target": "すみません、メニューをいただけますか。",
         "breakdown": [
-          { "surface": "すみません", "reading": "すみません", "pos": "感嘆詞", "meaning": "不好意思（呼喚店員）" },
-          { "surface": "メニュー", "reading": "メニュー", "pos": "名詞", "meaning": "菜單（外來語 menu）" },
-          { "surface": "を", "reading": "を", "pos": "助詞", "meaning": "受格" },
-          { "surface": "いただけますか", "reading": "いただけますか", "pos": "動詞", "meaning": "可以給我嗎（謙讓語可能形）" }
+          {
+            "surface": "すみません",
+            "reading": "すみません",
+            "pos": "感嘆詞",
+            "meaning": "不好意思（呼喚店員）"
+          },
+          {
+            "surface": "メニュー",
+            "reading": "メニュー",
+            "pos": "名詞",
+            "meaning": "菜單（外來語 menu）"
+          },
+          {
+            "surface": "を",
+            "reading": "を",
+            "pos": "助詞",
+            "meaning": "受格"
+          },
+          {
+            "surface": "いただけますか",
+            "reading": "いただけますか",
+            "pos": "動詞",
+            "meaning": "可以給我嗎（謙讓語可能形）"
+          }
         ],
         "grammar_note": "「〜をいただけますか」是「〜をください」的更禮貌版本，餐廳請求物品最自然的說法。"
       },
@@ -80,10 +195,30 @@
         "native": "這是菜單，今天的推薦是這個。",
         "target": "こちらメニューです。今日のおすすめはこちらになります。",
         "breakdown": [
-          { "surface": "こちら", "reading": "こちら", "pos": "代名詞", "meaning": "這個（敬語）" },
-          { "surface": "メニュー", "reading": "メニュー", "pos": "名詞", "meaning": "菜單" },
-          { "surface": "今日のおすすめ", "reading": "きょうのおすすめ", "pos": "片語", "meaning": "今日推薦" },
-          { "surface": "になります", "reading": "になります", "pos": "動詞", "meaning": "是（服務業常用代替 です）" }
+          {
+            "surface": "こちら",
+            "reading": "こちら",
+            "pos": "代名詞",
+            "meaning": "這個（敬語）"
+          },
+          {
+            "surface": "メニュー",
+            "reading": "メニュー",
+            "pos": "名詞",
+            "meaning": "菜單"
+          },
+          {
+            "surface": "今日のおすすめ",
+            "reading": "きょうのおすすめ",
+            "pos": "片語",
+            "meaning": "今日推薦"
+          },
+          {
+            "surface": "になります",
+            "reading": "になります",
+            "pos": "動詞",
+            "meaning": "是（服務業常用代替 です）"
+          }
         ],
         "grammar_note": "「〜になります」在服務業是「〜です」的更柔軟版本，雖然文法學界有爭議但實際使用極廣。"
       },
@@ -92,13 +227,48 @@
         "native": "那我點這個，還有一杯生啤酒。",
         "target": "じゃあ、これと、あと生ビール一杯お願いします。",
         "breakdown": [
-          { "surface": "じゃあ", "reading": "じゃあ", "pos": "接續詞", "meaning": "那麼（では 的口語）" },
-          { "surface": "これ", "reading": "これ", "pos": "代名詞", "meaning": "這個" },
-          { "surface": "と", "reading": "と", "pos": "助詞", "meaning": "和（並列）" },
-          { "surface": "あと", "reading": "あと", "pos": "副詞", "meaning": "還有、另外" },
-          { "surface": "生ビール", "reading": "なまビール", "pos": "名詞", "meaning": "生啤酒" },
-          { "surface": "一杯", "reading": "いっぱい", "pos": "數量詞", "meaning": "一杯" },
-          { "surface": "お願いします", "reading": "おねがいします", "pos": "片語", "meaning": "拜託、請" }
+          {
+            "surface": "じゃあ",
+            "reading": "じゃあ",
+            "pos": "接續詞",
+            "meaning": "那麼（では 的口語）"
+          },
+          {
+            "surface": "これ",
+            "reading": "これ",
+            "pos": "代名詞",
+            "meaning": "這個"
+          },
+          {
+            "surface": "と",
+            "reading": "と",
+            "pos": "助詞",
+            "meaning": "和（並列）"
+          },
+          {
+            "surface": "あと",
+            "reading": "あと",
+            "pos": "副詞",
+            "meaning": "還有、另外"
+          },
+          {
+            "surface": "生ビール",
+            "reading": "なまビール",
+            "pos": "名詞",
+            "meaning": "生啤酒"
+          },
+          {
+            "surface": "一杯",
+            "reading": "いっぱい",
+            "pos": "數量詞",
+            "meaning": "一杯"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "片語",
+            "meaning": "拜託、請"
+          }
         ],
         "grammar_note": "點餐結尾用「お願いします」是最自然的萬用句型。「あと」用來追加品項，比「そして」更口語。"
       },
@@ -107,9 +277,24 @@
         "native": "好的，請稍等。",
         "target": "かしこまりました。少々お待ちください。",
         "breakdown": [
-          { "surface": "かしこまりました", "reading": "かしこまりました", "pos": "動詞", "meaning": "明白了（服務業最高敬語）" },
-          { "surface": "少々", "reading": "しょうしょう", "pos": "副詞", "meaning": "稍微、片刻" },
-          { "surface": "お待ちください", "reading": "おまちください", "pos": "片語", "meaning": "請等候（尊敬語）" }
+          {
+            "surface": "かしこまりました",
+            "reading": "かしこまりました",
+            "pos": "動詞",
+            "meaning": "明白了（服務業最高敬語）"
+          },
+          {
+            "surface": "少々",
+            "reading": "しょうしょう",
+            "pos": "副詞",
+            "meaning": "稍微、片刻"
+          },
+          {
+            "surface": "お待ちください",
+            "reading": "おまちください",
+            "pos": "片語",
+            "meaning": "請等候（尊敬語）"
+          }
         ],
         "grammar_note": "「かしこまりました」比「わかりました」更尊敬，是高級服務業才會用。「少々お待ちください」是固定句型。"
       },
@@ -118,11 +303,36 @@
         "native": "不好意思，可以幫我加點水嗎？",
         "target": "すみません、お水のおかわりお願いします。",
         "breakdown": [
-          { "surface": "すみません", "reading": "すみません", "pos": "感嘆詞", "meaning": "不好意思" },
-          { "surface": "お水", "reading": "おみず", "pos": "名詞", "meaning": "水（お 是美化語）" },
-          { "surface": "の", "reading": "の", "pos": "助詞", "meaning": "的" },
-          { "surface": "おかわり", "reading": "おかわり", "pos": "名詞", "meaning": "續杯、再來一份" },
-          { "surface": "お願いします", "reading": "おねがいします", "pos": "片語", "meaning": "拜託" }
+          {
+            "surface": "すみません",
+            "reading": "すみません",
+            "pos": "感嘆詞",
+            "meaning": "不好意思"
+          },
+          {
+            "surface": "お水",
+            "reading": "おみず",
+            "pos": "名詞",
+            "meaning": "水（お 是美化語）"
+          },
+          {
+            "surface": "の",
+            "reading": "の",
+            "pos": "助詞",
+            "meaning": "的"
+          },
+          {
+            "surface": "おかわり",
+            "reading": "おかわり",
+            "pos": "名詞",
+            "meaning": "續杯、再來一份"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "片語",
+            "meaning": "拜託"
+          }
         ],
         "grammar_note": "「おかわり」是日本餐廳續飯/續飲料的關鍵字，記住就夠用。「お水」加 お 是美化語，更禮貌。"
       },
@@ -131,9 +341,24 @@
         "native": "不好意思，買單。",
         "target": "すみません、お会計お願いします。",
         "breakdown": [
-          { "surface": "すみません", "reading": "すみません", "pos": "感嘆詞", "meaning": "不好意思" },
-          { "surface": "お会計", "reading": "おかいけい", "pos": "名詞", "meaning": "結帳" },
-          { "surface": "お願いします", "reading": "おねがいします", "pos": "片語", "meaning": "拜託" }
+          {
+            "surface": "すみません",
+            "reading": "すみません",
+            "pos": "感嘆詞",
+            "meaning": "不好意思"
+          },
+          {
+            "surface": "お会計",
+            "reading": "おかいけい",
+            "pos": "名詞",
+            "meaning": "結帳"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "片語",
+            "meaning": "拜託"
+          }
         ],
         "grammar_note": "「お会計」是餐廳結帳的標準說法。也可說「お勘定 おかんじょう」，較傳統。"
       },
@@ -142,9 +367,1019 @@
         "native": "謝謝光臨。",
         "target": "ありがとうございました。",
         "breakdown": [
-          { "surface": "ありがとうございました", "reading": "ありがとうございました", "pos": "片語", "meaning": "謝謝（過去式表示交易已完成）" }
+          {
+            "surface": "ありがとうございました",
+            "reading": "ありがとうございました",
+            "pos": "片語",
+            "meaning": "謝謝（過去式表示交易已完成）"
+          }
         ],
         "grammar_note": "結帳後店家用過去式「ございました」表示交易完成；如果還沒結束會用現在式「ございます」。"
+      }
+    ]
+  },
+  {
+    "id": "convenience_store_payment",
+    "title": "便利商店付款",
+    "context": "在便利商店買東西，處理袋子、加熱便當、刷卡、集點和收據",
+    "lines": [
+      {
+        "speaker": "other",
+        "native": "歡迎光臨。袋子需要嗎？",
+        "target": "いらっしゃいませ。レジ袋はご利用ですか。",
+        "breakdown": [
+          {
+            "surface": "いらっしゃいませ",
+            "reading": "いらっしゃいませ",
+            "pos": "挨拶",
+            "meaning": "歡迎光臨，服務業固定招呼語"
+          },
+          {
+            "surface": "レジ袋",
+            "reading": "レジぶくろ",
+            "pos": "名詞",
+            "meaning": "購物袋、塑膠袋"
+          },
+          {
+            "surface": "ご利用",
+            "reading": "ごりよう",
+            "pos": "名詞/敬語",
+            "meaning": "使用、利用的禮貌說法"
+          },
+          {
+            "surface": "ですか",
+            "reading": "ですか",
+            "pos": "助動詞+助詞",
+            "meaning": "禮貌疑問句結尾"
+          }
+        ],
+        "grammar_note": "「ご利用ですか」是店員常用的禮貌問法，比直接說「使いますか」更像服務業日文。"
+      },
+      {
+        "speaker": "you",
+        "native": "不用，沒關係。",
+        "target": "大丈夫です。袋はいりません。",
+        "breakdown": [
+          {
+            "surface": "大丈夫",
+            "reading": "だいじょうぶ",
+            "pos": "形容動詞",
+            "meaning": "沒關係、不需要、可以"
+          },
+          {
+            "surface": "です",
+            "reading": "です",
+            "pos": "助動詞",
+            "meaning": "禮貌結尾"
+          },
+          {
+            "surface": "袋",
+            "reading": "ふくろ",
+            "pos": "名詞",
+            "meaning": "袋子"
+          },
+          {
+            "surface": "いりません",
+            "reading": "いりません",
+            "pos": "動詞",
+            "meaning": "不需要"
+          }
+        ],
+        "grammar_note": "「大丈夫です」在店員詢問時常表示不用；後面補「いりません」可以避免誤會。"
+      },
+      {
+        "speaker": "other",
+        "native": "便當要幫您加熱嗎？",
+        "target": "お弁当、温めますか。",
+        "breakdown": [
+          {
+            "surface": "お弁当",
+            "reading": "おべんとう",
+            "pos": "名詞",
+            "meaning": "便當"
+          },
+          {
+            "surface": "温めます",
+            "reading": "あたためます",
+            "pos": "動詞",
+            "meaning": "加熱、微波"
+          },
+          {
+            "surface": "か",
+            "reading": "か",
+            "pos": "助詞",
+            "meaning": "疑問"
+          }
+        ],
+        "grammar_note": "便利商店最常聽到的句子之一。「温めますか」就是是否要微波加熱。"
+      },
+      {
+        "speaker": "you",
+        "native": "麻煩幫我加熱。",
+        "target": "お願いします。温めてください。",
+        "breakdown": [
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "片語",
+            "meaning": "麻煩你、拜託"
+          },
+          {
+            "surface": "温めて",
+            "reading": "あたためて",
+            "pos": "動詞て形",
+            "meaning": "加熱後接請求"
+          },
+          {
+            "surface": "ください",
+            "reading": "ください",
+            "pos": "補助動詞",
+            "meaning": "請對方做某事"
+          }
+        ],
+        "grammar_note": "「お願いします」可以單獨回答請對方幫忙；「〜てください」明確提出請求。"
+      },
+      {
+        "speaker": "other",
+        "native": "付款方式要怎麼付？",
+        "target": "お支払い方法はいかがなさいますか。",
+        "breakdown": [
+          {
+            "surface": "お支払い",
+            "reading": "おしはらい",
+            "pos": "名詞/敬語",
+            "meaning": "付款"
+          },
+          {
+            "surface": "方法",
+            "reading": "ほうほう",
+            "pos": "名詞",
+            "meaning": "方法、方式"
+          },
+          {
+            "surface": "いかが",
+            "reading": "いかが",
+            "pos": "副詞",
+            "meaning": "如何、怎麼樣的禮貌說法"
+          },
+          {
+            "surface": "なさいます",
+            "reading": "なさいます",
+            "pos": "尊敬語動詞",
+            "meaning": "する 的尊敬語"
+          }
+        ],
+        "grammar_note": "「いかがなさいますか」是很禮貌的「要怎麼做」。收銀台常用。"
+      },
+      {
+        "speaker": "you",
+        "native": "我用信用卡付款。",
+        "target": "クレジットカードでお願いします。",
+        "breakdown": [
+          {
+            "surface": "クレジットカード",
+            "reading": "クレジットカード",
+            "pos": "名詞",
+            "meaning": "信用卡"
+          },
+          {
+            "surface": "で",
+            "reading": "で",
+            "pos": "助詞",
+            "meaning": "表示使用的方式或工具"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "片語",
+            "meaning": "麻煩用這個方式處理"
+          }
+        ],
+        "grammar_note": "「〜でお願いします」表示用某種方式處理，付款、寄送、預約都很好用。"
+      },
+      {
+        "speaker": "other",
+        "native": "請插入卡片。",
+        "target": "カードを差し込んでください。",
+        "breakdown": [
+          {
+            "surface": "カード",
+            "reading": "カード",
+            "pos": "名詞",
+            "meaning": "卡片"
+          },
+          {
+            "surface": "を",
+            "reading": "を",
+            "pos": "助詞",
+            "meaning": "受詞標記"
+          },
+          {
+            "surface": "差し込んで",
+            "reading": "さしこんで",
+            "pos": "動詞て形",
+            "meaning": "插入"
+          },
+          {
+            "surface": "ください",
+            "reading": "ください",
+            "pos": "補助動詞",
+            "meaning": "請"
+          }
+        ],
+        "grammar_note": "「差し込む」是插入卡片、插頭的動詞；刷卡機常會顯示這個字。"
+      },
+      {
+        "speaker": "other",
+        "native": "需要收據嗎？",
+        "target": "レシートはご利用ですか。",
+        "breakdown": [
+          {
+            "surface": "レシート",
+            "reading": "レシート",
+            "pos": "名詞",
+            "meaning": "收據"
+          },
+          {
+            "surface": "は",
+            "reading": "は",
+            "pos": "助詞",
+            "meaning": "主題提示"
+          },
+          {
+            "surface": "ご利用",
+            "reading": "ごりよう",
+            "pos": "名詞/敬語",
+            "meaning": "使用、需要的禮貌說法"
+          },
+          {
+            "surface": "ですか",
+            "reading": "ですか",
+            "pos": "助動詞+助詞",
+            "meaning": "疑問結尾"
+          }
+        ],
+        "grammar_note": "店員可能用「ご利用ですか」問收據、袋子、筷子等是否需要。"
+      },
+      {
+        "speaker": "you",
+        "native": "不用收據，謝謝。",
+        "target": "レシートは大丈夫です。ありがとうございます。",
+        "breakdown": [
+          {
+            "surface": "レシート",
+            "reading": "レシート",
+            "pos": "名詞",
+            "meaning": "收據"
+          },
+          {
+            "surface": "は",
+            "reading": "は",
+            "pos": "助詞",
+            "meaning": "主題提示"
+          },
+          {
+            "surface": "大丈夫",
+            "reading": "だいじょうぶ",
+            "pos": "形容動詞",
+            "meaning": "不用、沒關係"
+          },
+          {
+            "surface": "ありがとうございます",
+            "reading": "ありがとうございます",
+            "pos": "片語",
+            "meaning": "謝謝"
+          }
+        ],
+        "grammar_note": "「〜は大丈夫です」是自然口語的拒絕方式，語氣比「いりません」柔和。"
+      },
+      {
+        "speaker": "other",
+        "native": "久等了，謝謝光臨。",
+        "target": "お待たせしました。ありがとうございました。",
+        "breakdown": [
+          {
+            "surface": "お待たせしました",
+            "reading": "おまたせしました",
+            "pos": "片語",
+            "meaning": "讓您久等了"
+          },
+          {
+            "surface": "ありがとうございました",
+            "reading": "ありがとうございました",
+            "pos": "片語",
+            "meaning": "謝謝光臨，交易完成後的謝謝"
+          }
+        ],
+        "grammar_note": "「お待たせしました」是讓客人等待後的固定道歉句。"
+      }
+    ]
+  },
+  {
+    "id": "train_station_help",
+    "title": "車站問路與轉乘",
+    "context": "在日本車站找不到月台，想確認路線、轉乘、末班車和是否需要補票",
+    "lines": [
+      {
+        "speaker": "you",
+        "native": "不好意思，請問去新宿要搭哪一班？",
+        "target": "すみません、新宿へ行くにはどれに乗ればいいですか。",
+        "breakdown": [
+          {
+            "surface": "すみません",
+            "reading": "すみません",
+            "pos": "感嘆詞",
+            "meaning": "不好意思，用來開口詢問"
+          },
+          {
+            "surface": "新宿",
+            "reading": "しんじゅく",
+            "pos": "地名",
+            "meaning": "新宿"
+          },
+          {
+            "surface": "へ",
+            "reading": "へ",
+            "pos": "助詞",
+            "meaning": "往某方向"
+          },
+          {
+            "surface": "行くには",
+            "reading": "いくには",
+            "pos": "片語",
+            "meaning": "要去的話"
+          },
+          {
+            "surface": "どれ",
+            "reading": "どれ",
+            "pos": "疑問詞",
+            "meaning": "哪一個"
+          },
+          {
+            "surface": "乗ればいい",
+            "reading": "のればいい",
+            "pos": "條件形+いい",
+            "meaning": "搭哪個才好"
+          }
+        ],
+        "grammar_note": "「〜にはどれに乗ればいいですか」是問交通方式的實用句型。"
+      },
+      {
+        "speaker": "other",
+        "native": "請搭這邊的快速列車。",
+        "target": "こちらの快速に乗ってください。",
+        "breakdown": [
+          {
+            "surface": "こちら",
+            "reading": "こちら",
+            "pos": "代名詞",
+            "meaning": "這邊，禮貌說法"
+          },
+          {
+            "surface": "快速",
+            "reading": "かいそく",
+            "pos": "名詞",
+            "meaning": "快速列車"
+          },
+          {
+            "surface": "に",
+            "reading": "に",
+            "pos": "助詞",
+            "meaning": "表示搭乘對象"
+          },
+          {
+            "surface": "乗ってください",
+            "reading": "のってください",
+            "pos": "動詞て形+ください",
+            "meaning": "請搭乘"
+          }
+        ],
+        "grammar_note": "「快速」是比普通車停站少的列車；在車站聽懂這個很重要。"
+      },
+      {
+        "speaker": "you",
+        "native": "這班車會到新宿嗎？",
+        "target": "この電車は新宿まで行きますか。",
+        "breakdown": [
+          {
+            "surface": "この",
+            "reading": "この",
+            "pos": "連體詞",
+            "meaning": "這個"
+          },
+          {
+            "surface": "電車",
+            "reading": "でんしゃ",
+            "pos": "名詞",
+            "meaning": "電車"
+          },
+          {
+            "surface": "新宿まで",
+            "reading": "しんじゅくまで",
+            "pos": "名詞+助詞",
+            "meaning": "到新宿為止"
+          },
+          {
+            "surface": "行きますか",
+            "reading": "いきますか",
+            "pos": "動詞",
+            "meaning": "會去嗎"
+          }
+        ],
+        "grammar_note": "「〜まで行きますか」可以確認交通工具是否到目的地。"
+      },
+      {
+        "speaker": "other",
+        "native": "會到。不需要轉車。",
+        "target": "はい、行きます。乗り換えは必要ありません。",
+        "breakdown": [
+          {
+            "surface": "はい",
+            "reading": "はい",
+            "pos": "感嘆詞",
+            "meaning": "是、會"
+          },
+          {
+            "surface": "行きます",
+            "reading": "いきます",
+            "pos": "動詞",
+            "meaning": "會去"
+          },
+          {
+            "surface": "乗り換え",
+            "reading": "のりかえ",
+            "pos": "名詞",
+            "meaning": "轉乘"
+          },
+          {
+            "surface": "必要ありません",
+            "reading": "ひつようありません",
+            "pos": "片語",
+            "meaning": "不需要"
+          }
+        ],
+        "grammar_note": "「乗り換え」是轉乘；「必要ありません」是正式又清楚的「不需要」。"
+      },
+      {
+        "speaker": "you",
+        "native": "月台在哪裡？",
+        "target": "ホームはどこですか。",
+        "breakdown": [
+          {
+            "surface": "ホーム",
+            "reading": "ホーム",
+            "pos": "名詞",
+            "meaning": "月台"
+          },
+          {
+            "surface": "は",
+            "reading": "は",
+            "pos": "助詞",
+            "meaning": "主題提示"
+          },
+          {
+            "surface": "どこ",
+            "reading": "どこ",
+            "pos": "疑問詞",
+            "meaning": "哪裡"
+          },
+          {
+            "surface": "ですか",
+            "reading": "ですか",
+            "pos": "助動詞+助詞",
+            "meaning": "禮貌疑問"
+          }
+        ],
+        "grammar_note": "日文的月台常說「ホーム」，不是直譯的「平台」。"
+      },
+      {
+        "speaker": "other",
+        "native": "三號月台，請上樓。",
+        "target": "三番線です。階段を上がってください。",
+        "breakdown": [
+          {
+            "surface": "三番線",
+            "reading": "さんばんせん",
+            "pos": "名詞",
+            "meaning": "三號月台/三號線"
+          },
+          {
+            "surface": "です",
+            "reading": "です",
+            "pos": "助動詞",
+            "meaning": "是"
+          },
+          {
+            "surface": "階段",
+            "reading": "かいだん",
+            "pos": "名詞",
+            "meaning": "樓梯"
+          },
+          {
+            "surface": "を",
+            "reading": "を",
+            "pos": "助詞",
+            "meaning": "經過的路徑"
+          },
+          {
+            "surface": "上がってください",
+            "reading": "あがってください",
+            "pos": "動詞て形+ください",
+            "meaning": "請上去"
+          }
+        ],
+        "grammar_note": "「番線」是月台線號；「三番線」就是三號月台。"
+      },
+      {
+        "speaker": "you",
+        "native": "現在這張票可以用嗎？",
+        "target": "この切符で大丈夫ですか。",
+        "breakdown": [
+          {
+            "surface": "この",
+            "reading": "この",
+            "pos": "連體詞",
+            "meaning": "這張、這個"
+          },
+          {
+            "surface": "切符",
+            "reading": "きっぷ",
+            "pos": "名詞",
+            "meaning": "車票"
+          },
+          {
+            "surface": "で",
+            "reading": "で",
+            "pos": "助詞",
+            "meaning": "用、憑"
+          },
+          {
+            "surface": "大丈夫ですか",
+            "reading": "だいじょうぶですか",
+            "pos": "片語",
+            "meaning": "可以嗎、沒問題嗎"
+          }
+        ],
+        "grammar_note": "「〜で大丈夫ですか」可以確認票、付款方式、文件是否可用。"
+      },
+      {
+        "speaker": "other",
+        "native": "可以。如果超過票價，出站時補票。",
+        "target": "大丈夫です。足りない場合は、改札を出る時に精算してください。",
+        "breakdown": [
+          {
+            "surface": "足りない",
+            "reading": "たりない",
+            "pos": "動詞/形容詞",
+            "meaning": "不夠"
+          },
+          {
+            "surface": "場合",
+            "reading": "ばあい",
+            "pos": "名詞",
+            "meaning": "情況"
+          },
+          {
+            "surface": "改札",
+            "reading": "かいさつ",
+            "pos": "名詞",
+            "meaning": "剪票口、閘門"
+          },
+          {
+            "surface": "出る時",
+            "reading": "でるとき",
+            "pos": "片語",
+            "meaning": "出去的時候"
+          },
+          {
+            "surface": "精算してください",
+            "reading": "せいさんしてください",
+            "pos": "名詞+する",
+            "meaning": "請補票/結清差額"
+          }
+        ],
+        "grammar_note": "「精算」是補票或結清差額，在日本車站很常見。"
+      },
+      {
+        "speaker": "you",
+        "native": "請問末班車是幾點？",
+        "target": "終電は何時ですか。",
+        "breakdown": [
+          {
+            "surface": "終電",
+            "reading": "しゅうでん",
+            "pos": "名詞",
+            "meaning": "末班電車"
+          },
+          {
+            "surface": "は",
+            "reading": "は",
+            "pos": "助詞",
+            "meaning": "主題提示"
+          },
+          {
+            "surface": "何時",
+            "reading": "なんじ",
+            "pos": "疑問詞",
+            "meaning": "幾點"
+          },
+          {
+            "surface": "ですか",
+            "reading": "ですか",
+            "pos": "助動詞+助詞",
+            "meaning": "禮貌疑問"
+          }
+        ],
+        "grammar_note": "「終電」是末班電車，夜間移動一定要會。"
+      },
+      {
+        "speaker": "other",
+        "native": "往新宿的末班車是十二點十分。",
+        "target": "新宿方面の終電は十二時十分です。",
+        "breakdown": [
+          {
+            "surface": "新宿方面",
+            "reading": "しんじゅくほうめん",
+            "pos": "名詞",
+            "meaning": "往新宿方向"
+          },
+          {
+            "surface": "の",
+            "reading": "の",
+            "pos": "助詞",
+            "meaning": "的"
+          },
+          {
+            "surface": "終電",
+            "reading": "しゅうでん",
+            "pos": "名詞",
+            "meaning": "末班車"
+          },
+          {
+            "surface": "十二時十分",
+            "reading": "じゅうにじじゅっぷん",
+            "pos": "時間",
+            "meaning": "十二點十分"
+          },
+          {
+            "surface": "です",
+            "reading": "です",
+            "pos": "助動詞",
+            "meaning": "是"
+          }
+        ],
+        "grammar_note": "「〜方面」表示往某方向，是車站廣播常見說法。"
+      }
+    ]
+  },
+  {
+    "id": "hotel_checkin",
+    "title": "飯店入住",
+    "context": "到飯店 check-in，確認訂房、寄放行李、早餐時間、Wi-Fi 和退房時間",
+    "lines": [
+      {
+        "speaker": "you",
+        "native": "你好，我想辦理入住。",
+        "target": "こんにちは、チェックインをお願いします。",
+        "breakdown": [
+          {
+            "surface": "こんにちは",
+            "reading": "こんにちは",
+            "pos": "挨拶",
+            "meaning": "你好"
+          },
+          {
+            "surface": "チェックイン",
+            "reading": "チェックイン",
+            "pos": "名詞",
+            "meaning": "入住"
+          },
+          {
+            "surface": "を",
+            "reading": "を",
+            "pos": "助詞",
+            "meaning": "受詞標記"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "片語",
+            "meaning": "麻煩辦理"
+          }
+        ],
+        "grammar_note": "「〜をお願いします」是旅行中萬用的請求句型。"
+      },
+      {
+        "speaker": "other",
+        "native": "請問有訂房嗎？",
+        "target": "ご予約はございますか。",
+        "breakdown": [
+          {
+            "surface": "ご予約",
+            "reading": "ごよやく",
+            "pos": "名詞/敬語",
+            "meaning": "預約、訂房"
+          },
+          {
+            "surface": "は",
+            "reading": "は",
+            "pos": "助詞",
+            "meaning": "主題提示"
+          },
+          {
+            "surface": "ございますか",
+            "reading": "ございますか",
+            "pos": "動詞",
+            "meaning": "有嗎，ありますか 的禮貌說法"
+          }
+        ],
+        "grammar_note": "「ございますか」是服務業常用的禮貌說法，比「ありますか」更正式。"
+      },
+      {
+        "speaker": "you",
+        "native": "有，用王的名字訂的。",
+        "target": "はい、王の名前で予約しています。",
+        "breakdown": [
+          {
+            "surface": "はい",
+            "reading": "はい",
+            "pos": "感嘆詞",
+            "meaning": "是"
+          },
+          {
+            "surface": "王",
+            "reading": "おう",
+            "pos": "姓名",
+            "meaning": "王"
+          },
+          {
+            "surface": "の名前で",
+            "reading": "のなまえで",
+            "pos": "片語",
+            "meaning": "用某人的名字"
+          },
+          {
+            "surface": "予約しています",
+            "reading": "よやくしています",
+            "pos": "動詞",
+            "meaning": "已經預約/訂房"
+          }
+        ],
+        "grammar_note": "「〜の名前で予約しています」表示用某個名字訂位或訂房。"
+      },
+      {
+        "speaker": "other",
+        "native": "請出示護照。",
+        "target": "パスポートを拝見してもよろしいですか。",
+        "breakdown": [
+          {
+            "surface": "パスポート",
+            "reading": "パスポート",
+            "pos": "名詞",
+            "meaning": "護照"
+          },
+          {
+            "surface": "を",
+            "reading": "を",
+            "pos": "助詞",
+            "meaning": "受詞標記"
+          },
+          {
+            "surface": "拝見しても",
+            "reading": "はいけんしても",
+            "pos": "謙讓語",
+            "meaning": "可以讓我看一下"
+          },
+          {
+            "surface": "よろしいですか",
+            "reading": "よろしいですか",
+            "pos": "片語",
+            "meaning": "可以嗎，禮貌說法"
+          }
+        ],
+        "grammar_note": "「拝見してもよろしいですか」是很禮貌的「可以看一下嗎」。"
+      },
+      {
+        "speaker": "you",
+        "native": "好的，這是我的護照。",
+        "target": "はい、こちらがパスポートです。",
+        "breakdown": [
+          {
+            "surface": "はい",
+            "reading": "はい",
+            "pos": "感嘆詞",
+            "meaning": "好的"
+          },
+          {
+            "surface": "こちら",
+            "reading": "こちら",
+            "pos": "代名詞",
+            "meaning": "這個、這邊，禮貌說法"
+          },
+          {
+            "surface": "が",
+            "reading": "が",
+            "pos": "助詞",
+            "meaning": "主語標記"
+          },
+          {
+            "surface": "パスポート",
+            "reading": "パスポート",
+            "pos": "名詞",
+            "meaning": "護照"
+          },
+          {
+            "surface": "です",
+            "reading": "です",
+            "pos": "助動詞",
+            "meaning": "是"
+          }
+        ],
+        "grammar_note": "遞東西時用「こちらが〜です」很自然，也比只說「はい」清楚。"
+      },
+      {
+        "speaker": "you",
+        "native": "入住前可以寄放行李嗎？",
+        "target": "チェックイン前に荷物を預けてもいいですか。",
+        "breakdown": [
+          {
+            "surface": "チェックイン前",
+            "reading": "チェックインまえ",
+            "pos": "名詞",
+            "meaning": "入住前"
+          },
+          {
+            "surface": "に",
+            "reading": "に",
+            "pos": "助詞",
+            "meaning": "時間點"
+          },
+          {
+            "surface": "荷物",
+            "reading": "にもつ",
+            "pos": "名詞",
+            "meaning": "行李"
+          },
+          {
+            "surface": "を",
+            "reading": "を",
+            "pos": "助詞",
+            "meaning": "受詞標記"
+          },
+          {
+            "surface": "預けてもいいですか",
+            "reading": "あずけてもいいですか",
+            "pos": "動詞+許可",
+            "meaning": "可以寄放嗎"
+          }
+        ],
+        "grammar_note": "「預ける」是寄放行李、託運物品的核心動詞。"
+      },
+      {
+        "speaker": "other",
+        "native": "可以，請放在這邊。",
+        "target": "はい、お預かりできます。こちらに置いてください。",
+        "breakdown": [
+          {
+            "surface": "お預かりできます",
+            "reading": "おあずかりできます",
+            "pos": "動詞/敬語",
+            "meaning": "可以幫您保管"
+          },
+          {
+            "surface": "こちら",
+            "reading": "こちら",
+            "pos": "代名詞",
+            "meaning": "這裡"
+          },
+          {
+            "surface": "に",
+            "reading": "に",
+            "pos": "助詞",
+            "meaning": "放置位置"
+          },
+          {
+            "surface": "置いてください",
+            "reading": "おいてください",
+            "pos": "動詞て形+ください",
+            "meaning": "請放"
+          }
+        ],
+        "grammar_note": "「お預かりできます」是櫃台人員說「可以幫您保管」的自然說法。"
+      },
+      {
+        "speaker": "you",
+        "native": "請問早餐是幾點到幾點？",
+        "target": "朝食は何時から何時までですか。",
+        "breakdown": [
+          {
+            "surface": "朝食",
+            "reading": "ちょうしょく",
+            "pos": "名詞",
+            "meaning": "早餐"
+          },
+          {
+            "surface": "は",
+            "reading": "は",
+            "pos": "助詞",
+            "meaning": "主題提示"
+          },
+          {
+            "surface": "何時から",
+            "reading": "なんじから",
+            "pos": "時間疑問",
+            "meaning": "從幾點"
+          },
+          {
+            "surface": "何時まで",
+            "reading": "なんじまで",
+            "pos": "時間疑問",
+            "meaning": "到幾點"
+          },
+          {
+            "surface": "ですか",
+            "reading": "ですか",
+            "pos": "助動詞+助詞",
+            "meaning": "疑問"
+          }
+        ],
+        "grammar_note": "「何時から何時まで」是問營業時間、早餐時間、使用時間的固定句型。"
+      },
+      {
+        "speaker": "other",
+        "native": "早上七點到十點，在二樓。",
+        "target": "朝七時から十時まで、二階でございます。",
+        "breakdown": [
+          {
+            "surface": "朝七時",
+            "reading": "あさしちじ",
+            "pos": "時間",
+            "meaning": "早上七點"
+          },
+          {
+            "surface": "から",
+            "reading": "から",
+            "pos": "助詞",
+            "meaning": "從"
+          },
+          {
+            "surface": "十時まで",
+            "reading": "じゅうじまで",
+            "pos": "時間",
+            "meaning": "到十點"
+          },
+          {
+            "surface": "二階",
+            "reading": "にかい",
+            "pos": "名詞",
+            "meaning": "二樓"
+          },
+          {
+            "surface": "でございます",
+            "reading": "でございます",
+            "pos": "丁寧語",
+            "meaning": "です 的更禮貌說法"
+          }
+        ],
+        "grammar_note": "「〜でございます」是服務業常用的正式版「です」。"
+      },
+      {
+        "speaker": "you",
+        "native": "Wi-Fi 密碼在哪裡看？",
+        "target": "Wi-Fiのパスワードはどこで確認できますか。",
+        "breakdown": [
+          {
+            "surface": "Wi-Fi",
+            "reading": "ワイファイ",
+            "pos": "名詞",
+            "meaning": "無線網路"
+          },
+          {
+            "surface": "の",
+            "reading": "の",
+            "pos": "助詞",
+            "meaning": "的"
+          },
+          {
+            "surface": "パスワード",
+            "reading": "パスワード",
+            "pos": "名詞",
+            "meaning": "密碼"
+          },
+          {
+            "surface": "どこで",
+            "reading": "どこで",
+            "pos": "疑問詞+助詞",
+            "meaning": "在哪裡"
+          },
+          {
+            "surface": "確認できますか",
+            "reading": "かくにんできますか",
+            "pos": "動詞",
+            "meaning": "可以確認嗎"
+          }
+        ],
+        "grammar_note": "「確認できますか」可以問資訊在哪裡確認，也可用在預約、時間、地址。"
       }
     ]
   }

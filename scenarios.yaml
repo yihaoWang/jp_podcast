@@ -4,9 +4,58 @@ native_language: 繁體中文
 sentences_per_scenario: 12
 
 scenarios:
+  - id: restaurant_full
+    title: 在餐廳吃飯
+    context: 在日式餐廳從入座、確認預約、點餐、加點到結帳的完整流程
+    roles:
+      you: 顧客
+      other: 店員
+
   - id: cafe_order
     title: 在咖啡廳點餐
     context: 你走進一家日式咖啡廳，要點一杯飲料跟甜點
+    roles:
+      you: 顧客
+      other: 店員
+
+  - id: izakaya_with_friends
+    title: 居酒屋和朋友點餐
+    context: 跟日本朋友到居酒屋，想點飲料、小菜、烤物，也要自然地請店員推薦
+    roles:
+      you: 顧客
+      other: 店員
+
+  - id: convenience_store_payment
+    title: 便利商店付款
+    context: 在便利商店買東西，處理袋子、加熱便當、刷卡、集點和收據
+    roles:
+      you: 顧客
+      other: 店員
+
+  - id: train_station_help
+    title: 車站問路與轉乘
+    context: 在日本車站找不到月台，想確認路線、轉乘、末班車和是否需要補票
+    roles:
+      you: 旅客
+      other: 站務員
+
+  - id: hotel_checkin
+    title: 飯店入住
+    context: 到飯店 check-in，確認訂房、寄放行李、早餐時間、Wi-Fi 和退房時間
+    roles:
+      you: 住客
+      other: 櫃台人員
+
+  - id: pharmacy_symptoms
+    title: 藥局買感冒藥
+    context: 到藥局描述喉嚨痛、鼻塞、咳嗽，詢問非處方藥和服用方式
+    roles:
+      you: 顧客
+      other: 藥師
+
+  - id: phone_reservation
+    title: 打電話預約餐廳
+    context: 用電話預約餐廳，確認日期、時間、人數、名字、電話和是否有禁菸座位
     roles:
       you: 顧客
       other: 店員
@@ -17,6 +66,13 @@ scenarios:
     roles:
       you: 工程師
       other: 主管
+
+  - id: work_status_blocker
+    title: 工作進度與卡關回報
+    context: 在 standup 中說明昨天完成的事、今天計畫、目前卡住的問題，並請同事協助
+    roles:
+      you: 工程師
+      other: 同事
 
   - id: ask_directions
     title: 問路

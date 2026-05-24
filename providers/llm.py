@@ -1,6 +1,11 @@
 from abc import ABC, abstractmethod
 import os
+from typing import Optional
 from anthropic import Anthropic
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 
 class LLMProvider(ABC):
@@ -9,9 +14,9 @@ class LLMProvider(ABC):
 
 
 class ClaudeProvider(LLMProvider):
-    def __init__(self, model: str = "claude-sonnet-4-6"):
+    def __init__(self, model: Optional[str] = None):
         self.client = Anthropic()
-        self.model = model
+        self.model = model or os.getenv("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 
     def complete(self, system: str, user: str) -> str:
         resp = self.client.messages.create(

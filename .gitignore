@@ -1,4 +1,8 @@
 .wrangler/
+.env
+.env.*
+!.env.example
+__pycache__/
 web/dist/
 web/public/audio/
 web/node_modules/

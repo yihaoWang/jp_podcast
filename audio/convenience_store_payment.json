@@ -1,0 +1,329 @@
+{
+  "id": "convenience_store_payment",
+  "title": "便利商店付款",
+  "context": "在便利商店買東西，處理袋子、加熱便當、刷卡、集點和收據",
+  "language_code": "ja",
+  "duration": 54.967,
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "other",
+      "native": "歡迎光臨。袋子需要嗎？",
+      "target": "いらっしゃいませ。レジ袋はご利用ですか。",
+      "breakdown": [
+        {
+          "surface": "いらっしゃいませ",
+          "reading": "いらっしゃいませ",
+          "pos": "挨拶",
+          "meaning": "歡迎光臨，服務業固定招呼語"
+        },
+        {
+          "surface": "レジ袋",
+          "reading": "レジぶくろ",
+          "pos": "名詞",
+          "meaning": "購物袋、塑膠袋"
+        },
+        {
+          "surface": "ご利用",
+          "reading": "ごりよう",
+          "pos": "名詞/敬語",
+          "meaning": "使用、利用的禮貌說法"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "pos": "助動詞+助詞",
+          "meaning": "禮貌疑問句結尾"
+        }
+      ],
+      "grammar_note": "「ご利用ですか」是店員常用的禮貌問法，比直接說「使いますか」更像服務業日文。",
+      "start": 0,
+      "end": 4.224
+    },
+    {
+      "order": 2,
+      "speaker": "you",
+      "native": "不用，沒關係。",
+      "target": "大丈夫です。袋はいりません。",
+      "breakdown": [
+        {
+          "surface": "大丈夫",
+          "reading": "だいじょうぶ",
+          "pos": "形容動詞",
+          "meaning": "沒關係、不需要、可以"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "pos": "助動詞",
+          "meaning": "禮貌結尾"
+        },
+        {
+          "surface": "袋",
+          "reading": "ふくろ",
+          "pos": "名詞",
+          "meaning": "袋子"
+        },
+        {
+          "surface": "いりません",
+          "reading": "いりません",
+          "pos": "動詞",
+          "meaning": "不需要"
+        }
+      ],
+      "grammar_note": "「大丈夫です」在店員詢問時常表示不用；後面補「いりません」可以避免誤會。",
+      "start": 6.224,
+      "end": 10.232
+    },
+    {
+      "order": 3,
+      "speaker": "other",
+      "native": "便當要幫您加熱嗎？",
+      "target": "お弁当、温めますか。",
+      "breakdown": [
+        {
+          "surface": "お弁当",
+          "reading": "おべんとう",
+          "pos": "名詞",
+          "meaning": "便當"
+        },
+        {
+          "surface": "温めます",
+          "reading": "あたためます",
+          "pos": "動詞",
+          "meaning": "加熱、微波"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "pos": "助詞",
+          "meaning": "疑問"
+        }
+      ],
+      "grammar_note": "便利商店最常聽到的句子之一。「温めますか」就是是否要微波加熱。",
+      "start": 12.232,
+      "end": 15.04
+    },
+    {
+      "order": 4,
+      "speaker": "you",
+      "native": "麻煩幫我加熱。",
+      "target": "お願いします。温めてください。",
+      "breakdown": [
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "片語",
+          "meaning": "麻煩你、拜託"
+        },
+        {
+          "surface": "温めて",
+          "reading": "あたためて",
+          "pos": "動詞て形",
+          "meaning": "加熱後接請求"
+        },
+        {
+          "surface": "ください",
+          "reading": "ください",
+          "pos": "補助動詞",
+          "meaning": "請對方做某事"
+        }
+      ],
+      "grammar_note": "「お願いします」可以單獨回答請對方幫忙；「〜てください」明確提出請求。",
+      "start": 17.04,
+      "end": 21.024
+    },
+    {
+      "order": 5,
+      "speaker": "other",
+      "native": "付款方式要怎麼付？",
+      "target": "お支払い方法はいかがなさいますか。",
+      "breakdown": [
+        {
+          "surface": "お支払い",
+          "reading": "おしはらい",
+          "pos": "名詞/敬語",
+          "meaning": "付款"
+        },
+        {
+          "surface": "方法",
+          "reading": "ほうほう",
+          "pos": "名詞",
+          "meaning": "方法、方式"
+        },
+        {
+          "surface": "いかが",
+          "reading": "いかが",
+          "pos": "副詞",
+          "meaning": "如何、怎麼樣的禮貌說法"
+        },
+        {
+          "surface": "なさいます",
+          "reading": "なさいます",
+          "pos": "尊敬語動詞",
+          "meaning": "する 的尊敬語"
+        }
+      ],
+      "grammar_note": "「いかがなさいますか」是很禮貌的「要怎麼做」。收銀台常用。",
+      "start": 23.024,
+      "end": 26.264
+    },
+    {
+      "order": 6,
+      "speaker": "you",
+      "native": "我用信用卡付款。",
+      "target": "クレジットカードでお願いします。",
+      "breakdown": [
+        {
+          "surface": "クレジットカード",
+          "reading": "クレジットカード",
+          "pos": "名詞",
+          "meaning": "信用卡"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "pos": "助詞",
+          "meaning": "表示使用的方式或工具"
+        },
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "片語",
+          "meaning": "麻煩用這個方式處理"
+        }
+      ],
+      "grammar_note": "「〜でお願いします」表示用某種方式處理，付款、寄送、預約都很好用。",
+      "start": 28.264,
+      "end": 31.264
+    },
+    {
+      "order": 7,
+      "speaker": "other",
+      "native": "請插入卡片。",
+      "target": "カードを差し込んでください。",
+      "breakdown": [
+        {
+          "surface": "カード",
+          "reading": "カード",
+          "pos": "名詞",
+          "meaning": "卡片"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "pos": "助詞",
+          "meaning": "受詞標記"
+        },
+        {
+          "surface": "差し込んで",
+          "reading": "さしこんで",
+          "pos": "動詞て形",
+          "meaning": "插入"
+        },
+        {
+          "surface": "ください",
+          "reading": "ください",
+          "pos": "補助動詞",
+          "meaning": "請"
+        }
+      ],
+      "grammar_note": "「差し込む」是插入卡片、插頭的動詞；刷卡機常會顯示這個字。",
+      "start": 33.264,
+      "end": 35.688
+    },
+    {
+      "order": 8,
+      "speaker": "other",
+      "native": "需要收據嗎？",
+      "target": "レシートはご利用ですか。",
+      "breakdown": [
+        {
+          "surface": "レシート",
+          "reading": "レシート",
+          "pos": "名詞",
+          "meaning": "收據"
+        },
+        {
+          "surface": "は",
+          "reading": "は",
+          "pos": "助詞",
+          "meaning": "主題提示"
+        },
+        {
+          "surface": "ご利用",
+          "reading": "ごりよう",
+          "pos": "名詞/敬語",
+          "meaning": "使用、需要的禮貌說法"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "pos": "助動詞+助詞",
+          "meaning": "疑問結尾"
+        }
+      ],
+      "grammar_note": "店員可能用「ご利用ですか」問收據、袋子、筷子等是否需要。",
+      "start": 37.688,
+      "end": 40.112
+    },
+    {
+      "order": 9,
+      "speaker": "you",
+      "native": "不用收據，謝謝。",
+      "target": "レシートは大丈夫です。ありがとうございます。",
+      "breakdown": [
+        {
+          "surface": "レシート",
+          "reading": "レシート",
+          "pos": "名詞",
+          "meaning": "收據"
+        },
+        {
+          "surface": "は",
+          "reading": "は",
+          "pos": "助詞",
+          "meaning": "主題提示"
+        },
+        {
+          "surface": "大丈夫",
+          "reading": "だいじょうぶ",
+          "pos": "形容動詞",
+          "meaning": "不用、沒關係"
+        },
+        {
+          "surface": "ありがとうございます",
+          "reading": "ありがとうございます",
+          "pos": "片語",
+          "meaning": "謝謝"
+        }
+      ],
+      "grammar_note": "「〜は大丈夫です」是自然口語的拒絕方式，語氣比「いりません」柔和。",
+      "start": 42.112,
+      "end": 46.96
+    },
+    {
+      "order": 10,
+      "speaker": "other",
+      "native": "久等了，謝謝光臨。",
+      "target": "お待たせしました。ありがとうございました。",
+      "breakdown": [
+        {
+          "surface": "お待たせしました",
+          "reading": "おまたせしました",
+          "pos": "片語",
+          "meaning": "讓您久等了"
+        },
+        {
+          "surface": "ありがとうございました",
+          "reading": "ありがとうございました",
+          "pos": "片語",
+          "meaning": "謝謝光臨，交易完成後的謝謝"
+        }
+      ],
+      "grammar_note": "「お待たせしました」是讓客人等待後的固定道歉句。",
+      "start": 48.96,
+      "end": 52.968
+    }
+  ]
+}
