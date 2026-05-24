@@ -24,6 +24,16 @@ const stateLabel = (state: ReviewState, t: typeof messages["zh-TW"]) => {
   return t.newState;
 };
 
+const variantLabel = (variant: AudioVariant, t: typeof messages["zh-TW"]) => {
+  if (variant.mode === "target") return t.variantTarget;
+  if (variant.mode === "shadowing") return t.variantShadowing;
+  if (variant.mode === "slow") return t.variantSlow;
+  if (variant.mode === "native_then_target") return t.variantNativeTarget;
+  if (variant.mode === "target_then_native") return t.variantTargetNative;
+  if (variant.mode === "uploaded_audio") return t.variantUploadedAudio;
+  return variant.label;
+};
+
 const Player = () => {
   const { id } = useParams<{ id: string }>();
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -150,7 +160,7 @@ const Player = () => {
             className="rounded-md border border-neutral-800 bg-neutral-900 px-3 py-1 text-neutral-200"
           >
             {scenario.variants.map((variant) => (
-              <option key={variant.mode} value={variant.mode}>{variant.label}</option>
+              <option key={variant.mode} value={variant.mode}>{variantLabel(variant, t)}</option>
             ))}
           </select>
         )}
