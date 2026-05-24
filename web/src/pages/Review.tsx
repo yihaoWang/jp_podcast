@@ -16,6 +16,13 @@ const stateClass: Record<ReviewState, string> = {
   skipped: "border-yellow-700 bg-yellow-950/50 text-yellow-200",
 };
 
+const stateLabel = (state: ReviewState, t: typeof messages["zh-TW"]) => {
+  if (state === "correct") return t.correctState;
+  if (state === "wrong") return t.wrongState;
+  if (state === "skipped") return t.skippedState;
+  return t.newState;
+};
+
 const Review = () => {
   const [locale, setLocale] = useState<Locale>(getInitialLocale);
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
@@ -91,8 +98,8 @@ const Review = () => {
           <thead className="bg-neutral-900 text-xs uppercase text-neutral-500">
             <tr>
               <th className="px-3 py-2">{t.source}</th>
-              <th className="px-3 py-2">Native</th>
-              <th className="px-3 py-2">Target</th>
+              <th className="px-3 py-2">{t.nativeHeader}</th>
+              <th className="px-3 py-2">{t.targetHeader}</th>
               <th className="px-3 py-2">{t.status}</th>
               <th className="px-3 py-2" />
             </tr>
@@ -107,7 +114,7 @@ const Review = () => {
                   <td className="px-3 py-3 text-neutral-300">{line.native}</td>
                   <td className="px-3 py-3 text-lg text-neutral-100">{isRevealed ? line.target : "••••••"}</td>
                   <td className="px-3 py-3">
-                    <span className={`rounded border px-2 py-1 text-xs ${stateClass[state]}`}>{state}</span>
+                    <span className={`rounded border px-2 py-1 text-xs ${stateClass[state]}`}>{stateLabel(state, t)}</span>
                   </td>
                   <td className="w-60 px-3 py-3">
                     <div className="flex flex-wrap gap-1">
@@ -125,7 +132,7 @@ const Review = () => {
                           onClick={() => mark(scenario, line, next)}
                           className={`rounded border px-2 py-1 text-xs ${stateClass[next]}`}
                         >
-                          {next === "correct" ? t.correct : next === "wrong" ? t.wrong : t.skipped}
+                          {stateLabel(next, t)}
                         </button>
                       ))}
                     </div>

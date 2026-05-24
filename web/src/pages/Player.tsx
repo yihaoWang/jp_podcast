@@ -17,6 +17,13 @@ const stateClass: Record<ReviewState, string> = {
   skipped: "border-yellow-700 bg-yellow-950/50 text-yellow-200",
 };
 
+const stateLabel = (state: ReviewState, t: typeof messages["zh-TW"]) => {
+  if (state === "correct") return t.correctState;
+  if (state === "wrong") return t.wrongState;
+  if (state === "skipped") return t.skippedState;
+  return t.newState;
+};
+
 const Player = () => {
   const { id } = useParams<{ id: string }>();
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -217,7 +224,7 @@ const Player = () => {
                       {line.speaker === "you" ? t.you : t.other}
                     </span>
                     <span className="tabular-nums">{line.start.toFixed(1)}s</span>
-                    <span className={`rounded border px-1.5 py-0.5 ${stateClass[reviewState]}`}>{reviewState}</span>
+                    <span className={`rounded border px-1.5 py-0.5 ${stateClass[reviewState]}`}>{stateLabel(reviewState, t)}</span>
                   </div>
                   {showTarget && (
                     <div className="text-lg leading-relaxed text-neutral-100">{line.target}</div>
