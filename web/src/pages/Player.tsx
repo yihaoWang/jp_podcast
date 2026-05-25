@@ -47,6 +47,7 @@ const Player = () => {
   const [expandedOrders, setExpandedOrders] = useState<Set<number>>(new Set());
   const [autoExpand, setAutoExpand] = useState(false);
   const [loopScenario, setLoopScenario] = useState(false);
+  const [loopLineOrder, setLoopLineOrder] = useState<number | null>(null);
   const [selectedVariant, setSelectedVariant] = useState<AudioVariant | null>(null);
   const [locale, setLocale] = useState<Locale>(getInitialLocale);
   const t = messages[locale];
@@ -103,7 +104,25 @@ const Player = () => {
   };
 
   const repeatCurrent = () => {
-    if (activeIndex >= 0) jumpTo(scenario.lines[activeIndex].start);
+    if (activeIndex < 0) return;
+    const line = scenario.lines[activeIndex];
+    setLoopScenario(false);
+    setLoopLineOrder((current) => (current === line.order ? null : line.order));
+    jumpTo(line.start);
+  };
+
+  const handleTimeUpdate = (audio: HTMLAudioElement) => {
+    const nextTime = audio.currentTime;
+    const loopLine = loopLineOrder === null ? null : scenario.lines.find((line) => line.order === loopLineOrder);
+
+    if (loopLine && (nextTime >= loopLine.end || nextTime < loopLine.start)) {
+      audio.currentTime = loopLine.start;
+      setCurrentTime(loopLine.start);
+      audio.play().catch((e) => console.warn("play failed", e));
+      return;
+    }
+
+    setCurrentTime(nextTime);
   };
 
   const showNative = visibility !== "target";
@@ -155,6 +174,7 @@ const Player = () => {
             onChange={(e) => {
               const next = scenario.variants?.find((v) => v.mode === e.target.value) ?? null;
               setSelectedVariant(next);
+              setLoopLineOrder(null);
               if (audioRef.current) audioRef.current.currentTime = 0;
             }}
             className="rounded-md border border-neutral-800 bg-neutral-900 px-3 py-1 text-neutral-200"
@@ -169,14 +189,22 @@ const Player = () => {
           type="button"
           onClick={repeatCurrent}
           disabled={activeIndex < 0}
-          className="rounded-md border border-neutral-800 bg-neutral-900 px-3 py-1 text-neutral-200 transition hover:border-neutral-600 disabled:opacity-40"
+          className={`rounded-md border px-3 py-1 transition disabled:opacity-40 ${
+            loopLineOrder !== null
+              ? "border-amber-600 bg-amber-950/60 text-amber-100"
+              : "border-neutral-800 bg-neutral-900 text-neutral-200 hover:border-neutral-600"
+          }`}
+          aria-pressed={loopLineOrder !== null}
         >
           {t.repeatLine}
         </button>
 
         <button
           type="button"
-          onClick={() => setLoopScenario((value) => !value)}
+          onClick={() => {
+            setLoopLineOrder(null);
+            setLoopScenario((value) => !value);
+          }}
           className={`rounded-md border px-3 py-1 transition ${
             loopScenario
               ? "border-amber-600 bg-amber-950/60 text-amber-100"
@@ -279,7 +307,7 @@ const Player = () => {
         src={audioSrc}
         controls
         loop={loopScenario}
-        onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
+        onTimeUpdate={(e) => handleTimeUpdate(e.currentTarget)}
         className="mt-4 w-full"
       />
     </div>
