@@ -1,0 +1,475 @@
+{
+  "id": "ramen_shop",
+  "title": "拉麵店用餐",
+  "context": "在日本拉麵店排隊、買食券、調整麵硬度、加點配料、吃完後說謝謝招待",
+  "language_code": "ja",
+  "native_language_code": "zh-TW",
+  "source_type": "generated_scenario",
+  "source_id": "ramen_shop",
+  "difficulty": null,
+  "duration": 52.015,
+  "variants": [
+    {
+      "mode": "target",
+      "label": "Target only",
+      "path": "/audio/ramen_shop.mp3",
+      "duration": 52.015
+    },
+    {
+      "mode": "shadowing",
+      "label": "Shadowing long pause",
+      "path": "/audio/ramen_shop.shadowing.mp3",
+      "duration": 94.015
+    },
+    {
+      "mode": "slow",
+      "label": "Slow target",
+      "path": "/audio/ramen_shop.slow.mp3",
+      "duration": 61.677
+    },
+    {
+      "mode": "native_then_target",
+      "label": "Native then target",
+      "path": "/audio/ramen_shop.native-target.mp3",
+      "duration": 95.742
+    },
+    {
+      "mode": "target_then_native",
+      "label": "Target then native",
+      "path": "/audio/ramen_shop.target-native.mp3",
+      "duration": 95.742
+    }
+  ],
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "other",
+      "native": "歡迎光臨。請先在食券機買票。",
+      "target": "いらっしゃいませ。先に券売機で食券をお買い求めください。",
+      "line_id": "ramen_shop:1",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "いらっしゃいませ",
+          "reading": "いらっしゃいませ",
+          "pos": "挨拶",
+          "meaning": "歡迎光臨"
+        },
+        {
+          "surface": "先に",
+          "reading": "さきに",
+          "pos": "副詞",
+          "meaning": "先、首先"
+        },
+        {
+          "surface": "券売機",
+          "reading": "けんばいき",
+          "pos": "名詞",
+          "meaning": "售票機、食券機"
+        },
+        {
+          "surface": "食券",
+          "reading": "しょっけん",
+          "pos": "名詞",
+          "meaning": "餐券、食券"
+        },
+        {
+          "surface": "お買い求めください",
+          "reading": "おかいもとめください",
+          "pos": "敬語片語",
+          "meaning": "請購買"
+        }
+      ],
+      "grammar_note": "很多日本拉麵店先買食券再入座。「お買い求めください」是店家公告常用的禮貌說法。",
+      "start": 0.0,
+      "end": 5.448
+    },
+    {
+      "order": 2,
+      "speaker": "you",
+      "native": "不好意思，第一次來，食券機怎麼用？",
+      "target": "すみません、初めてなんですが、券売機はどう使えばいいですか。",
+      "line_id": "ramen_shop:2",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "すみません",
+          "reading": "すみません",
+          "pos": "感嘆詞",
+          "meaning": "不好意思"
+        },
+        {
+          "surface": "初めて",
+          "reading": "はじめて",
+          "pos": "名詞/副詞",
+          "meaning": "第一次"
+        },
+        {
+          "surface": "なんですが",
+          "reading": "なんですが",
+          "pos": "連接表現",
+          "meaning": "是這樣的，用來委婉開場"
+        },
+        {
+          "surface": "券売機",
+          "reading": "けんばいき",
+          "pos": "名詞",
+          "meaning": "食券機"
+        },
+        {
+          "surface": "どう使えばいいですか",
+          "reading": "どうつかえばいいですか",
+          "pos": "疑問句",
+          "meaning": "要怎麼用才好"
+        }
+      ],
+      "grammar_note": "「初めてなんですが」很適合開口求助，語氣自然又不突兀。",
+      "start": 6.248,
+      "end": 12.056
+    },
+    {
+      "order": 3,
+      "speaker": "other",
+      "native": "先放錢，再按想吃的拉麵按鈕。",
+      "target": "先にお金を入れて、食べたいラーメンのボタンを押してください。",
+      "line_id": "ramen_shop:3",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "お金",
+          "reading": "おかね",
+          "pos": "名詞",
+          "meaning": "錢"
+        },
+        {
+          "surface": "入れて",
+          "reading": "いれて",
+          "pos": "動詞て形",
+          "meaning": "放入"
+        },
+        {
+          "surface": "食べたい",
+          "reading": "たべたい",
+          "pos": "たい形",
+          "meaning": "想吃"
+        },
+        {
+          "surface": "ラーメン",
+          "reading": "ラーメン",
+          "pos": "名詞",
+          "meaning": "拉麵"
+        },
+        {
+          "surface": "ボタンを押してください",
+          "reading": "ボタンをおしてください",
+          "pos": "片語",
+          "meaning": "請按按鈕"
+        }
+      ],
+      "grammar_note": "「動詞たい + 名詞」可修飾後面的名詞，例如「食べたいラーメン」。",
+      "start": 12.856,
+      "end": 17.584
+    },
+    {
+      "order": 4,
+      "speaker": "you",
+      "native": "我要醬油拉麵，想加一顆溏心蛋。",
+      "target": "醤油ラーメンに味玉を一つ追加したいです。",
+      "line_id": "ramen_shop:4",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "醤油ラーメン",
+          "reading": "しょうゆラーメン",
+          "pos": "名詞",
+          "meaning": "醬油拉麵"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "pos": "助詞",
+          "meaning": "加到、對象"
+        },
+        {
+          "surface": "味玉",
+          "reading": "あじたま",
+          "pos": "名詞",
+          "meaning": "調味半熟蛋、溏心蛋"
+        },
+        {
+          "surface": "一つ",
+          "reading": "ひとつ",
+          "pos": "數量詞",
+          "meaning": "一個"
+        },
+        {
+          "surface": "追加したいです",
+          "reading": "ついかしたいです",
+          "pos": "動詞たい形",
+          "meaning": "想追加"
+        }
+      ],
+      "grammar_note": "拉麵店常把調味蛋叫「味玉」。加點配料可用「〜を追加したいです」。",
+      "start": 18.384,
+      "end": 22.56
+    },
+    {
+      "order": 5,
+      "speaker": "other",
+      "native": "麵的硬度要怎麼做？",
+      "target": "麺の硬さはどうされますか。",
+      "line_id": "ramen_shop:5",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "麺",
+          "reading": "めん",
+          "pos": "名詞",
+          "meaning": "麵"
+        },
+        {
+          "surface": "硬さ",
+          "reading": "かたさ",
+          "pos": "名詞",
+          "meaning": "硬度"
+        },
+        {
+          "surface": "は",
+          "reading": "は",
+          "pos": "助詞",
+          "meaning": "主題提示"
+        },
+        {
+          "surface": "どうされますか",
+          "reading": "どうされますか",
+          "pos": "尊敬語",
+          "meaning": "要怎麼做"
+        }
+      ],
+      "grammar_note": "「どうされますか」是服務業常見問法，拉麵店會用來問麵硬、油量、湯濃度。",
+      "start": 23.36,
+      "end": 25.952
+    },
+    {
+      "order": 6,
+      "speaker": "you",
+      "native": "麵硬一點，湯普通，油少一點。",
+      "target": "麺は硬め、味は普通、油は少なめでお願いします。",
+      "line_id": "ramen_shop:6",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "硬め",
+          "reading": "かため",
+          "pos": "名詞/形容表現",
+          "meaning": "偏硬"
+        },
+        {
+          "surface": "味",
+          "reading": "あじ",
+          "pos": "名詞",
+          "meaning": "味道、湯頭濃淡"
+        },
+        {
+          "surface": "普通",
+          "reading": "ふつう",
+          "pos": "名詞/形容動詞",
+          "meaning": "普通、正常"
+        },
+        {
+          "surface": "油",
+          "reading": "あぶら",
+          "pos": "名詞",
+          "meaning": "油"
+        },
+        {
+          "surface": "少なめ",
+          "reading": "すくなめ",
+          "pos": "名詞/形容表現",
+          "meaning": "偏少"
+        },
+        {
+          "surface": "でお願いします",
+          "reading": "でおねがいします",
+          "pos": "片語",
+          "meaning": "麻煩用這個方式"
+        }
+      ],
+      "grammar_note": "「硬め・普通・少なめ」是拉麵客製化常用字，句尾用「でお願いします」很自然。",
+      "start": 26.752,
+      "end": 32.056
+    },
+    {
+      "order": 7,
+      "speaker": "other",
+      "native": "好的，請把食券交給我。",
+      "target": "かしこまりました。食券をお預かりします。",
+      "line_id": "ramen_shop:7",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "かしこまりました",
+          "reading": "かしこまりました",
+          "pos": "片語",
+          "meaning": "我明白了，服務業敬語"
+        },
+        {
+          "surface": "食券",
+          "reading": "しょっけん",
+          "pos": "名詞",
+          "meaning": "食券"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "pos": "助詞",
+          "meaning": "受詞標記"
+        },
+        {
+          "surface": "お預かりします",
+          "reading": "おあずかりします",
+          "pos": "敬語",
+          "meaning": "我收下、替您保管"
+        }
+      ],
+      "grammar_note": "店員收票或收卡常說「お預かりします」，比「もらいます」更禮貌。",
+      "start": 32.856,
+      "end": 37.224
+    },
+    {
+      "order": 8,
+      "speaker": "you",
+      "native": "不好意思，可以給我一杯水嗎？",
+      "target": "すみません、お水を一杯いただけますか。",
+      "line_id": "ramen_shop:8",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "すみません",
+          "reading": "すみません",
+          "pos": "感嘆詞",
+          "meaning": "不好意思"
+        },
+        {
+          "surface": "お水",
+          "reading": "おみず",
+          "pos": "名詞",
+          "meaning": "水"
+        },
+        {
+          "surface": "一杯",
+          "reading": "いっぱい",
+          "pos": "數量詞",
+          "meaning": "一杯"
+        },
+        {
+          "surface": "いただけますか",
+          "reading": "いただけますか",
+          "pos": "謙讓語可能形",
+          "meaning": "可以給我嗎"
+        }
+      ],
+      "grammar_note": "「〜をいただけますか」是請店家給東西的禮貌句型，餐廳很好用。",
+      "start": 38.024,
+      "end": 42.056
+    },
+    {
+      "order": 9,
+      "speaker": "other",
+      "native": "好的，請稍等。",
+      "target": "はい、少々お待ちください。",
+      "line_id": "ramen_shop:9",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "はい",
+          "reading": "はい",
+          "pos": "感嘆詞",
+          "meaning": "好的"
+        },
+        {
+          "surface": "少々",
+          "reading": "しょうしょう",
+          "pos": "副詞",
+          "meaning": "稍微、一點點"
+        },
+        {
+          "surface": "お待ちください",
+          "reading": "おまちください",
+          "pos": "尊敬語片語",
+          "meaning": "請稍等"
+        }
+      ],
+      "grammar_note": "「少々お待ちください」是服務業固定句，聽到就表示請你等一下。",
+      "start": 42.856,
+      "end": 45.784
+    },
+    {
+      "order": 10,
+      "speaker": "you",
+      "native": "謝謝招待，很好吃。",
+      "target": "ごちそうさまでした。とてもおいしかったです。",
+      "line_id": "ramen_shop:10",
+      "source_type": "generated_scenario",
+      "source_id": "ramen_shop",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "ごちそうさまでした",
+          "reading": "ごちそうさまでした",
+          "pos": "固定表現",
+          "meaning": "謝謝招待、我吃飽了，飯後感謝用語"
+        },
+        {
+          "surface": "とても",
+          "reading": "とても",
+          "pos": "副詞",
+          "meaning": "非常、很"
+        },
+        {
+          "surface": "おいしかった",
+          "reading": "おいしかった",
+          "pos": "形容詞過去形",
+          "meaning": "很好吃"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "pos": "助動詞",
+          "meaning": "禮貌結尾"
+        }
+      ],
+      "grammar_note": "「ごちそうさまでした」是吃完離開時對店家或請客者說的感謝語，比直譯「謝謝」更符合日本用餐文化。",
+      "start": 46.584,
+      "end": 51.216
+    }
+  ]
+}

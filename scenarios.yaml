@@ -19,6 +19,13 @@ scenarios:
       you: 顧客
       other: 店員
 
+  - id: ramen_shop
+    title: 拉麵店用餐
+    context: 在日本拉麵店排隊、買食券、調整麵硬度、加點配料、吃完後說謝謝招待
+    roles:
+      you: 顧客
+      other: 店員
+
   - id: izakaya_with_friends
     title: 居酒屋和朋友點餐
     context: 跟日本朋友到居酒屋，想點飲料、小菜、烤物，也要自然地請店員推薦
