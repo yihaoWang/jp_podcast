@@ -42,7 +42,7 @@ Outputs:
 
 The web app is deployed to Cloudflare Pages project `jp-podcast`.
 
-Automatic deployment runs from GitHub Actions on pushes to `main` or `codex/complete-roadmap` when `audio/`, `web/`, or the deploy workflow changes. The workflow builds `web/` and deploys `web/dist`.
+Automatic deployment runs from GitHub Actions on pushes to `main` or `codex/complete-roadmap` when `audio/`, `web/`, or the deploy workflow changes. The workflow builds `web/` and deploys `web/dist` to the production Pages branch so `https://jp-podcast.pages.dev/` is updated.
 
 Required GitHub repository secrets:
 
@@ -54,7 +54,7 @@ Manual local deployment is still available when needed:
 ```bash
 cd web
 npm run build
-npx wrangler pages deploy dist --project-name jp-podcast
+npx wrangler pages deploy dist --project-name jp-podcast --branch main
 ```
 
 ## Uploaded Speech Ingestion
