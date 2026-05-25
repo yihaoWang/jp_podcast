@@ -1867,10 +1867,10 @@
       },
       {
         "speaker": "you",
-        "native": "預定三月二十五日離開日本。",
-        "target": "三月二十五日に日本を出国する予定です。",
+        "native": "預定六月二日離開日本。",
+        "target": "六月二日に日本を出国する予定です。",
         "breakdown": [
-          {"surface": "三月二十五日", "reading": "さんがつにじゅうごにち", "pos": "日期", "meaning": "三月二十五日"},
+          {"surface": "六月二日", "reading": "ろくがつふつか", "pos": "日期", "meaning": "六月二日"},
           {"surface": "に", "reading": "に", "pos": "助詞", "meaning": "時間點"},
           {"surface": "日本を出国する", "reading": "にほんをしゅっこくする", "pos": "片語", "meaning": "離開日本、出境"},
           {"surface": "予定です", "reading": "よていです", "pos": "名詞+です", "meaning": "預定"}
