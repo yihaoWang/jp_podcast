@@ -103,6 +103,14 @@ const Player = () => {
     }
   };
 
+  const jumpToLine = (line: Scenario["lines"][number]) => {
+    if (loopLineOrder !== null) {
+      setLoopLineOrder(line.order);
+      setLoopScenario(false);
+    }
+    jumpTo(line.start);
+  };
+
   const repeatCurrent = () => {
     if (activeIndex < 0) return;
     const line = scenario.lines[activeIndex];
@@ -264,7 +272,7 @@ const Player = () => {
               <div className="flex items-start gap-3">
                 <button
                   type="button"
-                  onClick={() => jumpTo(line.start)}
+                  onClick={() => jumpToLine(line)}
                   className="flex-1 text-left"
                 >
                   <div className="mb-1 flex items-center gap-2 text-xs text-neutral-500">
