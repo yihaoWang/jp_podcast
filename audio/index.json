@@ -209,6 +209,48 @@
           "duration": 95.742
         }
       ]
+    },
+    {
+      "id": "city_office_return_home",
+      "title": "區役所辦理轉出歸國",
+      "context": "去區役所辦理海外轉出，說明即將歸國，確認轉出届、國民健康保險、My Number 和相關手續",
+      "duration": 71.999,
+      "line_count": 12,
+      "source_type": "generated_scenario",
+      "source_id": "city_office_return_home",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/city_office_return_home.mp3",
+          "duration": 71.999
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/city_office_return_home.shadowing.mp3",
+          "duration": 122.399
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/city_office_return_home.slow.mp3",
+          "duration": 85.696
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/city_office_return_home.native-target.mp3",
+          "duration": 133.174
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/city_office_return_home.target-native.mp3",
+          "duration": 133.174
+        }
+      ]
     }
   ]
 }

@@ -1789,5 +1789,228 @@
     "source_type": "generated_scenario",
     "source_id": "ramen_shop",
     "difficulty": null
+  },
+  {
+    "id": "city_office_return_home",
+    "title": "區役所辦理轉出歸國",
+    "context": "去區役所辦理海外轉出，說明即將歸國，確認轉出届、國民健康保險、My Number 和相關手續",
+    "lines": [
+      {
+        "speaker": "you",
+        "native": "不好意思，我想辦理轉出手續。",
+        "target": "すみません、転出の手続きをしたいです。",
+        "breakdown": [
+          {"surface": "すみません", "reading": "すみません", "pos": "感嘆詞", "meaning": "不好意思，用來開口詢問"},
+          {"surface": "転出", "reading": "てんしゅつ", "pos": "名詞", "meaning": "轉出、搬離目前住址"},
+          {"surface": "手続き", "reading": "てつづき", "pos": "名詞", "meaning": "手續"},
+          {"surface": "したいです", "reading": "したいです", "pos": "動詞たい形", "meaning": "想辦理、想做"}
+        ],
+        "grammar_note": "到政府機關辦事時，「〜の手続きをしたいです」是最安全、清楚的開場。",
+        "line_id": "city_office_return_home:1",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "請問是搬到日本國內，還是搬到海外？",
+        "target": "日本国内へのお引っ越しですか。それとも海外への転出ですか。",
+        "breakdown": [
+          {"surface": "日本国内", "reading": "にほんこくない", "pos": "名詞", "meaning": "日本國內"},
+          {"surface": "お引っ越し", "reading": "おひっこし", "pos": "名詞/敬語", "meaning": "搬家"},
+          {"surface": "それとも", "reading": "それとも", "pos": "接續詞", "meaning": "還是"},
+          {"surface": "海外", "reading": "かいがい", "pos": "名詞", "meaning": "海外"},
+          {"surface": "転出", "reading": "てんしゅつ", "pos": "名詞", "meaning": "轉出"}
+        ],
+        "grammar_note": "區役所會先確認是國內搬家還是海外轉出，因為文件和後續處理不同。",
+        "line_id": "city_office_return_home:2",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "我要回國，所以是海外轉出。",
+        "target": "帰国するので、海外への転出です。",
+        "breakdown": [
+          {"surface": "帰国する", "reading": "きこくする", "pos": "動詞", "meaning": "回國"},
+          {"surface": "ので", "reading": "ので", "pos": "接續助詞", "meaning": "因為，所以"},
+          {"surface": "海外へ", "reading": "かいがいへ", "pos": "名詞+助詞", "meaning": "往海外"},
+          {"surface": "転出", "reading": "てんしゅつ", "pos": "名詞", "meaning": "轉出"}
+        ],
+        "grammar_note": "「帰国するので」比只說「帰ります」更清楚，行政場合容易理解你的目的。",
+        "line_id": "city_office_return_home:3",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "請問預定哪一天離開日本？",
+        "target": "日本を出国される予定日はいつですか。",
+        "breakdown": [
+          {"surface": "日本", "reading": "にほん", "pos": "名詞", "meaning": "日本"},
+          {"surface": "を", "reading": "を", "pos": "助詞", "meaning": "離開的對象"},
+          {"surface": "出国される", "reading": "しゅっこくされる", "pos": "尊敬語動詞", "meaning": "出境、離開國家"},
+          {"surface": "予定日", "reading": "よていび", "pos": "名詞", "meaning": "預定日期"},
+          {"surface": "いつ", "reading": "いつ", "pos": "疑問詞", "meaning": "什麼時候"}
+        ],
+        "grammar_note": "「出国」是正式的出境說法，辦海外轉出時常會被問出國預定日。",
+        "line_id": "city_office_return_home:4",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "預定三月二十五日離開日本。",
+        "target": "三月二十五日に日本を出国する予定です。",
+        "breakdown": [
+          {"surface": "三月二十五日", "reading": "さんがつにじゅうごにち", "pos": "日期", "meaning": "三月二十五日"},
+          {"surface": "に", "reading": "に", "pos": "助詞", "meaning": "時間點"},
+          {"surface": "日本を出国する", "reading": "にほんをしゅっこくする", "pos": "片語", "meaning": "離開日本、出境"},
+          {"surface": "予定です", "reading": "よていです", "pos": "名詞+です", "meaning": "預定"}
+        ],
+        "grammar_note": "日期後接「に」表示具體時間點；「〜予定です」是行政場合很常用的說法。",
+        "line_id": "city_office_return_home:5",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "請填寫這張轉出届。新的地址請寫海外地址。",
+        "target": "こちらの転出届にご記入ください。新しい住所は海外の住所を書いてください。",
+        "breakdown": [
+          {"surface": "こちら", "reading": "こちら", "pos": "代名詞", "meaning": "這邊、這份"},
+          {"surface": "転出届", "reading": "てんしゅつとどけ", "pos": "名詞", "meaning": "轉出申請書"},
+          {"surface": "ご記入ください", "reading": "ごきにゅうください", "pos": "敬語片語", "meaning": "請填寫"},
+          {"surface": "新しい住所", "reading": "あたらしいじゅうしょ", "pos": "名詞", "meaning": "新的地址"},
+          {"surface": "海外の住所", "reading": "かいがいのじゅうしょ", "pos": "名詞", "meaning": "海外地址"}
+        ],
+        "grammar_note": "「転出届」是轉出手續的核心文件；表格上常會看到「記入」表示填寫。",
+        "line_id": "city_office_return_home:6",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "海外地址還沒確定，可以先寫國家和城市嗎？",
+        "target": "海外の住所がまだ決まっていないんですが、国と都市だけでも大丈夫ですか。",
+        "breakdown": [
+          {"surface": "海外の住所", "reading": "かいがいのじゅうしょ", "pos": "名詞", "meaning": "海外地址"},
+          {"surface": "まだ", "reading": "まだ", "pos": "副詞", "meaning": "還沒"},
+          {"surface": "決まっていない", "reading": "きまっていない", "pos": "動詞ている否定", "meaning": "尚未決定"},
+          {"surface": "国", "reading": "くに", "pos": "名詞", "meaning": "國家"},
+          {"surface": "都市", "reading": "とし", "pos": "名詞", "meaning": "城市"},
+          {"surface": "だけでも大丈夫ですか", "reading": "だけでもだいじょうぶですか", "pos": "片語", "meaning": "只有這樣也可以嗎"}
+        ],
+        "grammar_note": "「〜だけでも大丈夫ですか」可用來確認資料不完整時是否仍可辦理。",
+        "line_id": "city_office_return_home:7",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "可以。請同時出示在留卡和本人確認文件。",
+        "target": "はい、大丈夫です。在留カードと本人確認書類もご提示ください。",
+        "breakdown": [
+          {"surface": "大丈夫です", "reading": "だいじょうぶです", "pos": "片語", "meaning": "可以、沒問題"},
+          {"surface": "在留カード", "reading": "ざいりゅうカード", "pos": "名詞", "meaning": "在留卡"},
+          {"surface": "本人確認書類", "reading": "ほんにんかくにんしょるい", "pos": "名詞", "meaning": "身份確認文件"},
+          {"surface": "ご提示ください", "reading": "ごていじください", "pos": "敬語片語", "meaning": "請出示"}
+        ],
+        "grammar_note": "「本人確認書類」是行政手續常見詞，可指護照、在留卡、駕照等身份文件。",
+        "line_id": "city_office_return_home:8",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "國民健康保險也需要一起辦理嗎？",
+        "target": "国民健康保険の手続きも一緒に必要ですか。",
+        "breakdown": [
+          {"surface": "国民健康保険", "reading": "こくみんけんこうほけん", "pos": "名詞", "meaning": "國民健康保險"},
+          {"surface": "手続き", "reading": "てつづき", "pos": "名詞", "meaning": "手續"},
+          {"surface": "も", "reading": "も", "pos": "助詞", "meaning": "也"},
+          {"surface": "一緒に", "reading": "いっしょに", "pos": "副詞", "meaning": "一起"},
+          {"surface": "必要ですか", "reading": "ひつようですか", "pos": "片語", "meaning": "需要嗎"}
+        ],
+        "grammar_note": "海外轉出時常需要確認國民健康保險、年金、住民稅等相關手續。",
+        "line_id": "city_office_return_home:9",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "需要。如果有保險證，請一起歸還。",
+        "target": "必要です。保険証をお持ちでしたら、一緒にご返却ください。",
+        "breakdown": [
+          {"surface": "必要です", "reading": "ひつようです", "pos": "片語", "meaning": "需要"},
+          {"surface": "保険証", "reading": "ほけんしょう", "pos": "名詞", "meaning": "保險證"},
+          {"surface": "お持ちでしたら", "reading": "おもちでしたら", "pos": "敬語條件句", "meaning": "如果您有帶"},
+          {"surface": "一緒に", "reading": "いっしょに", "pos": "副詞", "meaning": "一起"},
+          {"surface": "ご返却ください", "reading": "ごへんきゃくください", "pos": "敬語片語", "meaning": "請歸還"}
+        ],
+        "grammar_note": "「お持ちでしたら」是「如果你有帶」的禮貌說法；「返却」是歸還文件或物品。",
+        "line_id": "city_office_return_home:10",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "My Number 卡需要做什麼手續嗎？",
+        "target": "マイナンバーカードについて、何か手続きは必要ですか。",
+        "breakdown": [
+          {"surface": "マイナンバーカード", "reading": "マイナンバーカード", "pos": "名詞", "meaning": "My Number 卡"},
+          {"surface": "について", "reading": "について", "pos": "複合助詞", "meaning": "關於"},
+          {"surface": "何か", "reading": "なにか", "pos": "疑問詞", "meaning": "有什麼"},
+          {"surface": "手続き", "reading": "てつづき", "pos": "名詞", "meaning": "手續"},
+          {"surface": "必要ですか", "reading": "ひつようですか", "pos": "片語", "meaning": "需要嗎"}
+        ],
+        "grammar_note": "不確定某個項目是否需要辦理時，可用「〜について、何か手続きは必要ですか」。",
+        "line_id": "city_office_return_home:11",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "需要確認卡片狀態，請到隔壁窗口辦理。",
+        "target": "カードの状態を確認しますので、隣の窓口でお手続きください。",
+        "breakdown": [
+          {"surface": "カード", "reading": "カード", "pos": "名詞", "meaning": "卡片"},
+          {"surface": "状態", "reading": "じょうたい", "pos": "名詞", "meaning": "狀態"},
+          {"surface": "確認します", "reading": "かくにんします", "pos": "動詞", "meaning": "確認"},
+          {"surface": "隣の窓口", "reading": "となりのまどぐち", "pos": "名詞", "meaning": "隔壁窗口"},
+          {"surface": "お手続きください", "reading": "おてつづきください", "pos": "敬語片語", "meaning": "請辦理手續"}
+        ],
+        "grammar_note": "「窓口」是政府機關、銀行、車站等的窗口；辦事時很常聽到「隣の窓口」。",
+        "line_id": "city_office_return_home:12",
+        "source_type": "generated_scenario",
+        "source_id": "city_office_return_home",
+        "difficulty": null,
+        "review_state": "new"
+      }
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "city_office_return_home",
+    "difficulty": null
   }
 ]

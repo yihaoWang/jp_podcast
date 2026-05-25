@@ -54,6 +54,13 @@ scenarios:
       you: 住客
       other: 櫃台人員
 
+  - id: city_office_return_home
+    title: 區役所辦理轉出歸國
+    context: 去區役所辦理海外轉出，說明即將歸國，確認轉出届、國民健康保險、My Number 和相關手續
+    roles:
+      you: 居民
+      other: 區役所職員
+
   - id: pharmacy_symptoms
     title: 藥局買感冒藥
     context: 到藥局描述喉嚨痛、鼻塞、咳嗽，詢問非處方藥和服用方式
