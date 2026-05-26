@@ -251,6 +251,48 @@
           "duration": 132.262
         }
       ]
+    },
+    {
+      "id": "phone_reservation",
+      "title": "打電話預約餐廳",
+      "context": "用電話預約餐廳，確認日期、時間、人數、滿位改時間、姓名電話、座位偏好、套餐、過敏、孩童、遲到和取消規則",
+      "duration": 128.326,
+      "line_count": 21,
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/phone_reservation.mp3",
+          "duration": 128.326
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/phone_reservation.shadowing.mp3",
+          "duration": 216.526
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/phone_reservation.slow.mp3",
+          "duration": 152.807
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/phone_reservation.native-target.mp3",
+          "duration": 244.064
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/phone_reservation.target-native.mp3",
+          "duration": 244.064
+        }
+      ]
     }
   ]
 }

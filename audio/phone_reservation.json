@@ -1,0 +1,855 @@
+{
+  "id": "phone_reservation",
+  "title": "打電話預約餐廳",
+  "context": "用電話預約餐廳，確認日期、時間、人數、滿位改時間、姓名電話、座位偏好、套餐、過敏、孩童、遲到和取消規則",
+  "language_code": "ja",
+  "native_language_code": "zh-TW",
+  "source_type": "generated_scenario",
+  "source_id": "phone_reservation",
+  "difficulty": null,
+  "duration": 128.326,
+  "variants": [
+    {
+      "mode": "target",
+      "label": "Target only",
+      "path": "/audio/phone_reservation.mp3",
+      "duration": 128.326
+    },
+    {
+      "mode": "shadowing",
+      "label": "Shadowing long pause",
+      "path": "/audio/phone_reservation.shadowing.mp3",
+      "duration": 216.526
+    },
+    {
+      "mode": "slow",
+      "label": "Slow target",
+      "path": "/audio/phone_reservation.slow.mp3",
+      "duration": 152.807
+    },
+    {
+      "mode": "native_then_target",
+      "label": "Native then target",
+      "path": "/audio/phone_reservation.native-target.mp3",
+      "duration": 244.064
+    },
+    {
+      "mode": "target_then_native",
+      "label": "Target then native",
+      "path": "/audio/phone_reservation.target-native.mp3",
+      "duration": 244.064
+    }
+  ],
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "other",
+      "native": "謝謝您的來電，這裡是 Sakura 餐廳。",
+      "target": "お電話ありがとうございます。さくらレストランでございます。",
+      "line_id": "phone_reservation:1",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "お電話ありがとうございます",
+          "reading": "おでんわありがとうございます",
+          "pos": "電話接待句",
+          "meaning": "謝謝您的來電"
+        },
+        {
+          "surface": "さくらレストラン",
+          "reading": "さくらレストラン",
+          "pos": "店名",
+          "meaning": "Sakura 餐廳"
+        },
+        {
+          "surface": "でございます",
+          "reading": "でございます",
+          "pos": "敬語",
+          "meaning": "是，比「です」更正式"
+        }
+      ],
+      "grammar_note": "電話接聽常用「お電話ありがとうございます」。店家自稱時常用「〜でございます」。",
+      "start": 0.0,
+      "end": 5.136
+    },
+    {
+      "order": 2,
+      "speaker": "you",
+      "native": "我想預約。",
+      "target": "予約をお願いしたいんですが。",
+      "line_id": "phone_reservation:2",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "予約",
+          "reading": "よやく",
+          "pos": "名詞",
+          "meaning": "預約"
+        },
+        {
+          "surface": "お願いしたい",
+          "reading": "おねがいしたい",
+          "pos": "請求片語",
+          "meaning": "想拜託、想辦理"
+        },
+        {
+          "surface": "んですが",
+          "reading": "んですが",
+          "pos": "緩衝句尾",
+          "meaning": "想請問、委婉開口"
+        }
+      ],
+      "grammar_note": "「〜したいんですが」是電話開場很自然的委婉說法。",
+      "start": 5.936,
+      "end": 8.864
+    },
+    {
+      "order": 3,
+      "speaker": "other",
+      "native": "請問您希望哪一天、幾點呢？",
+      "target": "ご希望のお日にちとお時間をお伺いしてもよろしいでしょうか。",
+      "line_id": "phone_reservation:3",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "ご希望",
+          "reading": "ごきぼう",
+          "pos": "敬語名詞",
+          "meaning": "您希望的"
+        },
+        {
+          "surface": "お日にち",
+          "reading": "おひにち",
+          "pos": "敬語名詞",
+          "meaning": "日期"
+        },
+        {
+          "surface": "お時間",
+          "reading": "おじかん",
+          "pos": "敬語名詞",
+          "meaning": "時間"
+        },
+        {
+          "surface": "お伺いしてもよろしいでしょうか",
+          "reading": "おうかがいしてもよろしいでしょうか",
+          "pos": "敬語問句",
+          "meaning": "可以請教您嗎"
+        }
+      ],
+      "grammar_note": "店員詢問資訊時常用「お伺いしてもよろしいでしょうか」，比「聞いてもいいですか」正式。",
+      "start": 9.664,
+      "end": 14.08
+    },
+    {
+      "order": 4,
+      "speaker": "you",
+      "native": "下週六晚上七點，兩位可以嗎？",
+      "target": "来週の土曜日、午後七時に二名でお願いできますか。",
+      "line_id": "phone_reservation:4",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "来週の土曜日",
+          "reading": "らいしゅうのどようび",
+          "pos": "日期",
+          "meaning": "下週六"
+        },
+        {
+          "surface": "午後七時",
+          "reading": "ごごしちじ",
+          "pos": "時間",
+          "meaning": "晚上七點"
+        },
+        {
+          "surface": "二名",
+          "reading": "にめい",
+          "pos": "人數",
+          "meaning": "兩位"
+        },
+        {
+          "surface": "お願いできますか",
+          "reading": "おねがいできますか",
+          "pos": "請求問句",
+          "meaning": "可以麻煩安排嗎"
+        }
+      ],
+      "grammar_note": "預約時用「二名」比「二人」更像店家場景。",
+      "start": 14.88,
+      "end": 19.92
+    },
+    {
+      "order": 5,
+      "speaker": "other",
+      "native": "不好意思，那個時間已經滿位，七點半的話可以安排。",
+      "target": "申し訳ございません。その時間は満席でして、七時半でしたらご案内できます。",
+      "line_id": "phone_reservation:5",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "申し訳ございません",
+          "reading": "もうしわけございません",
+          "pos": "敬語道歉",
+          "meaning": "非常抱歉"
+        },
+        {
+          "surface": "満席",
+          "reading": "まんせき",
+          "pos": "名詞",
+          "meaning": "滿位"
+        },
+        {
+          "surface": "でして",
+          "reading": "でして",
+          "pos": "接續",
+          "meaning": "因為是、所以"
+        },
+        {
+          "surface": "七時半でしたら",
+          "reading": "しちじはんでしたら",
+          "pos": "條件句",
+          "meaning": "如果是七點半"
+        },
+        {
+          "surface": "ご案内できます",
+          "reading": "ごあんないできます",
+          "pos": "敬語片語",
+          "meaning": "可以安排、可以帶位"
+        }
+      ],
+      "grammar_note": "「満席でして」是店家說明無法接受原時間的自然說法。",
+      "start": 20.72,
+      "end": 27.944
+    },
+    {
+      "order": 6,
+      "speaker": "you",
+      "native": "那就麻煩七點半。",
+      "target": "では、七時半でお願いします。",
+      "line_id": "phone_reservation:6",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "では",
+          "reading": "では",
+          "pos": "接續詞",
+          "meaning": "那麼"
+        },
+        {
+          "surface": "七時半で",
+          "reading": "しちじはんで",
+          "pos": "時間+で",
+          "meaning": "以七點半這個時間"
+        },
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "請求片語",
+          "meaning": "麻煩您"
+        }
+      ],
+      "grammar_note": "接受替代方案時，用「〜でお願いします」即可。",
+      "start": 28.744,
+      "end": 32.128
+    },
+    {
+      "order": 7,
+      "speaker": "other",
+      "native": "請提供您的姓名和電話號碼。",
+      "target": "お名前とお電話番号をお願いいたします。",
+      "line_id": "phone_reservation:7",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "お名前",
+          "reading": "おなまえ",
+          "pos": "敬語名詞",
+          "meaning": "姓名"
+        },
+        {
+          "surface": "お電話番号",
+          "reading": "おでんわばんごう",
+          "pos": "敬語名詞",
+          "meaning": "電話號碼"
+        },
+        {
+          "surface": "お願いいたします",
+          "reading": "おねがいいたします",
+          "pos": "敬語請求",
+          "meaning": "麻煩您"
+        }
+      ],
+      "grammar_note": "「お願いいたします」比「お願いします」更正式，電話預約常聽到。",
+      "start": 32.928,
+      "end": 36.408
+    },
+    {
+      "order": 8,
+      "speaker": "you",
+      "native": "我姓王。電話是 090-1234-5678。",
+      "target": "ワンと申します。電話番号は090-1234-5678です。",
+      "line_id": "phone_reservation:8",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "ワンと申します",
+          "reading": "ワンともうします",
+          "pos": "自我介紹敬語",
+          "meaning": "我姓王"
+        },
+        {
+          "surface": "電話番号",
+          "reading": "でんわばんごう",
+          "pos": "名詞",
+          "meaning": "電話號碼"
+        },
+        {
+          "surface": "090-1234-5678",
+          "reading": "ゼロキューゼロ の イチニサンヨン の ゴーロクナナハチ",
+          "pos": "電話號碼",
+          "meaning": "電話號碼讀法"
+        }
+      ],
+      "grammar_note": "報電話時常用「の」分段。姓名用「〜と申します」最安全。",
+      "start": 37.208,
+      "end": 44.744
+    },
+    {
+      "order": 9,
+      "speaker": "other",
+      "native": "請問有座位偏好嗎？禁菸席、靠窗或包廂都可以受理。",
+      "target": "お席のご希望はございますか。禁煙席、窓側、個室なども承れます。",
+      "line_id": "phone_reservation:9",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "お席",
+          "reading": "おせき",
+          "pos": "敬語名詞",
+          "meaning": "座位"
+        },
+        {
+          "surface": "ご希望",
+          "reading": "ごきぼう",
+          "pos": "敬語名詞",
+          "meaning": "偏好、希望"
+        },
+        {
+          "surface": "禁煙席",
+          "reading": "きんえんせき",
+          "pos": "名詞",
+          "meaning": "禁菸席"
+        },
+        {
+          "surface": "窓側",
+          "reading": "まどがわ",
+          "pos": "名詞",
+          "meaning": "靠窗"
+        },
+        {
+          "surface": "個室",
+          "reading": "こしつ",
+          "pos": "名詞",
+          "meaning": "包廂"
+        },
+        {
+          "surface": "承れます",
+          "reading": "うけたまわれます",
+          "pos": "謙讓語",
+          "meaning": "可以受理"
+        }
+      ],
+      "grammar_note": "「承れます」是店家說「可以受理」的正式說法。",
+      "start": 45.544,
+      "end": 52.792
+    },
+    {
+      "order": 10,
+      "speaker": "you",
+      "native": "如果可以的話，請安排禁菸、安靜一點的位置。",
+      "target": "できれば禁煙席で、静かな席をお願いします。",
+      "line_id": "phone_reservation:10",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "できれば",
+          "reading": "できれば",
+          "pos": "副詞",
+          "meaning": "如果可以的話"
+        },
+        {
+          "surface": "禁煙席で",
+          "reading": "きんえんせきで",
+          "pos": "名詞+で",
+          "meaning": "以禁菸席"
+        },
+        {
+          "surface": "静かな席",
+          "reading": "しずかなせき",
+          "pos": "名詞片語",
+          "meaning": "安靜的座位"
+        },
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "請求片語",
+          "meaning": "麻煩您"
+        }
+      ],
+      "grammar_note": "座位偏好不一定能保證，用「できれば」語氣較自然。",
+      "start": 53.592,
+      "end": 58.296
+    },
+    {
+      "order": 11,
+      "speaker": "other",
+      "native": "請問要套餐料理，還是只預約座位？",
+      "target": "コース料理になさいますか。それともお席だけのご予約でしょうか。",
+      "line_id": "phone_reservation:11",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "コース料理",
+          "reading": "コースりょうり",
+          "pos": "名詞",
+          "meaning": "套餐、course menu"
+        },
+        {
+          "surface": "になさいますか",
+          "reading": "になさいますか",
+          "pos": "尊敬語問句",
+          "meaning": "要選擇嗎"
+        },
+        {
+          "surface": "それとも",
+          "reading": "それとも",
+          "pos": "接續詞",
+          "meaning": "還是"
+        },
+        {
+          "surface": "お席だけ",
+          "reading": "おせきだけ",
+          "pos": "名詞片語",
+          "meaning": "只訂座位"
+        }
+      ],
+      "grammar_note": "餐廳可能確認是訂套餐還是只保留座位。",
+      "start": 59.096,
+      "end": 64.472
+    },
+    {
+      "order": 12,
+      "speaker": "you",
+      "native": "只預約座位。另外有一位有過敏。",
+      "target": "お席だけでお願いします。アレルギーが一人あります。",
+      "line_id": "phone_reservation:12",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "お席だけで",
+          "reading": "おせきだけで",
+          "pos": "名詞+で",
+          "meaning": "只訂座位"
+        },
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "請求片語",
+          "meaning": "麻煩您"
+        },
+        {
+          "surface": "アレルギー",
+          "reading": "アレルギー",
+          "pos": "名詞",
+          "meaning": "過敏"
+        },
+        {
+          "surface": "一人あります",
+          "reading": "ひとりあります",
+          "pos": "人數表達",
+          "meaning": "有一位"
+        }
+      ],
+      "grammar_note": "說過敏時可先說「アレルギーがあります」，店員通常會追問種類。",
+      "start": 65.272,
+      "end": 70.456
+    },
+    {
+      "order": 13,
+      "speaker": "other",
+      "native": "請問是哪一種過敏呢？",
+      "target": "どちらのアレルギーでしょうか。",
+      "line_id": "phone_reservation:13",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "どちらの",
+          "reading": "どちらの",
+          "pos": "疑問詞",
+          "meaning": "哪一種"
+        },
+        {
+          "surface": "アレルギー",
+          "reading": "アレルギー",
+          "pos": "名詞",
+          "meaning": "過敏"
+        },
+        {
+          "surface": "でしょうか",
+          "reading": "でしょうか",
+          "pos": "禮貌問句",
+          "meaning": "請問是嗎"
+        }
+      ],
+      "grammar_note": "「どちらの」在服務業比「何の」更禮貌。",
+      "start": 71.256,
+      "end": 73.776
+    },
+    {
+      "order": 14,
+      "speaker": "you",
+      "native": "是甲殼類過敏。想避開蝦子和螃蟹。",
+      "target": "甲殻類アレルギーです。エビやカニは避けたいです。",
+      "line_id": "phone_reservation:14",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "甲殻類",
+          "reading": "こうかくるい",
+          "pos": "名詞",
+          "meaning": "甲殼類"
+        },
+        {
+          "surface": "アレルギー",
+          "reading": "アレルギー",
+          "pos": "名詞",
+          "meaning": "過敏"
+        },
+        {
+          "surface": "エビやカニ",
+          "reading": "エビやカニ",
+          "pos": "名詞片語",
+          "meaning": "蝦子和螃蟹等"
+        },
+        {
+          "surface": "避けたい",
+          "reading": "さけたい",
+          "pos": "動詞たい形",
+          "meaning": "想避免"
+        }
+      ],
+      "grammar_note": "過敏資訊要說明具體食材；「〜や〜」表示舉例。",
+      "start": 74.576,
+      "end": 79.88
+    },
+    {
+      "order": 15,
+      "speaker": "other",
+      "native": "了解。請問有小孩同行嗎？",
+      "target": "承知いたしました。お子様はいらっしゃいますか。",
+      "line_id": "phone_reservation:15",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "承知いたしました",
+          "reading": "しょうちいたしました",
+          "pos": "謙讓語",
+          "meaning": "了解、知道了"
+        },
+        {
+          "surface": "お子様",
+          "reading": "おこさま",
+          "pos": "敬語名詞",
+          "meaning": "小孩"
+        },
+        {
+          "surface": "いらっしゃいますか",
+          "reading": "いらっしゃいますか",
+          "pos": "尊敬語",
+          "meaning": "在、有嗎"
+        }
+      ],
+      "grammar_note": "店家確認小孩是為了兒童椅、餐具、座位空間。",
+      "start": 80.68,
+      "end": 85.048
+    },
+    {
+      "order": 16,
+      "speaker": "you",
+      "native": "沒有，是兩位大人。也沒有嬰兒車。",
+      "target": "いいえ、大人二名です。ベビーカーもありません。",
+      "line_id": "phone_reservation:16",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "大人二名",
+          "reading": "おとなにめい",
+          "pos": "人數",
+          "meaning": "兩位大人"
+        },
+        {
+          "surface": "ベビーカー",
+          "reading": "ベビーカー",
+          "pos": "名詞",
+          "meaning": "嬰兒車"
+        },
+        {
+          "surface": "ありません",
+          "reading": "ありません",
+          "pos": "否定表達",
+          "meaning": "沒有"
+        }
+      ],
+      "grammar_note": "若有嬰兒車可說「ベビーカーがあります」，餐廳可能會安排較寬的座位。",
+      "start": 85.848,
+      "end": 90.984
+    },
+    {
+      "order": 17,
+      "speaker": "other",
+      "native": "如果會遲到超過十五分鐘，請打電話通知。",
+      "target": "十五分以上遅れる場合は、お電話をお願いいたします。",
+      "line_id": "phone_reservation:17",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "十五分以上",
+          "reading": "じゅうごふんいじょう",
+          "pos": "時間",
+          "meaning": "十五分鐘以上"
+        },
+        {
+          "surface": "遅れる場合",
+          "reading": "おくれるばあい",
+          "pos": "條件片語",
+          "meaning": "遲到的情況"
+        },
+        {
+          "surface": "お電話をお願いいたします",
+          "reading": "おでんわをおねがいいたします",
+          "pos": "敬語請求",
+          "meaning": "請打電話"
+        }
+      ],
+      "grammar_note": "「〜場合は」用來說明規則或條件。",
+      "start": 91.784,
+      "end": 96.536
+    },
+    {
+      "order": 18,
+      "speaker": "you",
+      "native": "了解。取消的話要在什麼時候以前聯絡？",
+      "target": "わかりました。キャンセルはいつまでに連絡すればいいですか。",
+      "line_id": "phone_reservation:18",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "キャンセル",
+          "reading": "キャンセル",
+          "pos": "名詞",
+          "meaning": "取消"
+        },
+        {
+          "surface": "いつまでに",
+          "reading": "いつまでに",
+          "pos": "疑問詞",
+          "meaning": "到什麼時候以前"
+        },
+        {
+          "surface": "連絡すればいいですか",
+          "reading": "れんらくすればいいですか",
+          "pos": "條件問句",
+          "meaning": "聯絡就可以嗎"
+        }
+      ],
+      "grammar_note": "「いつまでに〜すればいいですか」可用來確認期限。",
+      "start": 97.336,
+      "end": 103.024
+    },
+    {
+      "order": 19,
+      "speaker": "other",
+      "native": "請在前一天以前聯絡。當天取消有時會產生取消費。",
+      "target": "前日までにご連絡ください。当日のキャンセルはキャンセル料がかかる場合がございます。",
+      "line_id": "phone_reservation:19",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "前日までに",
+          "reading": "ぜんじつまでに",
+          "pos": "期限",
+          "meaning": "前一天以前"
+        },
+        {
+          "surface": "ご連絡ください",
+          "reading": "ごれんらくください",
+          "pos": "敬語請求",
+          "meaning": "請聯絡"
+        },
+        {
+          "surface": "当日",
+          "reading": "とうじつ",
+          "pos": "名詞",
+          "meaning": "當天"
+        },
+        {
+          "surface": "キャンセル料",
+          "reading": "キャンセルりょう",
+          "pos": "名詞",
+          "meaning": "取消費"
+        },
+        {
+          "surface": "かかる場合がございます",
+          "reading": "かかるばあいがございます",
+          "pos": "敬語片語",
+          "meaning": "有可能會產生"
+        }
+      ],
+      "grammar_note": "「〜料がかかる」表示會產生費用。",
+      "start": 103.824,
+      "end": 111.0
+    },
+    {
+      "order": 20,
+      "speaker": "you",
+      "native": "了解。下週六七點半，兩位，麻煩預約。",
+      "target": "承知しました。来週土曜日の七時半、二名で予約をお願いします。",
+      "line_id": "phone_reservation:20",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "承知しました",
+          "reading": "しょうちしました",
+          "pos": "禮貌回應",
+          "meaning": "了解"
+        },
+        {
+          "surface": "来週土曜日",
+          "reading": "らいしゅうどようび",
+          "pos": "日期",
+          "meaning": "下週六"
+        },
+        {
+          "surface": "七時半",
+          "reading": "しちじはん",
+          "pos": "時間",
+          "meaning": "七點半"
+        },
+        {
+          "surface": "二名で",
+          "reading": "にめいで",
+          "pos": "人數+で",
+          "meaning": "以兩位"
+        },
+        {
+          "surface": "予約をお願いします",
+          "reading": "よやくをおねがいします",
+          "pos": "請求片語",
+          "meaning": "麻煩預約"
+        }
+      ],
+      "grammar_note": "最後重複日期、時間、人數，可以降低電話預約出錯機率。",
+      "start": 111.8,
+      "end": 118.52
+    },
+    {
+      "order": 21,
+      "speaker": "other",
+      "native": "謝謝您。王先生/小姐，下週六十九點三十分，兩位，已為您預約。",
+      "target": "ありがとうございます。ワン様、来週土曜日十九時三十分、二名様で承りました。",
+      "line_id": "phone_reservation:21",
+      "source_type": "generated_scenario",
+      "source_id": "phone_reservation",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "ワン様",
+          "reading": "ワンさま",
+          "pos": "敬稱",
+          "meaning": "王先生/小姐"
+        },
+        {
+          "surface": "十九時三十分",
+          "reading": "じゅうくじさんじゅっぷん",
+          "pos": "時間",
+          "meaning": "十九點三十分"
+        },
+        {
+          "surface": "二名様",
+          "reading": "にめいさま",
+          "pos": "人數敬語",
+          "meaning": "兩位"
+        },
+        {
+          "surface": "承りました",
+          "reading": "うけたまわりました",
+          "pos": "謙讓語",
+          "meaning": "已受理、已承接"
+        }
+      ],
+      "grammar_note": "店家確認預約常用「承りました」。十九時三十分等於晚上七點半。",
+      "start": 119.32,
+      "end": 127.528
+    }
+  ]
+}
