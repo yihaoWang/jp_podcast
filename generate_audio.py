@@ -109,7 +109,7 @@ async def main() -> None:
         for idx, line in enumerate(lines, 1):
             voice = voices[line["speaker"]]
             clip_path = tmp_dir / f"{scenario_id}_{idx}.mp3"
-            await tts.synthesize(line["target"], voice, clip_path)
+            await tts.synthesize(line.get("tts_text", line["target"]), voice, clip_path)
             clip = AudioSegment.from_file(clip_path)
             target_clips.append(clip)
             if native_voice:

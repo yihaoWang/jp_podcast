@@ -523,7 +523,8 @@
       {
         "speaker": "other",
         "native": "便當要幫您加熱嗎？",
-        "target": "お弁当、あたためますか。",
+        "target": "お弁当、温めますか。",
+        "tts_text": "お弁当、あたためますか。",
         "breakdown": [
           {
             "surface": "お弁当",
@@ -532,7 +533,7 @@
             "meaning": "便當"
           },
           {
-            "surface": "あたためます",
+            "surface": "温めます",
             "reading": "あたためます",
             "pos": "動詞",
             "meaning": "加熱、微波"
@@ -544,7 +545,7 @@
             "meaning": "疑問"
           }
         ],
-        "grammar_note": "便利商店最常聽到的句子之一。「あたためますか」就是是否要微波加熱；這裡用假名避免 TTS 誤讀漢字。",
+        "grammar_note": "便利商店最常聽到的句子之一。「温めますか」讀作「あたためますか」，意思是是否要微波加熱。",
         "line_id": "convenience_store_payment:3",
         "source_type": "generated_scenario",
         "source_id": "convenience_store_payment",
