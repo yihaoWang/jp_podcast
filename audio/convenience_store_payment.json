@@ -7,37 +7,37 @@
   "source_type": "generated_scenario",
   "source_id": "convenience_store_payment",
   "difficulty": null,
-  "duration": 43.063,
+  "duration": 43.135,
   "variants": [
     {
       "mode": "target",
       "label": "Target only",
       "path": "/audio/convenience_store_payment.mp3",
-      "duration": 43.063
+      "duration": 43.135
     },
     {
       "mode": "shadowing",
       "label": "Shadowing long pause",
       "path": "/audio/convenience_store_payment.shadowing.mp3",
-      "duration": 85.063
+      "duration": 85.135
     },
     {
       "mode": "slow",
       "label": "Slow target",
       "path": "/audio/convenience_store_payment.slow.mp3",
-      "duration": 50.76
+      "duration": 50.848
     },
     {
       "mode": "native_then_target",
       "label": "Native then target",
       "path": "/audio/convenience_store_payment.native-target.mp3",
-      "duration": 77.574
+      "duration": 77.646
     },
     {
       "mode": "target_then_native",
       "label": "Target then native",
       "path": "/audio/convenience_store_payment.target-native.mp3",
-      "duration": 77.574
+      "duration": 77.646
     }
   ],
   "lines": [
@@ -187,7 +187,7 @@
       ],
       "grammar_note": "「お願いします」可以單獨回答請對方幫忙；「〜てください」明確提出請求。",
       "start": 13.536,
-      "end": 17.52
+      "end": 17.592
     },
     {
       "order": 5,
@@ -226,8 +226,8 @@
         }
       ],
       "grammar_note": "「いかがなさいますか」是很禮貌的「要怎麼做」。收銀台常用。",
-      "start": 18.32,
-      "end": 21.56
+      "start": 18.392,
+      "end": 21.632
     },
     {
       "order": 6,
@@ -260,8 +260,8 @@
         }
       ],
       "grammar_note": "「〜でお願いします」表示用某種方式處理，付款、寄送、預約都很好用。",
-      "start": 22.36,
-      "end": 25.36
+      "start": 22.432,
+      "end": 25.432
     },
     {
       "order": 7,
@@ -300,8 +300,8 @@
         }
       ],
       "grammar_note": "「差し込む」是插入卡片、插頭的動詞；刷卡機常會顯示這個字。",
-      "start": 26.16,
-      "end": 28.584
+      "start": 26.232,
+      "end": 28.656
     },
     {
       "order": 8,
@@ -340,8 +340,8 @@
         }
       ],
       "grammar_note": "店員可能用「ご利用ですか」問收據、袋子、筷子等是否需要。",
-      "start": 29.384,
-      "end": 31.808
+      "start": 29.456,
+      "end": 31.88
     },
     {
       "order": 9,
@@ -380,8 +380,8 @@
         }
       ],
       "grammar_note": "「〜は大丈夫です」是自然口語的拒絕方式，語氣比「いりません」柔和。",
-      "start": 32.608,
-      "end": 37.456
+      "start": 32.68,
+      "end": 37.528
     },
     {
       "order": 10,
@@ -408,8 +408,8 @@
         }
       ],
       "grammar_note": "「お待たせしました」是讓客人等待後的固定道歉句。",
-      "start": 38.256,
-      "end": 42.264
+      "start": 38.328,
+      "end": 42.336
     }
   ]
 }

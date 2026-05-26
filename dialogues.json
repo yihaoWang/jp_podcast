@@ -556,6 +556,7 @@
         "speaker": "you",
         "native": "麻煩幫我加熱。",
         "target": "お願いします。温めてください。",
+        "tts_text": "お願いします。あたためてください。",
         "breakdown": [
           {
             "surface": "お願いします",
