@@ -101,6 +101,7 @@ const Player = () => {
   const [autoExpand, setAutoExpand] = useState(false);
   const [loopScenario, setLoopScenario] = useState(false);
   const [loopLineOrder, setLoopLineOrder] = useState<number | null>(null);
+  const [playLineOrder, setPlayLineOrder] = useState<number | null>(null);
   const [showAdvancedControls, setShowAdvancedControls] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState<AudioVariant | null>(null);
   const [locale, setLocale] = useState<Locale>(getInitialLocale);
@@ -160,6 +161,10 @@ const Player = () => {
   const jumpToLine = (line: Scenario["lines"][number]) => {
     if (loopLineOrder !== null) {
       setLoopLineOrder(line.order);
+      setPlayLineOrder(null);
+      setLoopScenario(false);
+    } else {
+      setPlayLineOrder(line.order);
       setLoopScenario(false);
     }
     jumpTo(line.start);
@@ -168,6 +173,7 @@ const Player = () => {
   const repeatCurrent = () => {
     if (activeIndex < 0) return;
     const line = scenario.lines[activeIndex];
+    setPlayLineOrder(null);
     setLoopScenario(false);
     setLoopLineOrder((current) => (current === line.order ? null : line.order));
     jumpTo(line.start);
@@ -176,11 +182,20 @@ const Player = () => {
   const handleTimeUpdate = (audio: HTMLAudioElement) => {
     const nextTime = audio.currentTime;
     const loopLine = loopLineOrder === null ? null : scenario.lines.find((line) => line.order === loopLineOrder);
+    const playLine = playLineOrder === null ? null : scenario.lines.find((line) => line.order === playLineOrder);
 
     if (loopLine && (nextTime >= loopLine.end || nextTime < loopLine.start)) {
       audio.currentTime = loopLine.start;
       setCurrentTime(loopLine.start);
       audio.play().catch((e) => console.warn("play failed", e));
+      return;
+    }
+
+    if (playLine && nextTime >= playLine.end) {
+      audio.pause();
+      audio.currentTime = playLine.end;
+      setCurrentTime(playLine.end);
+      setPlayLineOrder(null);
       return;
     }
 
@@ -217,6 +232,7 @@ const Player = () => {
           <button
             type="button"
             onClick={() => {
+              setPlayLineOrder(null);
               setLoopLineOrder(null);
               setLoopScenario((value) => !value);
             }}
@@ -301,6 +317,7 @@ const Player = () => {
                 onChange={(e) => {
                   const next = scenario.variants?.find((v) => v.mode === e.target.value) ?? null;
                   setSelectedVariant(next);
+                  setPlayLineOrder(null);
                   setLoopLineOrder(null);
                   if (audioRef.current) audioRef.current.currentTime = 0;
                 }}
