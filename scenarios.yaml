@@ -82,6 +82,13 @@ scenarios:
       you: 工程師
       other: 主管
 
+  - id: onboarding_self_intro
+    title: 入職自我介紹
+    context: 第一天加入日本公司或新團隊，向主管和同事自我介紹，說明背景、負責範圍、語言狀況和請教工作流程
+    roles:
+      you: 新人
+      other: 主管或同事
+
   - id: work_status_blocker
     title: 工作進度與卡關回報
     context: 在 standup 中說明昨天完成的事、今天計畫、目前卡住的問題，並請同事協助

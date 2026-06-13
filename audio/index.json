@@ -293,6 +293,48 @@
           "duration": 244.064
         }
       ]
+    },
+    {
+      "id": "onboarding_self_intro",
+      "title": "入職自我介紹",
+      "context": "第一天加入日本公司或新團隊，向主管和同事自我介紹，說明背景、負責範圍、語言狀況和請教工作流程",
+      "duration": 106.039,
+      "line_count": 16,
+      "source_type": "generated_scenario",
+      "source_id": "onboarding_self_intro",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/onboarding_self_intro.mp3",
+          "duration": 106.039
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/onboarding_self_intro.shadowing.mp3",
+          "duration": 173.239
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/onboarding_self_intro.slow.mp3",
+          "duration": 126.505
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/onboarding_self_intro.native-target.mp3",
+          "duration": 196.829
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/onboarding_self_intro.target-native.mp3",
+          "duration": 196.829
+        }
+      ]
     }
   ]
 }

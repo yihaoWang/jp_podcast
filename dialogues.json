@@ -3283,5 +3283,627 @@
     "source_type": "generated_scenario",
     "source_id": "phone_reservation",
     "difficulty": null
+  },
+  {
+    "id": "onboarding_self_intro",
+    "title": "入職自我介紹",
+    "context": "第一天加入日本公司或新團隊，向主管和同事自我介紹，說明背景、負責範圍、語言狀況和請教工作流程",
+    "lines": [
+      {
+        "speaker": "other",
+        "native": "那麼，請新加入的王先生/小姐簡單自我介紹。",
+        "target": "それでは、新しく入社されたワンさんから、簡単に自己紹介をお願いします。",
+        "breakdown": [
+          {
+            "surface": "それでは",
+            "reading": "それでは",
+            "pos": "接續詞",
+            "meaning": "那麼、接下來"
+          },
+          {
+            "surface": "新しく入社された",
+            "reading": "あたらしくにゅうしゃされた",
+            "pos": "尊敬語片語",
+            "meaning": "新入職的"
+          },
+          {
+            "surface": "ワンさんから",
+            "reading": "ワンさんから",
+            "pos": "人名+から",
+            "meaning": "從王先生/小姐開始"
+          },
+          {
+            "surface": "簡単に自己紹介",
+            "reading": "かんたんにじこしょうかい",
+            "pos": "片語",
+            "meaning": "簡單自我介紹"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "請求片語",
+            "meaning": "麻煩您"
+          }
+        ],
+        "grammar_note": "會議主持人常用「〜さんからお願いします」點名請人發言。",
+        "line_id": "onboarding_self_intro:1",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "從今天開始承蒙大家照顧，我姓王。",
+        "target": "本日からお世話になります、ワンと申します。",
+        "breakdown": [
+          {
+            "surface": "本日から",
+            "reading": "ほんじつから",
+            "pos": "時間片語",
+            "meaning": "從今天開始"
+          },
+          {
+            "surface": "お世話になります",
+            "reading": "おせわになります",
+            "pos": "寒暄句",
+            "meaning": "承蒙照顧"
+          },
+          {
+            "surface": "ワンと申します",
+            "reading": "ワンともうします",
+            "pos": "自我介紹敬語",
+            "meaning": "我姓王"
+          }
+        ],
+        "grammar_note": "入職第一句用「本日からお世話になります」很自然、禮貌。",
+        "line_id": "onboarding_self_intro:2",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "我來自台灣，之前一直擔任後端工程師。",
+        "target": "台湾出身で、これまでバックエンドエンジニアとして働いてきました。",
+        "breakdown": [
+          {
+            "surface": "台湾出身",
+            "reading": "たいわんしゅっしん",
+            "pos": "名詞片語",
+            "meaning": "台灣出身"
+          },
+          {
+            "surface": "これまで",
+            "reading": "これまで",
+            "pos": "副詞",
+            "meaning": "到目前為止"
+          },
+          {
+            "surface": "バックエンドエンジニア",
+            "reading": "バックエンドエンジニア",
+            "pos": "職稱",
+            "meaning": "後端工程師"
+          },
+          {
+            "surface": "として働いてきました",
+            "reading": "としてはたらいてきました",
+            "pos": "經驗表達",
+            "meaning": "作為某職務工作至今"
+          }
+        ],
+        "grammar_note": "「〜として働いてきました」適合說明過去職務背景。",
+        "line_id": "onboarding_self_intro:3",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "前公司主要負責 API 開發和資料基礎建設改善。",
+        "target": "前職では、主にAPI開発とデータ基盤の改善を担当していました。",
+        "breakdown": [
+          {
+            "surface": "前職では",
+            "reading": "ぜんしょくでは",
+            "pos": "名詞+では",
+            "meaning": "在前一份工作中"
+          },
+          {
+            "surface": "主に",
+            "reading": "おもに",
+            "pos": "副詞",
+            "meaning": "主要"
+          },
+          {
+            "surface": "API開発",
+            "reading": "エーピーアイかいはつ",
+            "pos": "名詞",
+            "meaning": "API 開發"
+          },
+          {
+            "surface": "データ基盤",
+            "reading": "データきばん",
+            "pos": "名詞",
+            "meaning": "資料基礎建設"
+          },
+          {
+            "surface": "担当していました",
+            "reading": "たんとうしていました",
+            "pos": "職務表達",
+            "meaning": "曾負責"
+          }
+        ],
+        "grammar_note": "說明經歷時，「前職では、主に〜を担当していました」是安全模板。",
+        "tts_text": "前職では、主にエーピーアイ開発とデータ基盤の改善を担当していました。",
+        "line_id": "onboarding_self_intro:4",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "謝謝。這次在團隊裡預計會負責哪一塊？",
+        "target": "ありがとうございます。今回のチームでは、どのあたりを担当される予定ですか。",
+        "breakdown": [
+          {
+            "surface": "今回のチーム",
+            "reading": "こんかいのチーム",
+            "pos": "名詞片語",
+            "meaning": "這次的團隊"
+          },
+          {
+            "surface": "どのあたり",
+            "reading": "どのあたり",
+            "pos": "疑問片語",
+            "meaning": "哪一塊、哪個範圍"
+          },
+          {
+            "surface": "担当される",
+            "reading": "たんとうされる",
+            "pos": "尊敬語",
+            "meaning": "負責"
+          },
+          {
+            "surface": "予定ですか",
+            "reading": "よていですか",
+            "pos": "名詞+ですか",
+            "meaning": "預計嗎"
+          }
+        ],
+        "grammar_note": "「どのあたり」比「何」更模糊自然，常用於工作範圍。",
+        "line_id": "onboarding_self_intro:5",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "我會先從理解既有系統開始，再逐步負責新功能開發。",
+        "target": "まずは既存システムの理解から始めて、徐々に新機能の開発を担当する予定です。",
+        "breakdown": [
+          {
+            "surface": "まずは",
+            "reading": "まずは",
+            "pos": "副詞",
+            "meaning": "首先"
+          },
+          {
+            "surface": "既存システム",
+            "reading": "きそんシステム",
+            "pos": "名詞",
+            "meaning": "既有系統"
+          },
+          {
+            "surface": "理解から始めて",
+            "reading": "りかいからはじめて",
+            "pos": "動詞片語",
+            "meaning": "從理解開始"
+          },
+          {
+            "surface": "徐々に",
+            "reading": "じょじょに",
+            "pos": "副詞",
+            "meaning": "逐步地"
+          },
+          {
+            "surface": "担当する予定です",
+            "reading": "たんとうするよていです",
+            "pos": "計畫表達",
+            "meaning": "預計負責"
+          }
+        ],
+        "grammar_note": "入職初期可用「まずは〜から始めて」說明不急著承諾太多。",
+        "line_id": "onboarding_self_intro:6",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "我還不太習慣用日文開會，可能會有需要確認或反問的地方。",
+        "target": "まだ日本語での会議に慣れていないので、聞き返すことがあるかもしれません。",
+        "breakdown": [
+          {
+            "surface": "まだ",
+            "reading": "まだ",
+            "pos": "副詞",
+            "meaning": "還"
+          },
+          {
+            "surface": "日本語での会議",
+            "reading": "にほんごでのかいぎ",
+            "pos": "名詞片語",
+            "meaning": "用日文進行的會議"
+          },
+          {
+            "surface": "慣れていない",
+            "reading": "なれていない",
+            "pos": "動詞否定",
+            "meaning": "還不習慣"
+          },
+          {
+            "surface": "聞き返す",
+            "reading": "ききかえす",
+            "pos": "動詞",
+            "meaning": "反問、請對方再說一次"
+          },
+          {
+            "surface": "あるかもしれません",
+            "reading": "あるかもしれません",
+            "pos": "可能性表達",
+            "meaning": "可能會有"
+          }
+        ],
+        "grammar_note": "事先說明語言狀況可以降低會議壓力，也讓同事知道你會確認。",
+        "line_id": "onboarding_self_intro:7",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "當然沒問題。有不懂的地方請不要客氣，隨時問。",
+        "target": "もちろん大丈夫です。わからないことがあれば、遠慮なく聞いてください。",
+        "breakdown": [
+          {
+            "surface": "もちろん",
+            "reading": "もちろん",
+            "pos": "副詞",
+            "meaning": "當然"
+          },
+          {
+            "surface": "大丈夫です",
+            "reading": "だいじょうぶです",
+            "pos": "片語",
+            "meaning": "沒問題"
+          },
+          {
+            "surface": "わからないこと",
+            "reading": "わからないこと",
+            "pos": "名詞片語",
+            "meaning": "不懂的事情"
+          },
+          {
+            "surface": "遠慮なく",
+            "reading": "えんりょなく",
+            "pos": "副詞",
+            "meaning": "不用客氣"
+          },
+          {
+            "surface": "聞いてください",
+            "reading": "きいてください",
+            "pos": "請求句",
+            "meaning": "請問"
+          }
+        ],
+        "grammar_note": "「遠慮なく聞いてください」是日本職場常見的友善回應。",
+        "line_id": "onboarding_self_intro:8",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "謝謝。如果能教我業務推進方式和 code review 流程，會很有幫助。",
+        "target": "ありがとうございます。業務の進め方やコードレビューの流れも教えていただけると助かります。",
+        "breakdown": [
+          {
+            "surface": "業務の進め方",
+            "reading": "ぎょうむのすすめかた",
+            "pos": "名詞片語",
+            "meaning": "工作推進方式"
+          },
+          {
+            "surface": "コードレビュー",
+            "reading": "コードレビュー",
+            "pos": "名詞",
+            "meaning": "code review"
+          },
+          {
+            "surface": "流れ",
+            "reading": "ながれ",
+            "pos": "名詞",
+            "meaning": "流程"
+          },
+          {
+            "surface": "教えていただけると",
+            "reading": "おしえていただけると",
+            "pos": "謙讓請求",
+            "meaning": "如果能請您教我"
+          },
+          {
+            "surface": "助かります",
+            "reading": "たすかります",
+            "pos": "片語",
+            "meaning": "會很有幫助"
+          }
+        ],
+        "grammar_note": "請教流程時用「〜ていただけると助かります」比直接要求更自然。",
+        "line_id": "onboarding_self_intro:9",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "稍後會分享 Slack 頻道和文件。",
+        "target": "後ほどSlackのチャンネルとドキュメントを共有します。",
+        "breakdown": [
+          {
+            "surface": "後ほど",
+            "reading": "のちほど",
+            "pos": "副詞",
+            "meaning": "稍後"
+          },
+          {
+            "surface": "Slackのチャンネル",
+            "reading": "スラックのチャンネル",
+            "pos": "名詞片語",
+            "meaning": "Slack 頻道"
+          },
+          {
+            "surface": "ドキュメント",
+            "reading": "ドキュメント",
+            "pos": "名詞",
+            "meaning": "文件"
+          },
+          {
+            "surface": "共有します",
+            "reading": "きょうゆうします",
+            "pos": "動詞",
+            "meaning": "分享、共享"
+          }
+        ],
+        "grammar_note": "「後ほど」是工作場合常用的「稍後」。",
+        "tts_text": "後ほどスラックのチャンネルとドキュメントを共有します。",
+        "line_id": "onboarding_self_intro:10",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "太好了。我會先確認，有問題再整理後聯絡。",
+        "target": "助かります。まず確認して、質問があればまとめて連絡します。",
+        "breakdown": [
+          {
+            "surface": "助かります",
+            "reading": "たすかります",
+            "pos": "回應句",
+            "meaning": "幫大忙了、謝謝"
+          },
+          {
+            "surface": "まず確認して",
+            "reading": "まずかくにんして",
+            "pos": "動詞片語",
+            "meaning": "先確認"
+          },
+          {
+            "surface": "質問があれば",
+            "reading": "しつもんがあれば",
+            "pos": "條件句",
+            "meaning": "如果有問題"
+          },
+          {
+            "surface": "まとめて連絡します",
+            "reading": "まとめてれんらくします",
+            "pos": "動詞片語",
+            "meaning": "整理後聯絡"
+          }
+        ],
+        "grammar_note": "「まとめて連絡します」表現出你會先整理問題，不會零散打擾。",
+        "line_id": "onboarding_self_intro:11",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "今天下午我會安排 onboarding meeting。",
+        "target": "今日の午後にオンボーディングのミーティングを入れておきます。",
+        "breakdown": [
+          {
+            "surface": "今日の午後",
+            "reading": "きょうのごご",
+            "pos": "時間",
+            "meaning": "今天下午"
+          },
+          {
+            "surface": "オンボーディング",
+            "reading": "オンボーディング",
+            "pos": "名詞",
+            "meaning": "入職導入"
+          },
+          {
+            "surface": "ミーティング",
+            "reading": "ミーティング",
+            "pos": "名詞",
+            "meaning": "會議"
+          },
+          {
+            "surface": "入れておきます",
+            "reading": "いれておきます",
+            "pos": "動詞ておく",
+            "meaning": "先安排好"
+          }
+        ],
+        "grammar_note": "「予定を入れておきます」表示先把行程排進日曆。",
+        "line_id": "onboarding_self_intro:12",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "了解。我會確認日曆並參加。",
+        "target": "承知しました。カレンダーを確認して参加します。",
+        "breakdown": [
+          {
+            "surface": "承知しました",
+            "reading": "しょうちしました",
+            "pos": "禮貌回應",
+            "meaning": "了解"
+          },
+          {
+            "surface": "カレンダー",
+            "reading": "カレンダー",
+            "pos": "名詞",
+            "meaning": "日曆"
+          },
+          {
+            "surface": "確認して",
+            "reading": "かくにんして",
+            "pos": "動詞て形",
+            "meaning": "確認後"
+          },
+          {
+            "surface": "参加します",
+            "reading": "さんかします",
+            "pos": "動詞",
+            "meaning": "參加"
+          }
+        ],
+        "grammar_note": "職場中「承知しました」比「わかりました」更正式。",
+        "line_id": "onboarding_self_intro:13",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "很期待能和大家一起工作。",
+        "target": "皆さんと一緒に働けることを楽しみにしています。",
+        "breakdown": [
+          {
+            "surface": "皆さんと一緒に",
+            "reading": "みなさんといっしょに",
+            "pos": "片語",
+            "meaning": "和大家一起"
+          },
+          {
+            "surface": "働けること",
+            "reading": "はたらけること",
+            "pos": "可能形名詞化",
+            "meaning": "能夠工作這件事"
+          },
+          {
+            "surface": "楽しみにしています",
+            "reading": "たのしみにしています",
+            "pos": "固定句",
+            "meaning": "很期待"
+          }
+        ],
+        "grammar_note": "自我介紹結尾可用「楽しみにしています」表達正面但不誇張。",
+        "line_id": "onboarding_self_intro:14",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "今後請多多指教。",
+        "target": "これからどうぞよろしくお願いいたします。",
+        "breakdown": [
+          {
+            "surface": "これから",
+            "reading": "これから",
+            "pos": "副詞",
+            "meaning": "今後、接下來"
+          },
+          {
+            "surface": "どうぞよろしく",
+            "reading": "どうぞよろしく",
+            "pos": "寒暄句",
+            "meaning": "請多指教"
+          },
+          {
+            "surface": "お願いいたします",
+            "reading": "おねがいいたします",
+            "pos": "敬語請求",
+            "meaning": "拜託您、請多關照"
+          }
+        ],
+        "grammar_note": "入職自我介紹結尾用「よろしくお願いいたします」比「よろしくお願いします」更正式。",
+        "line_id": "onboarding_self_intro:15",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "我們也請多指教。有困難的地方隨時找我們。",
+        "target": "こちらこそ、よろしくお願いします。困ったことがあればいつでも声をかけてください。",
+        "breakdown": [
+          {
+            "surface": "こちらこそ",
+            "reading": "こちらこそ",
+            "pos": "回應句",
+            "meaning": "我方才是、我們也"
+          },
+          {
+            "surface": "困ったこと",
+            "reading": "こまったこと",
+            "pos": "名詞片語",
+            "meaning": "遇到困難的事"
+          },
+          {
+            "surface": "いつでも",
+            "reading": "いつでも",
+            "pos": "副詞",
+            "meaning": "隨時"
+          },
+          {
+            "surface": "声をかけてください",
+            "reading": "こえをかけてください",
+            "pos": "慣用句",
+            "meaning": "請找我、請出聲叫我"
+          }
+        ],
+        "grammar_note": "「声をかけてください」在職場中表示可以隨時找我。",
+        "line_id": "onboarding_self_intro:16",
+        "source_type": "generated_scenario",
+        "source_id": "onboarding_self_intro",
+        "difficulty": null,
+        "review_state": "new"
+      }
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "onboarding_self_intro",
+    "difficulty": null
   }
 ]
