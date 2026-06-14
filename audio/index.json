@@ -335,6 +335,174 @@
           "duration": 196.829
         }
       ]
+    },
+    {
+      "id": "cafe_takeout",
+      "title": "咖啡店外帶",
+      "context": "在咖啡店點飲料，確認內用外帶、冰熱、尺寸、少糖、加奶、等待叫號和收據",
+      "duration": 58.007,
+      "line_count": 12,
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/cafe_takeout.mp3",
+          "duration": 58.007
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/cafe_takeout.shadowing.mp3",
+          "duration": 108.407
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/cafe_takeout.slow.mp3",
+          "duration": 68.633
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/cafe_takeout.native-target.mp3",
+          "duration": 107.998
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/cafe_takeout.target-native.mp3",
+          "duration": 107.998
+        }
+      ]
+    },
+    {
+      "id": "delivery_redelivery",
+      "title": "宅配再配送",
+      "context": "收到不在票後打電話或和配送員確認再配送時間、地址、置き配、宅配箱和本人確認",
+      "duration": 62.159,
+      "line_count": 12,
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/delivery_redelivery.mp3",
+          "duration": 62.159
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/delivery_redelivery.shadowing.mp3",
+          "duration": 112.559
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/delivery_redelivery.slow.mp3",
+          "duration": 73.696
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/delivery_redelivery.native-target.mp3",
+          "duration": 117.838
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/delivery_redelivery.target-native.mp3",
+          "duration": 117.838
+        }
+      ]
+    },
+    {
+      "id": "clinic_registration",
+      "title": "診所掛號與描述症狀",
+      "context": "第一次到診所掛號，出示保險證，描述發燒、喉嚨痛、咳嗽，確認等候時間和藥物過敏",
+      "duration": 56.983,
+      "line_count": 13,
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/clinic_registration.mp3",
+          "duration": 56.983
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/clinic_registration.shadowing.mp3",
+          "duration": 111.583
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/clinic_registration.slow.mp3",
+          "duration": 67.208
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/clinic_registration.native-target.mp3",
+          "duration": 109.505
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/clinic_registration.target-native.mp3",
+          "duration": 109.505
+        }
+      ]
+    },
+    {
+      "id": "hair_salon",
+      "title": "理髮美容院溝通",
+      "context": "到理髮店或美容院，說明預約、想剪的長度、瀏海、髮量、不要太短、造型和付款",
+      "duration": 65.727,
+      "line_count": 14,
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "variants": [
+        {
+          "mode": "target",
+          "label": "Target only",
+          "path": "/audio/hair_salon.mp3",
+          "duration": 65.727
+        },
+        {
+          "mode": "shadowing",
+          "label": "Shadowing long pause",
+          "path": "/audio/hair_salon.shadowing.mp3",
+          "duration": 124.527
+        },
+        {
+          "mode": "slow",
+          "label": "Slow target",
+          "path": "/audio/hair_salon.slow.mp3",
+          "duration": 77.696
+        },
+        {
+          "mode": "native_then_target",
+          "label": "Native then target",
+          "path": "/audio/hair_salon.native-target.mp3",
+          "duration": 121.477
+        },
+        {
+          "mode": "target_then_native",
+          "label": "Target then native",
+          "path": "/audio/hair_salon.target-native.mp3",
+          "duration": 121.477
+        }
+      ]
     }
   ]
 }

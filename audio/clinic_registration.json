@@ -1,0 +1,475 @@
+{
+  "id": "clinic_registration",
+  "title": "診所掛號與描述症狀",
+  "context": "第一次到診所掛號，出示保險證，描述發燒、喉嚨痛、咳嗽，確認等候時間和藥物過敏",
+  "language_code": "ja",
+  "native_language_code": "zh-TW",
+  "source_type": "generated_scenario",
+  "source_id": "clinic_registration",
+  "difficulty": null,
+  "duration": 56.983,
+  "variants": [
+    {
+      "mode": "target",
+      "label": "Target only",
+      "path": "/audio/clinic_registration.mp3",
+      "duration": 56.983
+    },
+    {
+      "mode": "shadowing",
+      "label": "Shadowing long pause",
+      "path": "/audio/clinic_registration.shadowing.mp3",
+      "duration": 111.583
+    },
+    {
+      "mode": "slow",
+      "label": "Slow target",
+      "path": "/audio/clinic_registration.slow.mp3",
+      "duration": 67.208
+    },
+    {
+      "mode": "native_then_target",
+      "label": "Native then target",
+      "path": "/audio/clinic_registration.native-target.mp3",
+      "duration": 109.505
+    },
+    {
+      "mode": "target_then_native",
+      "label": "Target then native",
+      "path": "/audio/clinic_registration.target-native.mp3",
+      "duration": 109.505
+    }
+  ],
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "you",
+      "native": "不好意思，我是第一次來，想掛號。",
+      "target": "すみません、初めてなんですが、受付をお願いします。",
+      "line_id": "clinic_registration:1",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "初めて",
+          "reading": "はじめて",
+          "pos": "副詞/名詞",
+          "meaning": "第一次"
+        },
+        {
+          "surface": "受付",
+          "reading": "うけつけ",
+          "pos": "名詞",
+          "meaning": "掛號、櫃台受理"
+        },
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "請求",
+          "meaning": "麻煩您"
+        }
+      ],
+      "grammar_note": "初診掛號可說「初めてなんですが、受付をお願いします」。",
+      "start": 0.0,
+      "end": 4.968
+    },
+    {
+      "order": 2,
+      "speaker": "other",
+      "native": "請出示健康保險證和在留卡。",
+      "target": "保険証と在留カードをご提示ください。",
+      "line_id": "clinic_registration:2",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "保険証",
+          "reading": "ほけんしょう",
+          "pos": "名詞",
+          "meaning": "健康保險證"
+        },
+        {
+          "surface": "在留カード",
+          "reading": "ざいりゅうカード",
+          "pos": "名詞",
+          "meaning": "在留卡"
+        },
+        {
+          "surface": "ご提示ください",
+          "reading": "ごていじください",
+          "pos": "敬語請求",
+          "meaning": "請出示"
+        }
+      ],
+      "grammar_note": "診所初診常會確認保險證與身分證件。",
+      "start": 5.768,
+      "end": 9.272
+    },
+    {
+      "order": 3,
+      "speaker": "you",
+      "native": "好的，這是保險證。",
+      "target": "はい、こちらが保険証です。",
+      "line_id": "clinic_registration:3",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "こちら",
+          "reading": "こちら",
+          "pos": "代名詞",
+          "meaning": "這個、這邊"
+        },
+        {
+          "surface": "保険証",
+          "reading": "ほけんしょう",
+          "pos": "名詞",
+          "meaning": "保險證"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "pos": "助動詞",
+          "meaning": "是"
+        }
+      ],
+      "grammar_note": "遞文件時用「こちらが〜です」。",
+      "start": 10.072,
+      "end": 13.216
+    },
+    {
+      "order": 4,
+      "speaker": "other",
+      "native": "今天是哪裡不舒服？",
+      "target": "今日はどうされましたか。",
+      "line_id": "clinic_registration:4",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "pos": "名詞",
+          "meaning": "今天"
+        },
+        {
+          "surface": "どうされましたか",
+          "reading": "どうされましたか",
+          "pos": "固定問句",
+          "meaning": "您怎麼了"
+        }
+      ],
+      "grammar_note": "醫護人員問症狀常說「どうされましたか」。",
+      "start": 14.016,
+      "end": 16.272
+    },
+    {
+      "order": 5,
+      "speaker": "you",
+      "native": "從昨天開始發燒，喉嚨也很痛。",
+      "target": "昨日から熱があって、喉もかなり痛いです。",
+      "line_id": "clinic_registration:5",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "昨日から",
+          "reading": "きのうから",
+          "pos": "時間",
+          "meaning": "從昨天開始"
+        },
+        {
+          "surface": "熱がある",
+          "reading": "ねつがある",
+          "pos": "片語",
+          "meaning": "發燒"
+        },
+        {
+          "surface": "喉",
+          "reading": "のど",
+          "pos": "名詞",
+          "meaning": "喉嚨"
+        },
+        {
+          "surface": "かなり痛い",
+          "reading": "かなりいたい",
+          "pos": "形容詞片語",
+          "meaning": "相當痛"
+        }
+      ],
+      "grammar_note": "描述症狀用「〜から」「〜が痛い」最基本。",
+      "start": 17.072,
+      "end": 21.296
+    },
+    {
+      "order": 6,
+      "speaker": "other",
+      "native": "有咳嗽或流鼻水嗎？",
+      "target": "咳や鼻水はありますか。",
+      "line_id": "clinic_registration:6",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "咳",
+          "reading": "せき",
+          "pos": "名詞",
+          "meaning": "咳嗽"
+        },
+        {
+          "surface": "鼻水",
+          "reading": "はなみず",
+          "pos": "名詞",
+          "meaning": "鼻水"
+        },
+        {
+          "surface": "ありますか",
+          "reading": "ありますか",
+          "pos": "問句",
+          "meaning": "有嗎"
+        }
+      ],
+      "grammar_note": "診所會追問常見症狀。",
+      "start": 22.096,
+      "end": 24.664
+    },
+    {
+      "order": 7,
+      "speaker": "you",
+      "native": "有一點咳嗽，但沒有流鼻水。",
+      "target": "咳は少しありますが、鼻水はありません。",
+      "line_id": "clinic_registration:7",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "少しあります",
+          "reading": "すこしあります",
+          "pos": "片語",
+          "meaning": "有一點"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "pos": "接續助詞",
+          "meaning": "但是"
+        },
+        {
+          "surface": "ありません",
+          "reading": "ありません",
+          "pos": "否定",
+          "meaning": "沒有"
+        }
+      ],
+      "grammar_note": "用「Aはありますが、Bはありません」對比症狀。",
+      "start": 25.464,
+      "end": 29.688
+    },
+    {
+      "order": 8,
+      "speaker": "other",
+      "native": "有吃過退燒藥嗎？",
+      "target": "解熱剤は飲まれましたか。",
+      "line_id": "clinic_registration:8",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "解熱剤",
+          "reading": "げねつざい",
+          "pos": "名詞",
+          "meaning": "退燒藥"
+        },
+        {
+          "surface": "飲まれましたか",
+          "reading": "のまれましたか",
+          "pos": "尊敬語",
+          "meaning": "有服用嗎"
+        }
+      ],
+      "grammar_note": "藥物用「飲む」，即使是藥錠。",
+      "start": 30.488,
+      "end": 32.936
+    },
+    {
+      "order": 9,
+      "speaker": "you",
+      "native": "今天早上吃過一次市售藥。",
+      "target": "今朝、市販薬を一回飲みました。",
+      "line_id": "clinic_registration:9",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "今朝",
+          "reading": "けさ",
+          "pos": "時間",
+          "meaning": "今天早上"
+        },
+        {
+          "surface": "市販薬",
+          "reading": "しはんやく",
+          "pos": "名詞",
+          "meaning": "市售藥"
+        },
+        {
+          "surface": "一回",
+          "reading": "いっかい",
+          "pos": "次數",
+          "meaning": "一次"
+        }
+      ],
+      "grammar_note": "「市販薬」指藥局可買到的非處方藥。",
+      "start": 33.736,
+      "end": 37.312
+    },
+    {
+      "order": 10,
+      "speaker": "other",
+      "native": "有藥物過敏嗎？",
+      "target": "薬のアレルギーはありますか。",
+      "line_id": "clinic_registration:10",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "薬",
+          "reading": "くすり",
+          "pos": "名詞",
+          "meaning": "藥"
+        },
+        {
+          "surface": "アレルギー",
+          "reading": "アレルギー",
+          "pos": "名詞",
+          "meaning": "過敏"
+        },
+        {
+          "surface": "ありますか",
+          "reading": "ありますか",
+          "pos": "問句",
+          "meaning": "有嗎"
+        }
+      ],
+      "grammar_note": "醫療場景一定要會回答過敏問題。",
+      "start": 38.112,
+      "end": 40.752
+    },
+    {
+      "order": 11,
+      "speaker": "you",
+      "native": "目前沒有已知的藥物過敏。",
+      "target": "今のところ、わかっている薬のアレルギーはありません。",
+      "line_id": "clinic_registration:11",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "今のところ",
+          "reading": "いまのところ",
+          "pos": "副詞",
+          "meaning": "目前"
+        },
+        {
+          "surface": "わかっている",
+          "reading": "わかっている",
+          "pos": "動詞",
+          "meaning": "已知的"
+        },
+        {
+          "surface": "ありません",
+          "reading": "ありません",
+          "pos": "否定",
+          "meaning": "沒有"
+        }
+      ],
+      "grammar_note": "不知道或沒有已知過敏時可說「今のところ、わかっている〜はありません」。",
+      "start": 41.552,
+      "end": 46.304
+    },
+    {
+      "order": 12,
+      "speaker": "other",
+      "native": "目前大約需要等三十分鐘。",
+      "target": "現在、待ち時間は三十分ほどです。",
+      "line_id": "clinic_registration:12",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "現在",
+          "reading": "げんざい",
+          "pos": "名詞",
+          "meaning": "目前"
+        },
+        {
+          "surface": "待ち時間",
+          "reading": "まちじかん",
+          "pos": "名詞",
+          "meaning": "等候時間"
+        },
+        {
+          "surface": "三十分ほど",
+          "reading": "さんじゅっぷんほど",
+          "pos": "時間",
+          "meaning": "約三十分"
+        }
+      ],
+      "grammar_note": "「〜ほど」表示大約。",
+      "start": 47.104,
+      "end": 50.872
+    },
+    {
+      "order": 13,
+      "speaker": "you",
+      "native": "了解。我在候診區等。",
+      "target": "わかりました。待合室で待っています。",
+      "line_id": "clinic_registration:13",
+      "source_type": "generated_scenario",
+      "source_id": "clinic_registration",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "待合室",
+          "reading": "まちあいしつ",
+          "pos": "名詞",
+          "meaning": "候診室"
+        },
+        {
+          "surface": "待っています",
+          "reading": "まっています",
+          "pos": "動詞",
+          "meaning": "等候中"
+        }
+      ],
+      "grammar_note": "診所候診區叫「待合室」。",
+      "start": 51.672,
+      "end": 56.184
+    }
+  ]
+}

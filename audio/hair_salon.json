@@ -1,0 +1,503 @@
+{
+  "id": "hair_salon",
+  "title": "理髮美容院溝通",
+  "context": "到理髮店或美容院，說明預約、想剪的長度、瀏海、髮量、不要太短、造型和付款",
+  "language_code": "ja",
+  "native_language_code": "zh-TW",
+  "source_type": "generated_scenario",
+  "source_id": "hair_salon",
+  "difficulty": null,
+  "duration": 65.727,
+  "variants": [
+    {
+      "mode": "target",
+      "label": "Target only",
+      "path": "/audio/hair_salon.mp3",
+      "duration": 65.727
+    },
+    {
+      "mode": "shadowing",
+      "label": "Shadowing long pause",
+      "path": "/audio/hair_salon.shadowing.mp3",
+      "duration": 124.527
+    },
+    {
+      "mode": "slow",
+      "label": "Slow target",
+      "path": "/audio/hair_salon.slow.mp3",
+      "duration": 77.696
+    },
+    {
+      "mode": "native_then_target",
+      "label": "Native then target",
+      "path": "/audio/hair_salon.native-target.mp3",
+      "duration": 121.477
+    },
+    {
+      "mode": "target_then_native",
+      "label": "Target then native",
+      "path": "/audio/hair_salon.target-native.mp3",
+      "duration": 121.477
+    }
+  ],
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "other",
+      "native": "歡迎光臨。請問有預約嗎？",
+      "target": "いらっしゃいませ。ご予約はされていますか。",
+      "line_id": "hair_salon:1",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "ご予約",
+          "reading": "ごよやく",
+          "pos": "敬語名詞",
+          "meaning": "預約"
+        },
+        {
+          "surface": "されていますか",
+          "reading": "されていますか",
+          "pos": "尊敬語",
+          "meaning": "有做嗎"
+        }
+      ],
+      "grammar_note": "美容院通常先確認預約。",
+      "start": 0.0,
+      "end": 4.056
+    },
+    {
+      "order": 2,
+      "speaker": "you",
+      "native": "有，我預約了下午三點，姓王。",
+      "target": "はい、十五時に予約しているワンです。",
+      "line_id": "hair_salon:2",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "十五時",
+          "reading": "じゅうごじ",
+          "pos": "時間",
+          "meaning": "下午三點"
+        },
+        {
+          "surface": "予約している",
+          "reading": "よやくしている",
+          "pos": "動詞",
+          "meaning": "有預約"
+        },
+        {
+          "surface": "ワンです",
+          "reading": "ワンです",
+          "pos": "自報姓名",
+          "meaning": "我是王"
+        }
+      ],
+      "grammar_note": "報預約可說「〜時に予約している〜です」。",
+      "start": 4.856,
+      "end": 8.624
+    },
+    {
+      "order": 3,
+      "speaker": "other",
+      "native": "今天想怎麼剪？",
+      "target": "今日はどのようにされますか。",
+      "line_id": "hair_salon:3",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "pos": "名詞",
+          "meaning": "今天"
+        },
+        {
+          "surface": "どのように",
+          "reading": "どのように",
+          "pos": "疑問副詞",
+          "meaning": "想怎麼樣"
+        },
+        {
+          "surface": "されますか",
+          "reading": "されますか",
+          "pos": "尊敬語",
+          "meaning": "要做嗎"
+        }
+      ],
+      "grammar_note": "設計師問需求常用「どのようにされますか」。",
+      "start": 9.424,
+      "end": 11.872
+    },
+    {
+      "order": 4,
+      "speaker": "you",
+      "native": "整體想修短一點，但不要太短。",
+      "target": "全体的に少し短くしたいですが、短くしすぎないでください。",
+      "line_id": "hair_salon:4",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "全体的に",
+          "reading": "ぜんたいてきに",
+          "pos": "副詞",
+          "meaning": "整體上"
+        },
+        {
+          "surface": "少し短く",
+          "reading": "すこしみじかく",
+          "pos": "形容詞副詞化",
+          "meaning": "稍微短一點"
+        },
+        {
+          "surface": "しすぎないでください",
+          "reading": "しすぎないでください",
+          "pos": "請求",
+          "meaning": "請不要做過頭"
+        }
+      ],
+      "grammar_note": "「〜しすぎないでください」可用於不要剪太短、不要打太薄。",
+      "start": 12.672,
+      "end": 18.36
+    },
+    {
+      "order": 5,
+      "speaker": "other",
+      "native": "大概要剪幾公分？",
+      "target": "何センチくらい切りますか。",
+      "line_id": "hair_salon:5",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "何センチ",
+          "reading": "なんセンチ",
+          "pos": "疑問詞",
+          "meaning": "幾公分"
+        },
+        {
+          "surface": "くらい",
+          "reading": "くらい",
+          "pos": "副助詞",
+          "meaning": "大約"
+        },
+        {
+          "surface": "切りますか",
+          "reading": "きりますか",
+          "pos": "動詞問句",
+          "meaning": "要剪嗎"
+        }
+      ],
+      "grammar_note": "理髮常用「何センチくらい」。",
+      "start": 19.16,
+      "end": 21.608
+    },
+    {
+      "order": 6,
+      "speaker": "you",
+      "native": "大概剪兩公分就好。",
+      "target": "二センチくらいでお願いします。",
+      "line_id": "hair_salon:6",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "二センチ",
+          "reading": "にセンチ",
+          "pos": "長度",
+          "meaning": "兩公分"
+        },
+        {
+          "surface": "くらいで",
+          "reading": "くらいで",
+          "pos": "片語",
+          "meaning": "大約以"
+        },
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "請求",
+          "meaning": "麻煩您"
+        }
+      ],
+      "grammar_note": "回答長度用「〜センチくらいでお願いします」。",
+      "start": 22.408,
+      "end": 25.288
+    },
+    {
+      "order": 7,
+      "speaker": "other",
+      "native": "瀏海要怎麼處理？",
+      "target": "前髪はどうされますか。",
+      "line_id": "hair_salon:7",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "前髪",
+          "reading": "まえがみ",
+          "pos": "名詞",
+          "meaning": "瀏海"
+        },
+        {
+          "surface": "どうされますか",
+          "reading": "どうされますか",
+          "pos": "尊敬語問句",
+          "meaning": "要怎麼處理"
+        }
+      ],
+      "grammar_note": "瀏海是「前髪」。",
+      "start": 26.088,
+      "end": 28.44
+    },
+    {
+      "order": 8,
+      "speaker": "you",
+      "native": "瀏海請修到眉毛附近。",
+      "target": "前髪は眉毛のあたりで整えてください。",
+      "line_id": "hair_salon:8",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "眉毛",
+          "reading": "まゆげ",
+          "pos": "名詞",
+          "meaning": "眉毛"
+        },
+        {
+          "surface": "あたり",
+          "reading": "あたり",
+          "pos": "名詞",
+          "meaning": "附近"
+        },
+        {
+          "surface": "整えてください",
+          "reading": "ととのえてください",
+          "pos": "請求",
+          "meaning": "請修整"
+        }
+      ],
+      "grammar_note": "「〜のあたり」表示大概位置。",
+      "start": 29.24,
+      "end": 33.248
+    },
+    {
+      "order": 9,
+      "speaker": "other",
+      "native": "髮量要打薄嗎？",
+      "target": "量は軽くしますか。",
+      "line_id": "hair_salon:9",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "量",
+          "reading": "りょう",
+          "pos": "名詞",
+          "meaning": "量、髮量"
+        },
+        {
+          "surface": "軽くします",
+          "reading": "かるくします",
+          "pos": "片語",
+          "meaning": "打薄、變輕"
+        }
+      ],
+      "grammar_note": "日文常用「軽くする」表示打薄髮量。",
+      "start": 34.048,
+      "end": 36.232
+    },
+    {
+      "order": 10,
+      "speaker": "you",
+      "native": "請稍微打薄，但不要太薄。",
+      "target": "少しだけ軽くしてください。でも、すきすぎないでください。",
+      "line_id": "hair_salon:10",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "少しだけ",
+          "reading": "すこしだけ",
+          "pos": "副詞",
+          "meaning": "只有一點"
+        },
+        {
+          "surface": "軽くしてください",
+          "reading": "かるくしてください",
+          "pos": "請求",
+          "meaning": "請打薄"
+        },
+        {
+          "surface": "すきすぎないで",
+          "reading": "すきすぎないで",
+          "pos": "請求",
+          "meaning": "不要打太薄"
+        }
+      ],
+      "grammar_note": "「すく」是打薄頭髮；「すきすぎないで」很實用。",
+      "start": 37.032,
+      "end": 42.864
+    },
+    {
+      "order": 11,
+      "speaker": "other",
+      "native": "洗完頭後要幫您簡單造型嗎？",
+      "target": "シャンプーの後、簡単にセットしますか。",
+      "line_id": "hair_salon:11",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "シャンプー",
+          "reading": "シャンプー",
+          "pos": "名詞",
+          "meaning": "洗髮"
+        },
+        {
+          "surface": "後",
+          "reading": "あと",
+          "pos": "名詞",
+          "meaning": "之後"
+        },
+        {
+          "surface": "セットしますか",
+          "reading": "セットしますか",
+          "pos": "問句",
+          "meaning": "要造型嗎"
+        }
+      ],
+      "grammar_note": "造型在美容院常說「セット」。",
+      "start": 43.664,
+      "end": 47.216
+    },
+    {
+      "order": 12,
+      "speaker": "you",
+      "native": "請自然一點，不要用太多髮蠟。",
+      "target": "自然な感じで、ワックスは少なめでお願いします。",
+      "line_id": "hair_salon:12",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "自然な感じ",
+          "reading": "しぜんなかんじ",
+          "pos": "名詞片語",
+          "meaning": "自然的感覺"
+        },
+        {
+          "surface": "ワックス",
+          "reading": "ワックス",
+          "pos": "名詞",
+          "meaning": "髮蠟"
+        },
+        {
+          "surface": "少なめ",
+          "reading": "すくなめ",
+          "pos": "形容動詞",
+          "meaning": "少一點"
+        }
+      ],
+      "grammar_note": "「〜な感じで」適合描述想要的風格。",
+      "start": 48.016,
+      "end": 52.6
+    },
+    {
+      "order": 13,
+      "speaker": "other",
+      "native": "完成了，這樣可以嗎？",
+      "target": "仕上がりました。こんな感じで大丈夫ですか。",
+      "line_id": "hair_salon:13",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "仕上がりました",
+          "reading": "しあがりました",
+          "pos": "動詞",
+          "meaning": "完成了"
+        },
+        {
+          "surface": "こんな感じ",
+          "reading": "こんなかんじ",
+          "pos": "片語",
+          "meaning": "這樣的感覺"
+        },
+        {
+          "surface": "大丈夫ですか",
+          "reading": "だいじょうぶですか",
+          "pos": "問句",
+          "meaning": "可以嗎"
+        }
+      ],
+      "grammar_note": "最後確認成品會說「こんな感じで大丈夫ですか」。",
+      "start": 53.4,
+      "end": 57.768
+    },
+    {
+      "order": 14,
+      "speaker": "you",
+      "native": "很好，謝謝。可以刷卡嗎？",
+      "target": "大丈夫です。ありがとうございます。カードは使えますか。",
+      "line_id": "hair_salon:14",
+      "source_type": "generated_scenario",
+      "source_id": "hair_salon",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "大丈夫です",
+          "reading": "だいじょうぶです",
+          "pos": "回應",
+          "meaning": "可以、沒問題"
+        },
+        {
+          "surface": "カード",
+          "reading": "カード",
+          "pos": "名詞",
+          "meaning": "信用卡"
+        },
+        {
+          "surface": "使えますか",
+          "reading": "つかえますか",
+          "pos": "可能形問句",
+          "meaning": "可以使用嗎"
+        }
+      ],
+      "grammar_note": "付款前確認刷卡可用「カードは使えますか」。",
+      "start": 58.568,
+      "end": 64.928
+    }
+  ]
+}

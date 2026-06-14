@@ -1,0 +1,447 @@
+{
+  "id": "cafe_takeout",
+  "title": "咖啡店外帶",
+  "context": "在咖啡店點飲料，確認內用外帶、冰熱、尺寸、少糖、加奶、等待叫號和收據",
+  "language_code": "ja",
+  "native_language_code": "zh-TW",
+  "source_type": "generated_scenario",
+  "source_id": "cafe_takeout",
+  "difficulty": null,
+  "duration": 58.007,
+  "variants": [
+    {
+      "mode": "target",
+      "label": "Target only",
+      "path": "/audio/cafe_takeout.mp3",
+      "duration": 58.007
+    },
+    {
+      "mode": "shadowing",
+      "label": "Shadowing long pause",
+      "path": "/audio/cafe_takeout.shadowing.mp3",
+      "duration": 108.407
+    },
+    {
+      "mode": "slow",
+      "label": "Slow target",
+      "path": "/audio/cafe_takeout.slow.mp3",
+      "duration": 68.633
+    },
+    {
+      "mode": "native_then_target",
+      "label": "Native then target",
+      "path": "/audio/cafe_takeout.native-target.mp3",
+      "duration": 107.998
+    },
+    {
+      "mode": "target_then_native",
+      "label": "Target then native",
+      "path": "/audio/cafe_takeout.target-native.mp3",
+      "duration": 107.998
+    }
+  ],
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "other",
+      "native": "歡迎光臨。請問在店內用還是外帶？",
+      "target": "いらっしゃいませ。店内でお召し上がりですか、お持ち帰りですか。",
+      "line_id": "cafe_takeout:1",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "店内",
+          "reading": "てんない",
+          "pos": "名詞",
+          "meaning": "店內"
+        },
+        {
+          "surface": "お召し上がり",
+          "reading": "おめしあがり",
+          "pos": "敬語",
+          "meaning": "用餐、飲用"
+        },
+        {
+          "surface": "お持ち帰り",
+          "reading": "おもちかえり",
+          "pos": "名詞",
+          "meaning": "外帶"
+        }
+      ],
+      "grammar_note": "咖啡店常先確認內用或外帶。",
+      "start": 0.0,
+      "end": 5.616
+    },
+    {
+      "order": 2,
+      "speaker": "you",
+      "native": "外帶。我要一杯冰拿鐵。",
+      "target": "持ち帰りで、アイスラテを一つお願いします。",
+      "line_id": "cafe_takeout:2",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "持ち帰りで",
+          "reading": "もちかえりで",
+          "pos": "片語",
+          "meaning": "外帶"
+        },
+        {
+          "surface": "アイスラテ",
+          "reading": "アイスラテ",
+          "pos": "名詞",
+          "meaning": "冰拿鐵"
+        },
+        {
+          "surface": "一つ",
+          "reading": "ひとつ",
+          "pos": "數量",
+          "meaning": "一個、一杯"
+        }
+      ],
+      "grammar_note": "點飲料用「〜を一つお願いします」很自然。",
+      "start": 6.416,
+      "end": 10.664
+    },
+    {
+      "order": 3,
+      "speaker": "other",
+      "native": "尺寸要中杯可以嗎？",
+      "target": "サイズはMでよろしいですか。",
+      "line_id": "cafe_takeout:3",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "サイズ",
+          "reading": "サイズ",
+          "pos": "名詞",
+          "meaning": "尺寸"
+        },
+        {
+          "surface": "M",
+          "reading": "エム",
+          "pos": "尺寸",
+          "meaning": "中杯"
+        },
+        {
+          "surface": "よろしいですか",
+          "reading": "よろしいですか",
+          "pos": "敬語問句",
+          "meaning": "可以嗎"
+        }
+      ],
+      "grammar_note": "店員確認選項時常用「よろしいですか」。",
+      "start": 11.464,
+      "end": 14.104
+    },
+    {
+      "order": 4,
+      "speaker": "you",
+      "native": "請給我大杯。",
+      "target": "Lサイズでお願いします。",
+      "line_id": "cafe_takeout:4",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "Lサイズ",
+          "reading": "エルサイズ",
+          "pos": "尺寸",
+          "meaning": "大杯"
+        },
+        {
+          "surface": "でお願いします",
+          "reading": "でおねがいします",
+          "pos": "片語",
+          "meaning": "麻煩用這個"
+        }
+      ],
+      "grammar_note": "選尺寸、付款方式、座位都可用「〜でお願いします」。",
+      "start": 14.904,
+      "end": 17.616
+    },
+    {
+      "order": 5,
+      "speaker": "other",
+      "native": "甜度要調整嗎？",
+      "target": "甘さは調整されますか。",
+      "line_id": "cafe_takeout:5",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "甘さ",
+          "reading": "あまさ",
+          "pos": "名詞",
+          "meaning": "甜度"
+        },
+        {
+          "surface": "調整",
+          "reading": "ちょうせい",
+          "pos": "名詞/動詞",
+          "meaning": "調整"
+        },
+        {
+          "surface": "されますか",
+          "reading": "されますか",
+          "pos": "尊敬語",
+          "meaning": "要做嗎"
+        }
+      ],
+      "grammar_note": "有些店會問甜度或糖漿量。",
+      "start": 18.416,
+      "end": 20.96
+    },
+    {
+      "order": 6,
+      "speaker": "you",
+      "native": "請少糖。可以改成燕麥奶嗎？",
+      "target": "甘さ控えめでお願いします。オーツミルクに変更できますか。",
+      "line_id": "cafe_takeout:6",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "控えめ",
+          "reading": "ひかえめ",
+          "pos": "形容動詞",
+          "meaning": "少一點"
+        },
+        {
+          "surface": "オーツミルク",
+          "reading": "オーツミルク",
+          "pos": "名詞",
+          "meaning": "燕麥奶"
+        },
+        {
+          "surface": "変更できますか",
+          "reading": "へんこうできますか",
+          "pos": "問句",
+          "meaning": "可以更改嗎"
+        }
+      ],
+      "grammar_note": "「控えめ」可用於少糖、少油、少鹽。",
+      "start": 21.76,
+      "end": 27.736
+    },
+    {
+      "order": 7,
+      "speaker": "other",
+      "native": "可以。更改牛奶會加五十日圓。",
+      "target": "できます。ミルク変更は五十円追加になります。",
+      "line_id": "cafe_takeout:7",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "できます",
+          "reading": "できます",
+          "pos": "動詞",
+          "meaning": "可以"
+        },
+        {
+          "surface": "五十円",
+          "reading": "ごじゅうえん",
+          "pos": "金額",
+          "meaning": "五十日圓"
+        },
+        {
+          "surface": "追加",
+          "reading": "ついか",
+          "pos": "名詞",
+          "meaning": "追加"
+        }
+      ],
+      "grammar_note": "「追加になります」表示會額外收費。",
+      "start": 28.536,
+      "end": 33.6
+    },
+    {
+      "order": 8,
+      "speaker": "you",
+      "native": "沒問題。那就麻煩這樣。",
+      "target": "大丈夫です。それでお願いします。",
+      "line_id": "cafe_takeout:8",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "大丈夫です",
+          "reading": "だいじょうぶです",
+          "pos": "片語",
+          "meaning": "沒問題"
+        },
+        {
+          "surface": "それで",
+          "reading": "それで",
+          "pos": "片語",
+          "meaning": "就那樣"
+        },
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "請求",
+          "meaning": "麻煩您"
+        }
+      ],
+      "grammar_note": "接受店員方案時可說「それでお願いします」。",
+      "start": 34.4,
+      "end": 38.624
+    },
+    {
+      "order": 9,
+      "speaker": "other",
+      "native": "要加熱三明治嗎？",
+      "target": "サンドイッチは温めますか。",
+      "line_id": "cafe_takeout:9",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "サンドイッチ",
+          "reading": "サンドイッチ",
+          "pos": "名詞",
+          "meaning": "三明治"
+        },
+        {
+          "surface": "温めます",
+          "reading": "あたためます",
+          "pos": "動詞",
+          "meaning": "加熱"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "pos": "助詞",
+          "meaning": "疑問"
+        }
+      ],
+      "grammar_note": "「温めますか」讀作「あたためますか」。",
+      "start": 39.424,
+      "end": 42.016
+    },
+    {
+      "order": 10,
+      "speaker": "you",
+      "native": "不用，直接給我就好。",
+      "target": "温めなくて大丈夫です。そのままでお願いします。",
+      "line_id": "cafe_takeout:10",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "温めなくて",
+          "reading": "あたためなくて",
+          "pos": "否定て形",
+          "meaning": "不用加熱"
+        },
+        {
+          "surface": "大丈夫です",
+          "reading": "だいじょうぶです",
+          "pos": "片語",
+          "meaning": "可以、沒問題"
+        },
+        {
+          "surface": "そのままで",
+          "reading": "そのままで",
+          "pos": "片語",
+          "meaning": "維持原樣"
+        }
+      ],
+      "grammar_note": "拒絕加熱時可說「そのままでお願いします」。",
+      "start": 42.816,
+      "end": 48.24
+    },
+    {
+      "order": 11,
+      "speaker": "other",
+      "native": "做好後會用號碼叫您。",
+      "target": "できましたら番号でお呼びします。",
+      "line_id": "cafe_takeout:11",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "できましたら",
+          "reading": "できましたら",
+          "pos": "條件句",
+          "meaning": "做好後"
+        },
+        {
+          "surface": "番号",
+          "reading": "ばんごう",
+          "pos": "名詞",
+          "meaning": "號碼"
+        },
+        {
+          "surface": "お呼びします",
+          "reading": "およびします",
+          "pos": "敬語",
+          "meaning": "呼叫"
+        }
+      ],
+      "grammar_note": "外帶等待時常聽到「番号でお呼びします」。",
+      "start": 49.04,
+      "end": 51.992
+    },
+    {
+      "order": 12,
+      "speaker": "you",
+      "native": "好的。請給我收據。",
+      "target": "わかりました。レシートをお願いします。",
+      "line_id": "cafe_takeout:12",
+      "source_type": "generated_scenario",
+      "source_id": "cafe_takeout",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "わかりました",
+          "reading": "わかりました",
+          "pos": "回應",
+          "meaning": "了解"
+        },
+        {
+          "surface": "レシート",
+          "reading": "レシート",
+          "pos": "名詞",
+          "meaning": "收據"
+        },
+        {
+          "surface": "お願いします",
+          "reading": "おねがいします",
+          "pos": "請求",
+          "meaning": "麻煩您"
+        }
+      ],
+      "grammar_note": "索取收據直接說「レシートをお願いします」。",
+      "start": 52.792,
+      "end": 57.208
+    }
+  ]
+}

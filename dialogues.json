@@ -3905,5 +3905,1593 @@
     "source_type": "generated_scenario",
     "source_id": "onboarding_self_intro",
     "difficulty": null
+  },
+  {
+    "id": "cafe_takeout",
+    "title": "咖啡店外帶",
+    "context": "在咖啡店點飲料，確認內用外帶、冰熱、尺寸、少糖、加奶、等待叫號和收據",
+    "lines": [
+      {
+        "speaker": "other",
+        "native": "歡迎光臨。請問在店內用還是外帶？",
+        "target": "いらっしゃいませ。店内でお召し上がりですか、お持ち帰りですか。",
+        "breakdown": [
+          {
+            "surface": "店内",
+            "reading": "てんない",
+            "pos": "名詞",
+            "meaning": "店內"
+          },
+          {
+            "surface": "お召し上がり",
+            "reading": "おめしあがり",
+            "pos": "敬語",
+            "meaning": "用餐、飲用"
+          },
+          {
+            "surface": "お持ち帰り",
+            "reading": "おもちかえり",
+            "pos": "名詞",
+            "meaning": "外帶"
+          }
+        ],
+        "grammar_note": "咖啡店常先確認內用或外帶。",
+        "line_id": "cafe_takeout:1",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "外帶。我要一杯冰拿鐵。",
+        "target": "持ち帰りで、アイスラテを一つお願いします。",
+        "breakdown": [
+          {
+            "surface": "持ち帰りで",
+            "reading": "もちかえりで",
+            "pos": "片語",
+            "meaning": "外帶"
+          },
+          {
+            "surface": "アイスラテ",
+            "reading": "アイスラテ",
+            "pos": "名詞",
+            "meaning": "冰拿鐵"
+          },
+          {
+            "surface": "一つ",
+            "reading": "ひとつ",
+            "pos": "數量",
+            "meaning": "一個、一杯"
+          }
+        ],
+        "grammar_note": "點飲料用「〜を一つお願いします」很自然。",
+        "line_id": "cafe_takeout:2",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "尺寸要中杯可以嗎？",
+        "target": "サイズはMでよろしいですか。",
+        "breakdown": [
+          {
+            "surface": "サイズ",
+            "reading": "サイズ",
+            "pos": "名詞",
+            "meaning": "尺寸"
+          },
+          {
+            "surface": "M",
+            "reading": "エム",
+            "pos": "尺寸",
+            "meaning": "中杯"
+          },
+          {
+            "surface": "よろしいですか",
+            "reading": "よろしいですか",
+            "pos": "敬語問句",
+            "meaning": "可以嗎"
+          }
+        ],
+        "grammar_note": "店員確認選項時常用「よろしいですか」。",
+        "tts_text": "サイズはエムでよろしいですか。",
+        "line_id": "cafe_takeout:3",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "請給我大杯。",
+        "target": "Lサイズでお願いします。",
+        "breakdown": [
+          {
+            "surface": "Lサイズ",
+            "reading": "エルサイズ",
+            "pos": "尺寸",
+            "meaning": "大杯"
+          },
+          {
+            "surface": "でお願いします",
+            "reading": "でおねがいします",
+            "pos": "片語",
+            "meaning": "麻煩用這個"
+          }
+        ],
+        "grammar_note": "選尺寸、付款方式、座位都可用「〜でお願いします」。",
+        "tts_text": "エルサイズでお願いします。",
+        "line_id": "cafe_takeout:4",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "甜度要調整嗎？",
+        "target": "甘さは調整されますか。",
+        "breakdown": [
+          {
+            "surface": "甘さ",
+            "reading": "あまさ",
+            "pos": "名詞",
+            "meaning": "甜度"
+          },
+          {
+            "surface": "調整",
+            "reading": "ちょうせい",
+            "pos": "名詞/動詞",
+            "meaning": "調整"
+          },
+          {
+            "surface": "されますか",
+            "reading": "されますか",
+            "pos": "尊敬語",
+            "meaning": "要做嗎"
+          }
+        ],
+        "grammar_note": "有些店會問甜度或糖漿量。",
+        "line_id": "cafe_takeout:5",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "請少糖。可以改成燕麥奶嗎？",
+        "target": "甘さ控えめでお願いします。オーツミルクに変更できますか。",
+        "breakdown": [
+          {
+            "surface": "控えめ",
+            "reading": "ひかえめ",
+            "pos": "形容動詞",
+            "meaning": "少一點"
+          },
+          {
+            "surface": "オーツミルク",
+            "reading": "オーツミルク",
+            "pos": "名詞",
+            "meaning": "燕麥奶"
+          },
+          {
+            "surface": "変更できますか",
+            "reading": "へんこうできますか",
+            "pos": "問句",
+            "meaning": "可以更改嗎"
+          }
+        ],
+        "grammar_note": "「控えめ」可用於少糖、少油、少鹽。",
+        "line_id": "cafe_takeout:6",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "可以。更改牛奶會加五十日圓。",
+        "target": "できます。ミルク変更は五十円追加になります。",
+        "breakdown": [
+          {
+            "surface": "できます",
+            "reading": "できます",
+            "pos": "動詞",
+            "meaning": "可以"
+          },
+          {
+            "surface": "五十円",
+            "reading": "ごじゅうえん",
+            "pos": "金額",
+            "meaning": "五十日圓"
+          },
+          {
+            "surface": "追加",
+            "reading": "ついか",
+            "pos": "名詞",
+            "meaning": "追加"
+          }
+        ],
+        "grammar_note": "「追加になります」表示會額外收費。",
+        "tts_text": "できます。ミルク変更はごじゅう円追加になります。",
+        "line_id": "cafe_takeout:7",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "沒問題。那就麻煩這樣。",
+        "target": "大丈夫です。それでお願いします。",
+        "breakdown": [
+          {
+            "surface": "大丈夫です",
+            "reading": "だいじょうぶです",
+            "pos": "片語",
+            "meaning": "沒問題"
+          },
+          {
+            "surface": "それで",
+            "reading": "それで",
+            "pos": "片語",
+            "meaning": "就那樣"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "請求",
+            "meaning": "麻煩您"
+          }
+        ],
+        "grammar_note": "接受店員方案時可說「それでお願いします」。",
+        "line_id": "cafe_takeout:8",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "要加熱三明治嗎？",
+        "target": "サンドイッチは温めますか。",
+        "breakdown": [
+          {
+            "surface": "サンドイッチ",
+            "reading": "サンドイッチ",
+            "pos": "名詞",
+            "meaning": "三明治"
+          },
+          {
+            "surface": "温めます",
+            "reading": "あたためます",
+            "pos": "動詞",
+            "meaning": "加熱"
+          },
+          {
+            "surface": "か",
+            "reading": "か",
+            "pos": "助詞",
+            "meaning": "疑問"
+          }
+        ],
+        "grammar_note": "「温めますか」讀作「あたためますか」。",
+        "tts_text": "サンドイッチはあたためますか。",
+        "line_id": "cafe_takeout:9",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "不用，直接給我就好。",
+        "target": "温めなくて大丈夫です。そのままでお願いします。",
+        "breakdown": [
+          {
+            "surface": "温めなくて",
+            "reading": "あたためなくて",
+            "pos": "否定て形",
+            "meaning": "不用加熱"
+          },
+          {
+            "surface": "大丈夫です",
+            "reading": "だいじょうぶです",
+            "pos": "片語",
+            "meaning": "可以、沒問題"
+          },
+          {
+            "surface": "そのままで",
+            "reading": "そのままで",
+            "pos": "片語",
+            "meaning": "維持原樣"
+          }
+        ],
+        "grammar_note": "拒絕加熱時可說「そのままでお願いします」。",
+        "tts_text": "あたためなくて大丈夫です。そのままでお願いします。",
+        "line_id": "cafe_takeout:10",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "做好後會用號碼叫您。",
+        "target": "できましたら番号でお呼びします。",
+        "breakdown": [
+          {
+            "surface": "できましたら",
+            "reading": "できましたら",
+            "pos": "條件句",
+            "meaning": "做好後"
+          },
+          {
+            "surface": "番号",
+            "reading": "ばんごう",
+            "pos": "名詞",
+            "meaning": "號碼"
+          },
+          {
+            "surface": "お呼びします",
+            "reading": "およびします",
+            "pos": "敬語",
+            "meaning": "呼叫"
+          }
+        ],
+        "grammar_note": "外帶等待時常聽到「番号でお呼びします」。",
+        "line_id": "cafe_takeout:11",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "好的。請給我收據。",
+        "target": "わかりました。レシートをお願いします。",
+        "breakdown": [
+          {
+            "surface": "わかりました",
+            "reading": "わかりました",
+            "pos": "回應",
+            "meaning": "了解"
+          },
+          {
+            "surface": "レシート",
+            "reading": "レシート",
+            "pos": "名詞",
+            "meaning": "收據"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "請求",
+            "meaning": "麻煩您"
+          }
+        ],
+        "grammar_note": "索取收據直接說「レシートをお願いします」。",
+        "line_id": "cafe_takeout:12",
+        "source_type": "generated_scenario",
+        "source_id": "cafe_takeout",
+        "difficulty": null,
+        "review_state": "new"
+      }
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "cafe_takeout",
+    "difficulty": null
+  },
+  {
+    "id": "delivery_redelivery",
+    "title": "宅配再配送",
+    "context": "收到不在票後打電話或和配送員確認再配送時間、地址、置き配、宅配箱和本人確認",
+    "lines": [
+      {
+        "speaker": "you",
+        "native": "不好意思，我想申請再配送。",
+        "target": "すみません、再配達をお願いしたいんですが。",
+        "breakdown": [
+          {
+            "surface": "再配達",
+            "reading": "さいはいたつ",
+            "pos": "名詞",
+            "meaning": "再配送"
+          },
+          {
+            "surface": "お願いしたい",
+            "reading": "おねがいしたい",
+            "pos": "請求",
+            "meaning": "想拜託"
+          },
+          {
+            "surface": "んですが",
+            "reading": "んですが",
+            "pos": "緩衝句",
+            "meaning": "想請問"
+          }
+        ],
+        "grammar_note": "收到不在票後可用「再配達をお願いしたいんですが」。",
+        "line_id": "delivery_redelivery:1",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "請問有不在連絡票的號碼嗎？",
+        "target": "ご不在連絡票の番号はおわかりになりますか。",
+        "breakdown": [
+          {
+            "surface": "不在連絡票",
+            "reading": "ふざいれんらくひょう",
+            "pos": "名詞",
+            "meaning": "不在通知單"
+          },
+          {
+            "surface": "番号",
+            "reading": "ばんごう",
+            "pos": "名詞",
+            "meaning": "號碼"
+          },
+          {
+            "surface": "おわかりになりますか",
+            "reading": "おわかりになりますか",
+            "pos": "敬語問句",
+            "meaning": "您知道嗎"
+          }
+        ],
+        "grammar_note": "配送客服會先問不在票號碼。",
+        "line_id": "delivery_redelivery:2",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "有，是 1234-5678。",
+        "target": "はい、1234-5678です。",
+        "breakdown": [
+          {
+            "surface": "はい",
+            "reading": "はい",
+            "pos": "回應",
+            "meaning": "是"
+          },
+          {
+            "surface": "1234-5678",
+            "reading": "いちにさんよん の ごろくななはち",
+            "pos": "號碼",
+            "meaning": "通知單號碼"
+          }
+        ],
+        "grammar_note": "報號碼可用「の」分段，降低聽錯。",
+        "tts_text": "はい、いちにさんよんのごろくななはちです。",
+        "line_id": "delivery_redelivery:3",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "請問希望什麼時段再配送？",
+        "target": "ご希望の配達時間帯はいつでしょうか。",
+        "breakdown": [
+          {
+            "surface": "ご希望",
+            "reading": "ごきぼう",
+            "pos": "敬語名詞",
+            "meaning": "希望"
+          },
+          {
+            "surface": "配達時間帯",
+            "reading": "はいたつじかんたい",
+            "pos": "名詞",
+            "meaning": "配送時段"
+          },
+          {
+            "surface": "いつでしょうか",
+            "reading": "いつでしょうか",
+            "pos": "禮貌問句",
+            "meaning": "是什麼時候"
+          }
+        ],
+        "grammar_note": "「時間帯」指一段時段，不是精確時間。",
+        "line_id": "delivery_redelivery:4",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "今天晚上七點到九點可以嗎？",
+        "target": "今日の十九時から二十一時の間でお願いできますか。",
+        "breakdown": [
+          {
+            "surface": "今日",
+            "reading": "きょう",
+            "pos": "時間",
+            "meaning": "今天"
+          },
+          {
+            "surface": "十九時から二十一時",
+            "reading": "じゅうくじからにじゅういちじ",
+            "pos": "時間",
+            "meaning": "19 到 21 點"
+          },
+          {
+            "surface": "間で",
+            "reading": "あいだで",
+            "pos": "片語",
+            "meaning": "在期間內"
+          }
+        ],
+        "grammar_note": "日本宅配常用 19-21 這類時段。",
+        "tts_text": "今日のじゅうく時からにじゅういち時の間でお願いできますか。",
+        "line_id": "delivery_redelivery:5",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "可以。地址還是原本的地址嗎？",
+        "target": "承れます。お届け先は同じご住所でよろしいですか。",
+        "breakdown": [
+          {
+            "surface": "承れます",
+            "reading": "うけたまわれます",
+            "pos": "謙讓語",
+            "meaning": "可以受理"
+          },
+          {
+            "surface": "お届け先",
+            "reading": "おとどけさき",
+            "pos": "名詞",
+            "meaning": "收件地址"
+          },
+          {
+            "surface": "同じご住所",
+            "reading": "おなじごじゅうしょ",
+            "pos": "名詞片語",
+            "meaning": "同一個地址"
+          }
+        ],
+        "grammar_note": "配送員確認地址時會說「お届け先」。",
+        "line_id": "delivery_redelivery:6",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "是的。公寓名稱和房號也和票上一樣。",
+        "target": "はい。マンション名と部屋番号も票の通りです。",
+        "breakdown": [
+          {
+            "surface": "マンション名",
+            "reading": "マンションめい",
+            "pos": "名詞",
+            "meaning": "公寓名稱"
+          },
+          {
+            "surface": "部屋番号",
+            "reading": "へやばんごう",
+            "pos": "名詞",
+            "meaning": "房號"
+          },
+          {
+            "surface": "票の通り",
+            "reading": "ひょうのとおり",
+            "pos": "片語",
+            "meaning": "照票上所寫"
+          }
+        ],
+        "grammar_note": "「〜の通りです」表示和文件上一樣。",
+        "line_id": "delivery_redelivery:7",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "如果您不在，可以放在門口嗎？",
+        "target": "ご不在の場合、玄関前に置き配してもよろしいですか。",
+        "breakdown": [
+          {
+            "surface": "ご不在の場合",
+            "reading": "ごふざいのばあい",
+            "pos": "條件",
+            "meaning": "您不在時"
+          },
+          {
+            "surface": "玄関前",
+            "reading": "げんかんまえ",
+            "pos": "名詞",
+            "meaning": "門口前"
+          },
+          {
+            "surface": "置き配",
+            "reading": "おきはい",
+            "pos": "名詞",
+            "meaning": "放置配送"
+          }
+        ],
+        "grammar_note": "「置き配」是放在指定地點的配送方式。",
+        "line_id": "delivery_redelivery:8",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "如果可以的話，請放進宅配箱。",
+        "target": "できれば宅配ボックスに入れてください。",
+        "breakdown": [
+          {
+            "surface": "できれば",
+            "reading": "できれば",
+            "pos": "副詞",
+            "meaning": "如果可以"
+          },
+          {
+            "surface": "宅配ボックス",
+            "reading": "たくはいボックス",
+            "pos": "名詞",
+            "meaning": "宅配箱"
+          },
+          {
+            "surface": "入れてください",
+            "reading": "いれてください",
+            "pos": "請求",
+            "meaning": "請放進"
+          }
+        ],
+        "grammar_note": "有宅配箱時直接說「宅配ボックスに入れてください」。",
+        "line_id": "delivery_redelivery:9",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "需要輸入密碼嗎？",
+        "target": "暗証番号は必要ですか。",
+        "breakdown": [
+          {
+            "surface": "暗証番号",
+            "reading": "あんしょうばんごう",
+            "pos": "名詞",
+            "meaning": "密碼"
+          },
+          {
+            "surface": "必要",
+            "reading": "ひつよう",
+            "pos": "名詞/形容動詞",
+            "meaning": "需要"
+          },
+          {
+            "surface": "ですか",
+            "reading": "ですか",
+            "pos": "問句",
+            "meaning": "嗎"
+          }
+        ],
+        "grammar_note": "宅配箱常會確認密碼或使用方式。",
+        "line_id": "delivery_redelivery:10",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "不需要。空的宅配箱可以直接使用。",
+        "target": "必要ありません。空いているボックスを使えます。",
+        "breakdown": [
+          {
+            "surface": "必要ありません",
+            "reading": "ひつようありません",
+            "pos": "否定",
+            "meaning": "不需要"
+          },
+          {
+            "surface": "空いている",
+            "reading": "あいている",
+            "pos": "動詞",
+            "meaning": "空著的"
+          },
+          {
+            "surface": "使えます",
+            "reading": "つかえます",
+            "pos": "可能形",
+            "meaning": "可以使用"
+          }
+        ],
+        "grammar_note": "說明不需要密碼時可用「必要ありません」。",
+        "line_id": "delivery_redelivery:11",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "了解。送達時可能會確認姓名。",
+        "target": "承知しました。お届け時にお名前を確認する場合があります。",
+        "breakdown": [
+          {
+            "surface": "承知しました",
+            "reading": "しょうちしました",
+            "pos": "回應",
+            "meaning": "了解"
+          },
+          {
+            "surface": "お届け時",
+            "reading": "おとどけじ",
+            "pos": "時間",
+            "meaning": "配送時"
+          },
+          {
+            "surface": "確認する場合があります",
+            "reading": "かくにんするばあいがあります",
+            "pos": "片語",
+            "meaning": "有時會確認"
+          }
+        ],
+        "grammar_note": "「場合があります」表示可能會發生。",
+        "line_id": "delivery_redelivery:12",
+        "source_type": "generated_scenario",
+        "source_id": "delivery_redelivery",
+        "difficulty": null,
+        "review_state": "new"
+      }
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "delivery_redelivery",
+    "difficulty": null
+  },
+  {
+    "id": "clinic_registration",
+    "title": "診所掛號與描述症狀",
+    "context": "第一次到診所掛號，出示保險證，描述發燒、喉嚨痛、咳嗽，確認等候時間和藥物過敏",
+    "lines": [
+      {
+        "speaker": "you",
+        "native": "不好意思，我是第一次來，想掛號。",
+        "target": "すみません、初めてなんですが、受付をお願いします。",
+        "breakdown": [
+          {
+            "surface": "初めて",
+            "reading": "はじめて",
+            "pos": "副詞/名詞",
+            "meaning": "第一次"
+          },
+          {
+            "surface": "受付",
+            "reading": "うけつけ",
+            "pos": "名詞",
+            "meaning": "掛號、櫃台受理"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "請求",
+            "meaning": "麻煩您"
+          }
+        ],
+        "grammar_note": "初診掛號可說「初めてなんですが、受付をお願いします」。",
+        "line_id": "clinic_registration:1",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "請出示健康保險證和在留卡。",
+        "target": "保険証と在留カードをご提示ください。",
+        "breakdown": [
+          {
+            "surface": "保険証",
+            "reading": "ほけんしょう",
+            "pos": "名詞",
+            "meaning": "健康保險證"
+          },
+          {
+            "surface": "在留カード",
+            "reading": "ざいりゅうカード",
+            "pos": "名詞",
+            "meaning": "在留卡"
+          },
+          {
+            "surface": "ご提示ください",
+            "reading": "ごていじください",
+            "pos": "敬語請求",
+            "meaning": "請出示"
+          }
+        ],
+        "grammar_note": "診所初診常會確認保險證與身分證件。",
+        "line_id": "clinic_registration:2",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "好的，這是保險證。",
+        "target": "はい、こちらが保険証です。",
+        "breakdown": [
+          {
+            "surface": "こちら",
+            "reading": "こちら",
+            "pos": "代名詞",
+            "meaning": "這個、這邊"
+          },
+          {
+            "surface": "保険証",
+            "reading": "ほけんしょう",
+            "pos": "名詞",
+            "meaning": "保險證"
+          },
+          {
+            "surface": "です",
+            "reading": "です",
+            "pos": "助動詞",
+            "meaning": "是"
+          }
+        ],
+        "grammar_note": "遞文件時用「こちらが〜です」。",
+        "line_id": "clinic_registration:3",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "今天是哪裡不舒服？",
+        "target": "今日はどうされましたか。",
+        "breakdown": [
+          {
+            "surface": "今日",
+            "reading": "きょう",
+            "pos": "名詞",
+            "meaning": "今天"
+          },
+          {
+            "surface": "どうされましたか",
+            "reading": "どうされましたか",
+            "pos": "固定問句",
+            "meaning": "您怎麼了"
+          }
+        ],
+        "grammar_note": "醫護人員問症狀常說「どうされましたか」。",
+        "line_id": "clinic_registration:4",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "從昨天開始發燒，喉嚨也很痛。",
+        "target": "昨日から熱があって、喉もかなり痛いです。",
+        "breakdown": [
+          {
+            "surface": "昨日から",
+            "reading": "きのうから",
+            "pos": "時間",
+            "meaning": "從昨天開始"
+          },
+          {
+            "surface": "熱がある",
+            "reading": "ねつがある",
+            "pos": "片語",
+            "meaning": "發燒"
+          },
+          {
+            "surface": "喉",
+            "reading": "のど",
+            "pos": "名詞",
+            "meaning": "喉嚨"
+          },
+          {
+            "surface": "かなり痛い",
+            "reading": "かなりいたい",
+            "pos": "形容詞片語",
+            "meaning": "相當痛"
+          }
+        ],
+        "grammar_note": "描述症狀用「〜から」「〜が痛い」最基本。",
+        "line_id": "clinic_registration:5",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "有咳嗽或流鼻水嗎？",
+        "target": "咳や鼻水はありますか。",
+        "breakdown": [
+          {
+            "surface": "咳",
+            "reading": "せき",
+            "pos": "名詞",
+            "meaning": "咳嗽"
+          },
+          {
+            "surface": "鼻水",
+            "reading": "はなみず",
+            "pos": "名詞",
+            "meaning": "鼻水"
+          },
+          {
+            "surface": "ありますか",
+            "reading": "ありますか",
+            "pos": "問句",
+            "meaning": "有嗎"
+          }
+        ],
+        "grammar_note": "診所會追問常見症狀。",
+        "line_id": "clinic_registration:6",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "有一點咳嗽，但沒有流鼻水。",
+        "target": "咳は少しありますが、鼻水はありません。",
+        "breakdown": [
+          {
+            "surface": "少しあります",
+            "reading": "すこしあります",
+            "pos": "片語",
+            "meaning": "有一點"
+          },
+          {
+            "surface": "が",
+            "reading": "が",
+            "pos": "接續助詞",
+            "meaning": "但是"
+          },
+          {
+            "surface": "ありません",
+            "reading": "ありません",
+            "pos": "否定",
+            "meaning": "沒有"
+          }
+        ],
+        "grammar_note": "用「Aはありますが、Bはありません」對比症狀。",
+        "line_id": "clinic_registration:7",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "有吃過退燒藥嗎？",
+        "target": "解熱剤は飲まれましたか。",
+        "breakdown": [
+          {
+            "surface": "解熱剤",
+            "reading": "げねつざい",
+            "pos": "名詞",
+            "meaning": "退燒藥"
+          },
+          {
+            "surface": "飲まれましたか",
+            "reading": "のまれましたか",
+            "pos": "尊敬語",
+            "meaning": "有服用嗎"
+          }
+        ],
+        "grammar_note": "藥物用「飲む」，即使是藥錠。",
+        "line_id": "clinic_registration:8",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "今天早上吃過一次市售藥。",
+        "target": "今朝、市販薬を一回飲みました。",
+        "breakdown": [
+          {
+            "surface": "今朝",
+            "reading": "けさ",
+            "pos": "時間",
+            "meaning": "今天早上"
+          },
+          {
+            "surface": "市販薬",
+            "reading": "しはんやく",
+            "pos": "名詞",
+            "meaning": "市售藥"
+          },
+          {
+            "surface": "一回",
+            "reading": "いっかい",
+            "pos": "次數",
+            "meaning": "一次"
+          }
+        ],
+        "grammar_note": "「市販薬」指藥局可買到的非處方藥。",
+        "line_id": "clinic_registration:9",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "有藥物過敏嗎？",
+        "target": "薬のアレルギーはありますか。",
+        "breakdown": [
+          {
+            "surface": "薬",
+            "reading": "くすり",
+            "pos": "名詞",
+            "meaning": "藥"
+          },
+          {
+            "surface": "アレルギー",
+            "reading": "アレルギー",
+            "pos": "名詞",
+            "meaning": "過敏"
+          },
+          {
+            "surface": "ありますか",
+            "reading": "ありますか",
+            "pos": "問句",
+            "meaning": "有嗎"
+          }
+        ],
+        "grammar_note": "醫療場景一定要會回答過敏問題。",
+        "line_id": "clinic_registration:10",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "目前沒有已知的藥物過敏。",
+        "target": "今のところ、わかっている薬のアレルギーはありません。",
+        "breakdown": [
+          {
+            "surface": "今のところ",
+            "reading": "いまのところ",
+            "pos": "副詞",
+            "meaning": "目前"
+          },
+          {
+            "surface": "わかっている",
+            "reading": "わかっている",
+            "pos": "動詞",
+            "meaning": "已知的"
+          },
+          {
+            "surface": "ありません",
+            "reading": "ありません",
+            "pos": "否定",
+            "meaning": "沒有"
+          }
+        ],
+        "grammar_note": "不知道或沒有已知過敏時可說「今のところ、わかっている〜はありません」。",
+        "line_id": "clinic_registration:11",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "目前大約需要等三十分鐘。",
+        "target": "現在、待ち時間は三十分ほどです。",
+        "breakdown": [
+          {
+            "surface": "現在",
+            "reading": "げんざい",
+            "pos": "名詞",
+            "meaning": "目前"
+          },
+          {
+            "surface": "待ち時間",
+            "reading": "まちじかん",
+            "pos": "名詞",
+            "meaning": "等候時間"
+          },
+          {
+            "surface": "三十分ほど",
+            "reading": "さんじゅっぷんほど",
+            "pos": "時間",
+            "meaning": "約三十分"
+          }
+        ],
+        "grammar_note": "「〜ほど」表示大約。",
+        "tts_text": "現在、待ち時間はさんじゅっぷんほどです。",
+        "line_id": "clinic_registration:12",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "了解。我在候診區等。",
+        "target": "わかりました。待合室で待っています。",
+        "breakdown": [
+          {
+            "surface": "待合室",
+            "reading": "まちあいしつ",
+            "pos": "名詞",
+            "meaning": "候診室"
+          },
+          {
+            "surface": "待っています",
+            "reading": "まっています",
+            "pos": "動詞",
+            "meaning": "等候中"
+          }
+        ],
+        "grammar_note": "診所候診區叫「待合室」。",
+        "line_id": "clinic_registration:13",
+        "source_type": "generated_scenario",
+        "source_id": "clinic_registration",
+        "difficulty": null,
+        "review_state": "new"
+      }
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "clinic_registration",
+    "difficulty": null
+  },
+  {
+    "id": "hair_salon",
+    "title": "理髮美容院溝通",
+    "context": "到理髮店或美容院，說明預約、想剪的長度、瀏海、髮量、不要太短、造型和付款",
+    "lines": [
+      {
+        "speaker": "other",
+        "native": "歡迎光臨。請問有預約嗎？",
+        "target": "いらっしゃいませ。ご予約はされていますか。",
+        "breakdown": [
+          {
+            "surface": "ご予約",
+            "reading": "ごよやく",
+            "pos": "敬語名詞",
+            "meaning": "預約"
+          },
+          {
+            "surface": "されていますか",
+            "reading": "されていますか",
+            "pos": "尊敬語",
+            "meaning": "有做嗎"
+          }
+        ],
+        "grammar_note": "美容院通常先確認預約。",
+        "line_id": "hair_salon:1",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "有，我預約了下午三點，姓王。",
+        "target": "はい、十五時に予約しているワンです。",
+        "breakdown": [
+          {
+            "surface": "十五時",
+            "reading": "じゅうごじ",
+            "pos": "時間",
+            "meaning": "下午三點"
+          },
+          {
+            "surface": "予約している",
+            "reading": "よやくしている",
+            "pos": "動詞",
+            "meaning": "有預約"
+          },
+          {
+            "surface": "ワンです",
+            "reading": "ワンです",
+            "pos": "自報姓名",
+            "meaning": "我是王"
+          }
+        ],
+        "grammar_note": "報預約可說「〜時に予約している〜です」。",
+        "tts_text": "はい、じゅうご時に予約しているワンです。",
+        "line_id": "hair_salon:2",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "今天想怎麼剪？",
+        "target": "今日はどのようにされますか。",
+        "breakdown": [
+          {
+            "surface": "今日",
+            "reading": "きょう",
+            "pos": "名詞",
+            "meaning": "今天"
+          },
+          {
+            "surface": "どのように",
+            "reading": "どのように",
+            "pos": "疑問副詞",
+            "meaning": "想怎麼樣"
+          },
+          {
+            "surface": "されますか",
+            "reading": "されますか",
+            "pos": "尊敬語",
+            "meaning": "要做嗎"
+          }
+        ],
+        "grammar_note": "設計師問需求常用「どのようにされますか」。",
+        "line_id": "hair_salon:3",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "整體想修短一點，但不要太短。",
+        "target": "全体的に少し短くしたいですが、短くしすぎないでください。",
+        "breakdown": [
+          {
+            "surface": "全体的に",
+            "reading": "ぜんたいてきに",
+            "pos": "副詞",
+            "meaning": "整體上"
+          },
+          {
+            "surface": "少し短く",
+            "reading": "すこしみじかく",
+            "pos": "形容詞副詞化",
+            "meaning": "稍微短一點"
+          },
+          {
+            "surface": "しすぎないでください",
+            "reading": "しすぎないでください",
+            "pos": "請求",
+            "meaning": "請不要做過頭"
+          }
+        ],
+        "grammar_note": "「〜しすぎないでください」可用於不要剪太短、不要打太薄。",
+        "line_id": "hair_salon:4",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "大概要剪幾公分？",
+        "target": "何センチくらい切りますか。",
+        "breakdown": [
+          {
+            "surface": "何センチ",
+            "reading": "なんセンチ",
+            "pos": "疑問詞",
+            "meaning": "幾公分"
+          },
+          {
+            "surface": "くらい",
+            "reading": "くらい",
+            "pos": "副助詞",
+            "meaning": "大約"
+          },
+          {
+            "surface": "切りますか",
+            "reading": "きりますか",
+            "pos": "動詞問句",
+            "meaning": "要剪嗎"
+          }
+        ],
+        "grammar_note": "理髮常用「何センチくらい」。",
+        "line_id": "hair_salon:5",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "大概剪兩公分就好。",
+        "target": "二センチくらいでお願いします。",
+        "breakdown": [
+          {
+            "surface": "二センチ",
+            "reading": "にセンチ",
+            "pos": "長度",
+            "meaning": "兩公分"
+          },
+          {
+            "surface": "くらいで",
+            "reading": "くらいで",
+            "pos": "片語",
+            "meaning": "大約以"
+          },
+          {
+            "surface": "お願いします",
+            "reading": "おねがいします",
+            "pos": "請求",
+            "meaning": "麻煩您"
+          }
+        ],
+        "grammar_note": "回答長度用「〜センチくらいでお願いします」。",
+        "line_id": "hair_salon:6",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "瀏海要怎麼處理？",
+        "target": "前髪はどうされますか。",
+        "breakdown": [
+          {
+            "surface": "前髪",
+            "reading": "まえがみ",
+            "pos": "名詞",
+            "meaning": "瀏海"
+          },
+          {
+            "surface": "どうされますか",
+            "reading": "どうされますか",
+            "pos": "尊敬語問句",
+            "meaning": "要怎麼處理"
+          }
+        ],
+        "grammar_note": "瀏海是「前髪」。",
+        "line_id": "hair_salon:7",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "瀏海請修到眉毛附近。",
+        "target": "前髪は眉毛のあたりで整えてください。",
+        "breakdown": [
+          {
+            "surface": "眉毛",
+            "reading": "まゆげ",
+            "pos": "名詞",
+            "meaning": "眉毛"
+          },
+          {
+            "surface": "あたり",
+            "reading": "あたり",
+            "pos": "名詞",
+            "meaning": "附近"
+          },
+          {
+            "surface": "整えてください",
+            "reading": "ととのえてください",
+            "pos": "請求",
+            "meaning": "請修整"
+          }
+        ],
+        "grammar_note": "「〜のあたり」表示大概位置。",
+        "line_id": "hair_salon:8",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "髮量要打薄嗎？",
+        "target": "量は軽くしますか。",
+        "breakdown": [
+          {
+            "surface": "量",
+            "reading": "りょう",
+            "pos": "名詞",
+            "meaning": "量、髮量"
+          },
+          {
+            "surface": "軽くします",
+            "reading": "かるくします",
+            "pos": "片語",
+            "meaning": "打薄、變輕"
+          }
+        ],
+        "grammar_note": "日文常用「軽くする」表示打薄髮量。",
+        "line_id": "hair_salon:9",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "請稍微打薄，但不要太薄。",
+        "target": "少しだけ軽くしてください。でも、すきすぎないでください。",
+        "breakdown": [
+          {
+            "surface": "少しだけ",
+            "reading": "すこしだけ",
+            "pos": "副詞",
+            "meaning": "只有一點"
+          },
+          {
+            "surface": "軽くしてください",
+            "reading": "かるくしてください",
+            "pos": "請求",
+            "meaning": "請打薄"
+          },
+          {
+            "surface": "すきすぎないで",
+            "reading": "すきすぎないで",
+            "pos": "請求",
+            "meaning": "不要打太薄"
+          }
+        ],
+        "grammar_note": "「すく」是打薄頭髮；「すきすぎないで」很實用。",
+        "line_id": "hair_salon:10",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "洗完頭後要幫您簡單造型嗎？",
+        "target": "シャンプーの後、簡単にセットしますか。",
+        "breakdown": [
+          {
+            "surface": "シャンプー",
+            "reading": "シャンプー",
+            "pos": "名詞",
+            "meaning": "洗髮"
+          },
+          {
+            "surface": "後",
+            "reading": "あと",
+            "pos": "名詞",
+            "meaning": "之後"
+          },
+          {
+            "surface": "セットしますか",
+            "reading": "セットしますか",
+            "pos": "問句",
+            "meaning": "要造型嗎"
+          }
+        ],
+        "grammar_note": "造型在美容院常說「セット」。",
+        "line_id": "hair_salon:11",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "請自然一點，不要用太多髮蠟。",
+        "target": "自然な感じで、ワックスは少なめでお願いします。",
+        "breakdown": [
+          {
+            "surface": "自然な感じ",
+            "reading": "しぜんなかんじ",
+            "pos": "名詞片語",
+            "meaning": "自然的感覺"
+          },
+          {
+            "surface": "ワックス",
+            "reading": "ワックス",
+            "pos": "名詞",
+            "meaning": "髮蠟"
+          },
+          {
+            "surface": "少なめ",
+            "reading": "すくなめ",
+            "pos": "形容動詞",
+            "meaning": "少一點"
+          }
+        ],
+        "grammar_note": "「〜な感じで」適合描述想要的風格。",
+        "line_id": "hair_salon:12",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "other",
+        "native": "完成了，這樣可以嗎？",
+        "target": "仕上がりました。こんな感じで大丈夫ですか。",
+        "breakdown": [
+          {
+            "surface": "仕上がりました",
+            "reading": "しあがりました",
+            "pos": "動詞",
+            "meaning": "完成了"
+          },
+          {
+            "surface": "こんな感じ",
+            "reading": "こんなかんじ",
+            "pos": "片語",
+            "meaning": "這樣的感覺"
+          },
+          {
+            "surface": "大丈夫ですか",
+            "reading": "だいじょうぶですか",
+            "pos": "問句",
+            "meaning": "可以嗎"
+          }
+        ],
+        "grammar_note": "最後確認成品會說「こんな感じで大丈夫ですか」。",
+        "line_id": "hair_salon:13",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      },
+      {
+        "speaker": "you",
+        "native": "很好，謝謝。可以刷卡嗎？",
+        "target": "大丈夫です。ありがとうございます。カードは使えますか。",
+        "breakdown": [
+          {
+            "surface": "大丈夫です",
+            "reading": "だいじょうぶです",
+            "pos": "回應",
+            "meaning": "可以、沒問題"
+          },
+          {
+            "surface": "カード",
+            "reading": "カード",
+            "pos": "名詞",
+            "meaning": "信用卡"
+          },
+          {
+            "surface": "使えますか",
+            "reading": "つかえますか",
+            "pos": "可能形問句",
+            "meaning": "可以使用嗎"
+          }
+        ],
+        "grammar_note": "付款前確認刷卡可用「カードは使えますか」。",
+        "line_id": "hair_salon:14",
+        "source_type": "generated_scenario",
+        "source_id": "hair_salon",
+        "difficulty": null,
+        "review_state": "new"
+      }
+    ],
+    "source_type": "generated_scenario",
+    "source_id": "hair_salon",
+    "difficulty": null
   }
 ]

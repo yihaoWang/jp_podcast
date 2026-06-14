@@ -1,0 +1,447 @@
+{
+  "id": "delivery_redelivery",
+  "title": "宅配再配送",
+  "context": "收到不在票後打電話或和配送員確認再配送時間、地址、置き配、宅配箱和本人確認",
+  "language_code": "ja",
+  "native_language_code": "zh-TW",
+  "source_type": "generated_scenario",
+  "source_id": "delivery_redelivery",
+  "difficulty": null,
+  "duration": 62.159,
+  "variants": [
+    {
+      "mode": "target",
+      "label": "Target only",
+      "path": "/audio/delivery_redelivery.mp3",
+      "duration": 62.159
+    },
+    {
+      "mode": "shadowing",
+      "label": "Shadowing long pause",
+      "path": "/audio/delivery_redelivery.shadowing.mp3",
+      "duration": 112.559
+    },
+    {
+      "mode": "slow",
+      "label": "Slow target",
+      "path": "/audio/delivery_redelivery.slow.mp3",
+      "duration": 73.696
+    },
+    {
+      "mode": "native_then_target",
+      "label": "Native then target",
+      "path": "/audio/delivery_redelivery.native-target.mp3",
+      "duration": 117.838
+    },
+    {
+      "mode": "target_then_native",
+      "label": "Target then native",
+      "path": "/audio/delivery_redelivery.target-native.mp3",
+      "duration": 117.838
+    }
+  ],
+  "lines": [
+    {
+      "order": 1,
+      "speaker": "you",
+      "native": "不好意思，我想申請再配送。",
+      "target": "すみません、再配達をお願いしたいんですが。",
+      "line_id": "delivery_redelivery:1",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "再配達",
+          "reading": "さいはいたつ",
+          "pos": "名詞",
+          "meaning": "再配送"
+        },
+        {
+          "surface": "お願いしたい",
+          "reading": "おねがいしたい",
+          "pos": "請求",
+          "meaning": "想拜託"
+        },
+        {
+          "surface": "んですが",
+          "reading": "んですが",
+          "pos": "緩衝句",
+          "meaning": "想請問"
+        }
+      ],
+      "grammar_note": "收到不在票後可用「再配達をお願いしたいんですが」。",
+      "start": 0.0,
+      "end": 4.152
+    },
+    {
+      "order": 2,
+      "speaker": "other",
+      "native": "請問有不在連絡票的號碼嗎？",
+      "target": "ご不在連絡票の番号はおわかりになりますか。",
+      "line_id": "delivery_redelivery:2",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "不在連絡票",
+          "reading": "ふざいれんらくひょう",
+          "pos": "名詞",
+          "meaning": "不在通知單"
+        },
+        {
+          "surface": "番号",
+          "reading": "ばんごう",
+          "pos": "名詞",
+          "meaning": "號碼"
+        },
+        {
+          "surface": "おわかりになりますか",
+          "reading": "おわかりになりますか",
+          "pos": "敬語問句",
+          "meaning": "您知道嗎"
+        }
+      ],
+      "grammar_note": "配送客服會先問不在票號碼。",
+      "start": 4.952,
+      "end": 8.96
+    },
+    {
+      "order": 3,
+      "speaker": "you",
+      "native": "有，是 1234-5678。",
+      "target": "はい、1234-5678です。",
+      "line_id": "delivery_redelivery:3",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "はい",
+          "reading": "はい",
+          "pos": "回應",
+          "meaning": "是"
+        },
+        {
+          "surface": "1234-5678",
+          "reading": "いちにさんよん の ごろくななはち",
+          "pos": "號碼",
+          "meaning": "通知單號碼"
+        }
+      ],
+      "grammar_note": "報號碼可用「の」分段，降低聽錯。",
+      "start": 9.76,
+      "end": 13.672
+    },
+    {
+      "order": 4,
+      "speaker": "other",
+      "native": "請問希望什麼時段再配送？",
+      "target": "ご希望の配達時間帯はいつでしょうか。",
+      "line_id": "delivery_redelivery:4",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "ご希望",
+          "reading": "ごきぼう",
+          "pos": "敬語名詞",
+          "meaning": "希望"
+        },
+        {
+          "surface": "配達時間帯",
+          "reading": "はいたつじかんたい",
+          "pos": "名詞",
+          "meaning": "配送時段"
+        },
+        {
+          "surface": "いつでしょうか",
+          "reading": "いつでしょうか",
+          "pos": "禮貌問句",
+          "meaning": "是什麼時候"
+        }
+      ],
+      "grammar_note": "「時間帯」指一段時段，不是精確時間。",
+      "start": 14.472,
+      "end": 17.904
+    },
+    {
+      "order": 5,
+      "speaker": "you",
+      "native": "今天晚上七點到九點可以嗎？",
+      "target": "今日の十九時から二十一時の間でお願いできますか。",
+      "line_id": "delivery_redelivery:5",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "pos": "時間",
+          "meaning": "今天"
+        },
+        {
+          "surface": "十九時から二十一時",
+          "reading": "じゅうくじからにじゅういちじ",
+          "pos": "時間",
+          "meaning": "19 到 21 點"
+        },
+        {
+          "surface": "間で",
+          "reading": "あいだで",
+          "pos": "片語",
+          "meaning": "在期間內"
+        }
+      ],
+      "grammar_note": "日本宅配常用 19-21 這類時段。",
+      "start": 18.704,
+      "end": 23.72
+    },
+    {
+      "order": 6,
+      "speaker": "other",
+      "native": "可以。地址還是原本的地址嗎？",
+      "target": "承れます。お届け先は同じご住所でよろしいですか。",
+      "line_id": "delivery_redelivery:6",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "承れます",
+          "reading": "うけたまわれます",
+          "pos": "謙讓語",
+          "meaning": "可以受理"
+        },
+        {
+          "surface": "お届け先",
+          "reading": "おとどけさき",
+          "pos": "名詞",
+          "meaning": "收件地址"
+        },
+        {
+          "surface": "同じご住所",
+          "reading": "おなじごじゅうしょ",
+          "pos": "名詞片語",
+          "meaning": "同一個地址"
+        }
+      ],
+      "grammar_note": "配送員確認地址時會說「お届け先」。",
+      "start": 24.52,
+      "end": 29.92
+    },
+    {
+      "order": 7,
+      "speaker": "you",
+      "native": "是的。公寓名稱和房號也和票上一樣。",
+      "target": "はい。マンション名と部屋番号も票の通りです。",
+      "line_id": "delivery_redelivery:7",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "マンション名",
+          "reading": "マンションめい",
+          "pos": "名詞",
+          "meaning": "公寓名稱"
+        },
+        {
+          "surface": "部屋番号",
+          "reading": "へやばんごう",
+          "pos": "名詞",
+          "meaning": "房號"
+        },
+        {
+          "surface": "票の通り",
+          "reading": "ひょうのとおり",
+          "pos": "片語",
+          "meaning": "照票上所寫"
+        }
+      ],
+      "grammar_note": "「〜の通りです」表示和文件上一樣。",
+      "start": 30.72,
+      "end": 35.856
+    },
+    {
+      "order": 8,
+      "speaker": "other",
+      "native": "如果您不在，可以放在門口嗎？",
+      "target": "ご不在の場合、玄関前に置き配してもよろしいですか。",
+      "line_id": "delivery_redelivery:8",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "ご不在の場合",
+          "reading": "ごふざいのばあい",
+          "pos": "條件",
+          "meaning": "您不在時"
+        },
+        {
+          "surface": "玄関前",
+          "reading": "げんかんまえ",
+          "pos": "名詞",
+          "meaning": "門口前"
+        },
+        {
+          "surface": "置き配",
+          "reading": "おきはい",
+          "pos": "名詞",
+          "meaning": "放置配送"
+        }
+      ],
+      "grammar_note": "「置き配」是放在指定地點的配送方式。",
+      "start": 36.656,
+      "end": 41.24
+    },
+    {
+      "order": 9,
+      "speaker": "you",
+      "native": "如果可以的話，請放進宅配箱。",
+      "target": "できれば宅配ボックスに入れてください。",
+      "line_id": "delivery_redelivery:9",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "できれば",
+          "reading": "できれば",
+          "pos": "副詞",
+          "meaning": "如果可以"
+        },
+        {
+          "surface": "宅配ボックス",
+          "reading": "たくはいボックス",
+          "pos": "名詞",
+          "meaning": "宅配箱"
+        },
+        {
+          "surface": "入れてください",
+          "reading": "いれてください",
+          "pos": "請求",
+          "meaning": "請放進"
+        }
+      ],
+      "grammar_note": "有宅配箱時直接說「宅配ボックスに入れてください」。",
+      "start": 42.04,
+      "end": 45.664
+    },
+    {
+      "order": 10,
+      "speaker": "other",
+      "native": "需要輸入密碼嗎？",
+      "target": "暗証番号は必要ですか。",
+      "line_id": "delivery_redelivery:10",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "暗証番号",
+          "reading": "あんしょうばんごう",
+          "pos": "名詞",
+          "meaning": "密碼"
+        },
+        {
+          "surface": "必要",
+          "reading": "ひつよう",
+          "pos": "名詞/形容動詞",
+          "meaning": "需要"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "pos": "問句",
+          "meaning": "嗎"
+        }
+      ],
+      "grammar_note": "宅配箱常會確認密碼或使用方式。",
+      "start": 46.464,
+      "end": 49.296
+    },
+    {
+      "order": 11,
+      "speaker": "you",
+      "native": "不需要。空的宅配箱可以直接使用。",
+      "target": "必要ありません。空いているボックスを使えます。",
+      "line_id": "delivery_redelivery:11",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "必要ありません",
+          "reading": "ひつようありません",
+          "pos": "否定",
+          "meaning": "不需要"
+        },
+        {
+          "surface": "空いている",
+          "reading": "あいている",
+          "pos": "動詞",
+          "meaning": "空著的"
+        },
+        {
+          "surface": "使えます",
+          "reading": "つかえます",
+          "pos": "可能形",
+          "meaning": "可以使用"
+        }
+      ],
+      "grammar_note": "說明不需要密碼時可用「必要ありません」。",
+      "start": 50.096,
+      "end": 55.016
+    },
+    {
+      "order": 12,
+      "speaker": "other",
+      "native": "了解。送達時可能會確認姓名。",
+      "target": "承知しました。お届け時にお名前を確認する場合があります。",
+      "line_id": "delivery_redelivery:12",
+      "source_type": "generated_scenario",
+      "source_id": "delivery_redelivery",
+      "difficulty": null,
+      "review_state": "new",
+      "breakdown": [
+        {
+          "surface": "承知しました",
+          "reading": "しょうちしました",
+          "pos": "回應",
+          "meaning": "了解"
+        },
+        {
+          "surface": "お届け時",
+          "reading": "おとどけじ",
+          "pos": "時間",
+          "meaning": "配送時"
+        },
+        {
+          "surface": "確認する場合があります",
+          "reading": "かくにんするばあいがあります",
+          "pos": "片語",
+          "meaning": "有時會確認"
+        }
+      ],
+      "grammar_note": "「場合があります」表示可能會發生。",
+      "start": 55.816,
+      "end": 61.36
+    }
+  ]
+}

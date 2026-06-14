@@ -40,6 +40,34 @@ scenarios:
       you: 顧客
       other: 店員
 
+  - id: cafe_takeout
+    title: 咖啡店外帶
+    context: 在咖啡店點飲料，確認內用外帶、冰熱、尺寸、少糖、加奶、等待叫號和收據
+    roles:
+      you: 顧客
+      other: 店員
+
+  - id: delivery_redelivery
+    title: 宅配再配送
+    context: 收到不在票後打電話或和配送員確認再配送時間、地址、置き配、宅配箱和本人確認
+    roles:
+      you: 收件人
+      other: 配送員
+
+  - id: clinic_registration
+    title: 診所掛號與描述症狀
+    context: 第一次到診所掛號，出示保險證，描述發燒、喉嚨痛、咳嗽，確認等候時間和藥物過敏
+    roles:
+      you: 病患
+      other: 櫃台或醫護人員
+
+  - id: hair_salon
+    title: 理髮美容院溝通
+    context: 到理髮店或美容院，說明預約、想剪的長度、瀏海、髮量、不要太短、造型和付款
+    roles:
+      you: 顧客
+      other: 設計師
+
   - id: train_station_help
     title: 車站問路與轉乘
     context: 在日本車站找不到月台，想確認路線、轉乘、末班車和是否需要補票
